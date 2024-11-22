@@ -62,43 +62,43 @@ function Maps() {
   async function getAddressFromCoordinate(lat, lon) {
     const API_REVERSE = `https://nominatim.openstreetmap.org/reverse.php?lat=${lat}&lon=${lon}&zoom=18&layer=address&format=jsonv2`;
     try {
-      // const response = await fetch(API_REVERSE);
-      // if (!response.ok) {
-      //   throw new Error(`HTTP error! Status: ${response.status}`);
-      // }
-      // const data = await response.json();
-      let data = {
-        place_id: 26434950,
-        licence:
-          "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
-        osm_type: "way",
-        osm_id: 540382604,
-        lat: "-6.179504315759951",
-        lon: "106.82051595088154",
-        category: "highway",
-        type: "residential",
-        place_rank: 26,
-        importance: 0.05341646982528416,
-        addresstype: "road",
-        name: "Jalan Budi Kemuliaan II",
-        display_name:
-          "Jalan Budi Kemuliaan II, RW 04, Gambir, Central Jakarta, Special capital Region of Jakarta, Java, 10110, Indonesia",
-        address: {
-          road: "Jalan Budi Kemuliaan II",
-          city_block: "RW 04",
-          neighbourhood: "Gambir",
-          suburb: "Gambir",
-          city_district: "Central Jakarta",
-          city: "Special capital Region of Jakarta",
-          "ISO3166-2-lvl4": "ID-JK",
-          region: "Java",
-          "ISO3166-2-lvl3": "ID-JW",
-          postcode: "10110",
-          country: "Indonesia",
-          country_code: "id",
-        },
-        boundingbox: ["-6.1806417", "-6.1788006", "106.8205110", "106.8213912"],
-      };
+      const response = await fetch(API_REVERSE);
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+      const data = await response.json();
+      // let data = {
+      //   place_id: 26434950,
+      //   licence:
+      //     "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      //   osm_type: "way",
+      //   osm_id: 540382604,
+      //   lat: "-6.179504315759951",
+      //   lon: "106.82051595088154",
+      //   category: "highway",
+      //   type: "residential",
+      //   place_rank: 26,
+      //   importance: 0.05341646982528416,
+      //   addresstype: "road",
+      //   name: "Jalan Budi Kemuliaan II",
+      //   display_name:
+      //     "Jalan Budi Kemuliaan II, RW 04, Gambir, Central Jakarta, Special capital Region of Jakarta, Java, 10110, Indonesia",
+      //   address: {
+      //     road: "Jalan Budi Kemuliaan II",
+      //     city_block: "RW 04",
+      //     neighbourhood: "Gambir",
+      //     suburb: "Gambir",
+      //     city_district: "Central Jakarta",
+      //     city: "Special capital Region of Jakarta",
+      //     "ISO3166-2-lvl4": "ID-JK",
+      //     region: "Java",
+      //     "ISO3166-2-lvl3": "ID-JW",
+      //     postcode: "10110",
+      //     country: "Indonesia",
+      //     country_code: "id",
+      //   },
+      //   boundingbox: ["-6.1806417", "-6.1788006", "106.8205110", "106.8213912"],
+      // };
       console.log(JSON.stringify(data, null, 2));
 
       setPos(data);
@@ -161,7 +161,7 @@ function Maps() {
         <button
           className="flex gap-3 px-3 py-3 bg-white border rounded-l-md"
           onClick={() =>
-            getAddressFromCoordinate(newPosition.lat, newPosition.lng)
+            getAddressFromCoordinate(coords.latitude, coords.longitude)
           }
         >
           <svg

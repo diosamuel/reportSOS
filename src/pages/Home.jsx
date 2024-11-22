@@ -52,7 +52,7 @@ function Home() {
           </div>
           <div className="flex flex-col gap-4 w-8/12">
             <button className="text-white border-white border px-3 py-4 rounded-full">
-              ❌ No, I was try, cancel
+              ❌ Cancel
             </button>
             <button className="flex gap-6 items-center bg-white rounded-full px-3 py-2" onClick={reportDanger}>
               <div
@@ -74,7 +74,7 @@ function Home() {
             🚨ReportSOS
           </h1>
           <h1 className="text-2xl font-medium w-9/12">
-            Shake your phone to activate, or click button below
+            Shake your phone to report, or click button below
           </h1>
           <button
             onClick={triggerSOS}
@@ -82,6 +82,7 @@ function Home() {
           >
             <h1 className="text-2xl font-semibold text-white">Help Me!</h1>
           </button>
+          <div>Use wisely, report will be sent to 911</div>
         </div>
       )}
     </Layout>
