@@ -13,6 +13,8 @@ import location_danger from "../../assets/location_danger.png";
 import emergencyCall from "./audio.mp3";
 import { useEffect, useState } from "react";
 import stations from "./overpass.json";
+import api_result from "./result.json";
+import api2_result from "./result2.json";
 
 async function GetOverpass(geo) {
   //radius 5 km
@@ -34,15 +36,29 @@ async function GetOverpass(geo) {
 }
 
 const Admin = () => {
+  let API_URL = "http://localhost:3000/";
   const [nearbyStation, setNearbyStation] = useState(null);
-  const [latlong, setLatLong] = useState([
-    38.897367324157926, -77.03646543098434,
-  ]);
+  const [latlong, setLatLong] = useState(null);
+  const [response, setResponse] = useState({
+    status: 500,
+  });
+  const [lemurResponse, setLemurResponse] = useState(null);
   useEffect(() => {
-    setLatLong([38.897367324157926, -77.03646543098434]);
-    setNearbyStation(stations);
-    console.log(nearbyStation);
+    setLatLong([api_result.data.nominatim.lat, api_result.data.nominatim.lon]);
   }, []);
+
+  function emergencyReview() {
+    setResponse(api_result);
+    let lemur = JSON.parse(api_result?.data?.assemblyai?.llm);
+    setLemurResponse(lemur);
+    // setNearbyStation(stations);
+    (async ()=>{
+      // let stations = await GetOverpass(latlong)
+      console.log(latlong)
+      setNearbyStation(stations);
+      console.log(nearbyStation);
+    })()
+  }
   const dangerIcon = new L.Icon({
     iconUrl: location_danger,
     iconAnchor: [50, 50],
@@ -57,8 +73,13 @@ const Admin = () => {
         <h1 className="relative">Emergency Alert!</h1>
       </div>
 
-      <section className="flex flex-col fixed z-50 right-0 shadow-2xl">
-        <div className="bg-blue-950 p-5 h-screen w-[40em] space-y-2 overflow-y-scroll">
+      {/* {response.status == 200 && ( */}
+      <section
+        className={`flex flex-col fixed z-50 right-0 shadow-2xl transition-all`}
+      >
+        <div className={`bg-blue-950 p-5 h-screen w-[35em] space-y-2 overflow-y-scroll ${
+          response.status == 200 ? "block" : "hidden"
+        }`}>
           <p className="p-3 rounded-md border opacity-40 text-white flex gap-3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -75,30 +96,29 @@ const Admin = () => {
           </p>
           <img
             className="rounded-lg"
-            src="https://www.ctvnews.ca/content/dam/ctvnews/en/images/2024/9/11/multi-vehicle-crash-1-7034426-1726089562682.png"
+            src={`${API_URL}${response?.data?.image}`}
           />
           <div>
-            <p className="text-white">Senin, 18/10/2024, 15:04:33</p>
+            <p className="text-white">{response?.data?.datetime}</p>
             <p className="text-white">
-              AAA Insurance, G Street Northwest, Downtown, Ward 2, Washington,
-              District of Columbia, 20045, United States
+              {response?.data?.nominatim?.display_name}
             </p>
           </div>
           <div className="flex gap-2">
-            <div className="h-44 w-full bg-red-700 border text-white flex flex-col items-center justify-center text-center p-5 rounded-lg">
+            <div className="h-32 w-full bg-red-700 border text-white flex flex-col items-center justify-center text-center p-5 rounded-lg">
               <h1 className="text-xl">Status</h1>
-              <p className="text-3xl font-bold">Critical</p>
+              <p className="text-3xl font-bold">{lemurResponse?.status}</p>
             </div>
-            <div className="h-44 w-full bg-red-800 border text-white p-5 rounded-lg text-center flex flex-col items-center justify-center">
+            <div className="h-32 w-full bg-red-800 border text-white p-5 rounded-lg text-center flex flex-col items-center justify-center">
               <h1 className="text-xl">Accident</h1>
-              <p className="text-3xl font-bold">Car Crash</p>
+              <p className="text-sm">{lemurResponse?.activities}</p>
             </div>
-            <div className="flex flex-col justify-between h-44 w-full bg-transparent text-center text-xl text-white border p-5 rounded-lg">
-              <h1 className="font-bold">Gardner Road, Brunswick, GA 31523</h1>
+            <div className="flex flex-col justify-center h-32 w-full bg-transparent text-center text-white border p-3 rounded-lg">
+              <h1 className="text-lg">{response?.data?.nominatim?.name}</h1>
               <a
-                href={`https://www.google.com/maps?q=${latlong.join(",")}`}
+                href={`https://www.google.com/maps?q=${latlong?.join(",")}`}
                 target="_blank"
-                className="text-sm p-4 underline"
+                className="text-sm underline"
               >
                 Open Maps
               </a>
@@ -112,80 +132,84 @@ const Admin = () => {
               class="w-full h-22 bg-gray-100 rounded-t-md"
               controls
               autoPlay
-              src={emergencyCall}
+              src={`${API_URL}${response?.data?.audio}`}
             >
               Your browser does not support the audio element.
             </audio>
             <div className="flex flex-col p-2 w-full bg-red-800 text-sm rounded-b-xl text-white">
-              <strong>Tone: Urgent and concerned</strong>
+              <strong>Tone: {lemurResponse?.tone}</strong>
             </div>
           </div>
           <div className="text-white space-y-3 h-32 overflow-y-auto">
             <p className="text-sm">
-              Ambulance service. Tell me exactly what's happened. Mummy fell
-              down a. Stairs. Your mummy fell down the stairs? Sorry. She's got
-              a baby. Did Mummy and the baby fall down the stairs at the same
-              time? Yes. All right, my darling. We're gonna help Mummy, okay? So
-              can you go up to your mummy for me? You're with Mummy, all right?
-              Is Mummy breathing? Yes. Mummy's breathing, is she? Yes. All
-              right, my lovely. Bear with me in second, okay? Stay on the phone.
-              I'm not going to hang up the phone. Okay. How's the baby? In
-              Mummy's tummy. The baby's in Mummy's tummy. Okay, sweetie. All
-              right, my darling. That's okay. Do you know where Mummy's hurt?
-              Where did Mummy hurt herself? Apart from her head? Is she hurt
-              anywhere else? No. No. Okay. And has Mummy got her eyes open? Is
-              she talking to you? Going back to sleep now. She's gone back to
-              sleep now. Okay, but, Emma, the ambulance has come in, my lovely,
-              so I'm going to stay on the phone with you, okay? Suicide. And I
-              want you to watch your mummy and make sure that Mummy's breathing,
-              okay? Do you know what that means?
+              {response?.data?.assemblyai?.transcribe?.text}
             </p>
           </div>
           <br />
           <div className="bg-white p-3 rounded-lg space-y-3">
-            <p className="text-xl font-bold">Emergency Key Points</p>
+            <p className="text-xl font-bold">Key Points</p>
             <ul className="list-disc ml-5">
-              <li>Caller identifies herself as Julia Murray</li>
-              <li>Reports killing her 2 and 4 year old children by drowning</li>
-              <li>States she then shot herself with a gun</li>
-              <li>Requests ambulance to her address in Brunswick, GA</li>
-              <li>911 operator attempts to keep her on the line</li>
-              <li>Caller becomes unresponsive by end of call"</li>
+              {lemurResponse?.key_points.map((key) => (
+                <li>{key}</li>
+              ))}
             </ul>
           </div>
           <div className="bg-white p-3 rounded-lg space-y-2">
-            <p className="text-xl font-bold">Emergency Summary</p>
-            <p>
-              This is a disturbing 911 call transcript where a woman named Julia
-              Murray reports that she has killed her two young children by
-              drowning them and then shot herself. She requests an ambulance to
-              her address in Brunswick, GA. The 911 operator tries to keep her
-              on the line but she becomes unresponsive
-            </p>
+            <p className="text-xl font-bold">Summary</p>
+            <p>{lemurResponse?.summary}</p>
           </div>
           <div className="text-white">
             <h1 className="text-xl font-bold my-4">Nearby Emergency Station</h1>
-            <div className="mt-3 p-4 border border-white/20 rounded overflow-y-auto h-44">
-              {[...new Array(10)].map((x) => (
-                <div>
-                  <p className="font-bold">
-                    Rumah Sakit Tingkat IV 02.07.04 DKT
-                  </p>
-                  <p className="text-sm">
-                    Jalanr. Rivai No.7, Penengahan, Kec. Tanjung Karang Pusat,
-                    Kota Bandar Lampung, Lampung
-                  </p>
-                  <div className="flex gap-2 mt-2">
-                    <button className="bg-red-600 px-3 py-2 rounded-full text-sm">
-                      Location
-                    </button>
-                    <button className="bg-red-600 px-3 py-2 rounded-full text-sm">
-                      Call Service
-                    </button>
+            <div className="flex items-center w-full gap-3 text-center">
+              {nearbyStation && (
+                <>
+                  <div className="p-5 w-full bg-blue-300/20 rounded">
+                    <h1 className="text-xl">
+                      {
+                        nearbyStation.elements.filter(
+                          (place) => place.tags.amenity == "police"
+                        ).length
+                      }
+                    </h1>
+                    <p>Police Station</p>
                   </div>
-                  <hr className="opacity-5 mt-4" />
-                </div>
-              ))}
+                  <div className="p-5 w-full bg-blue-300/20 rounded">
+                    <h1 className="text-xl">
+                      {
+                        nearbyStation.elements.filter(
+                          (place) => place.tags.amenity == "fire_station"
+                        ).length
+                      }
+                    </h1>
+                    <p>Fire Station</p>
+                  </div>
+                  <div className="p-5 w-full bg-blue-300/20 rounded">
+                    <h1 className="text-xl">
+                      {
+                        nearbyStation.elements.filter(
+                          (place) => place.tags.amenity == "hospital"
+                        ).length
+                      }
+                    </h1>
+                    <p>Hospital</p>
+                  </div>
+                </>
+              )}
+            </div>
+            <div className="mt-3 p-4 border border-white/20 rounded overflow-y-auto h-64">
+              {nearbyStation &&
+                nearbyStation.elements.map((place) => (
+                  <div>
+                    <p className="font-bold">{place.tags.name}</p>
+                    <p className="text-sm">{place.tags.amenity}</p>
+                    <div className="flex gap-2 mt-2">
+                      <button className="bg-red-600 px-3 py-2 rounded-full text-sm">
+                        Locate Me
+                      </button>
+                    </div>
+                    <hr className="opacity-5 mt-4" />
+                  </div>
+                ))}
             </div>
           </div>
           <div className="w-full space-y-2">
@@ -195,66 +219,117 @@ const Admin = () => {
           </div>
         </div>
       </section>
+      {/* )} */}
       <section className="h-screen">
-        <MapContainer
-          center={latlong}
-          zoom={15}
-          className="w-full h-full relative"
-          style={{ zIndex: 1 }}
-        >
-          <TileLayer url="https://tiles.stadiamaps.com/tiles/alidade_satellite/{z}/{x}/{y}{r}.png" />
-          <Marker position={latlong} icon={dangerIcon}>
-            <Popup>
-              <div className="bg-red-200 text-red-600 border border-red-600 p-1 w-fit rounded-md mb-2">
+        {latlong && (
+          <MapContainer
+            center={latlong}
+            zoom={15}
+            className="w-full h-full relative"
+            style={{ zIndex: 1 }}
+          >
+            <TileLayer url="https://tiles.stadiamaps.com/tiles/alidade_satellite/{z}/{x}/{y}{r}.png" />
+            <Marker position={latlong} icon={dangerIcon}>
+              <Popup>
+                {/* <div className="bg-red-200 text-red-600 border border-red-600 p-1 w-fit rounded-md mb-2">
                 Critical
-              </div>
-              <strong>Emergency Location</strong>
-              <p>
+              </div> */}
+                <strong>Emergency Location</strong>
+                {/* <p>
                 AAA Insurance, G Street Northwest, Downtown, Ward 2, Washington,
                 District of Columbia, 20045, United States
-              </p>
+              </p> */}
 
-              <img
+                {/* <img
                 className="rounded-lg"
                 src="https://www.ctvnews.ca/content/dam/ctvnews/en/images/2024/9/11/multi-vehicle-crash-1-7034426-1726089562682.png"
-              />
-              <button className="w-full bg-red-600 text-white p-3 rounded-full mt-4">
-                Description
-              </button>
-            </Popup>
-          </Marker>
+              /> */}
+                <button
+                  className="w-full bg-red-600 text-white p-3 rounded-full mt-4"
+                  onClick={() => {
+                    emergencyReview();
+                  }}
+                >
+                  View Emergency
+                </button>
+              </Popup>
+            </Marker>
 
-          {nearbyStation &&
-            nearbyStation.elements.map((place) => {
-              if (place.type == "node") {
-                return (
-                  <CircleMarker center={[place.lat, place.lon]} radius={10}>
-                    <Popup>
-                      <p className="bg-red px-2 py-1 w-fit bg-red-200 rounded border-2 border-red-400">
-                        {place.tags.amenity}
-                      </p>
-                      <h1 className="text-lg font-bold">{place.tags.name}</h1>
-                    </Popup>
-                  </CircleMarker>
-                );
-              } else if (place.type == "way") {
-                return (
-                  <CircleMarker
-                    center={[place.geometry[0].lat, place.geometry[0].lon]}
-                    radius={10}
-                  >
-                    {" "}
-                    <Popup>
-                      <p className="bg-red px-2 py-1 w-fit bg-red-200 rounded border-2 border-red-400">
-                        {place.tags.amenity}
-                      </p>
-                      <h1 className="text-lg font-bold">{place.tags.name}</h1>
-                    </Popup>
-                  </CircleMarker>
-                );
-              }
-            })}
-        </MapContainer>
+            {nearbyStation &&
+              nearbyStation.elements.map((place) => {
+                if (place.type == "node") {
+                  return (
+                    <CircleMarker
+                      center={[place.lat, place.lon]}
+                      radius={10}
+                      pathOptions={{
+                        fillColor:
+                          place.tags.amenity === "hospital"
+                            ? "lightblue"
+                            : place.tags.amenity === "fire_station"
+                            ? "red"
+                            : place.tags.amenity === "police"
+                            ? "orange"
+                            : "white",
+                        color:
+                          place.tags.amenity === "hospital"
+                            ? "lightblue"
+                            : place.tags.amenity === "fire_station"
+                            ? "red"
+                            : place.tags.amenity === "police"
+                            ? "orange"
+                            : "white",
+                        fillOpacity: 0.5,
+                      }}
+                    >
+                      <Popup>
+                        <p className="bg-red px-2 py-1 w-fit bg-red-200 rounded border-2 border-red-400">
+                          {place.tags.amenity}
+                        </p>
+                        <h1 className="text-lg font-bold">{place.tags.name}</h1>
+                        <p>{place.tags?.street}</p>
+                      </Popup>
+                    </CircleMarker>
+                  );
+                } else if (place.type == "way") {
+                  return (
+                    <CircleMarker
+                      center={[place.geometry[0].lat, place.geometry[0].lon]}
+                      radius={10}
+                      pathOptions={{
+                        fillColor:
+                          place.tags.amenity === "hospital"
+                            ? "lightblue"
+                            : place.tags.amenity === "fire_station"
+                            ? "red"
+                            : place.tags.amenity === "police"
+                            ? "orange"
+                            : "white",
+                        color:
+                          place.tags.amenity === "hospital"
+                            ? "lightblue"
+                            : place.tags.amenity === "fire_station"
+                            ? "red"
+                            : place.tags.amenity === "police"
+                            ? "orange"
+                            : "white",
+                        fillOpacity: 0.5,
+                      }}
+                    >
+                      {" "}
+                      <Popup>
+                        <p className="bg-red px-2 py-1 w-fit bg-red-200 rounded border-2 border-red-400">
+                          {place.tags.amenity}
+                        </p>
+                        <h1 className="text-lg font-bold">{place.tags.name}</h1>
+                        <p>{place.tags?.street}</p>
+                      </Popup>
+                    </CircleMarker>
+                  );
+                }
+              })}
+          </MapContainer>
+        )}
       </section>
     </>
   );

@@ -1,0 +1,299 @@
+{
+	"status": 200,
+	"message": "Success",
+	"data": {
+        "image":"image-1732356307514-507591873.jpg",
+        "audio":"audio-1732358753467-239997688.mp3",
+        "status":true,
+        "datetime":"2024-11-23 10:05:09.43919",
+		"nominatim": {
+			"place_id": 319990059,
+			"licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+			"osm_type": "way",
+			"osm_id": 238241017,
+			"lat": "38.8976631",
+			"lon": "-77.03707519098101",
+			"category": "building",
+			"type": "yes",
+			"place_rank": 30,
+			"importance": 0.00008492942702368227,
+			"addresstype": "building",
+			"name": "West Colonnade",
+			"display_name": "West Colonnade, Pennsylvania Avenue Northwest, Ward 2, Washington, District of Columbia, 20500, United States",
+			"address": {
+				"building": "West Colonnade",
+				"road": "Pennsylvania Avenue Northwest",
+				"borough": "Ward 2",
+				"city": "Washington",
+				"state": "District of Columbia",
+				"ISO3166-2-lvl4": "US-DC",
+				"postcode": "20500",
+				"country": "United States",
+				"country_code": "us"
+			},
+			"boundingbox": [
+				"38.8975942",
+				"38.8977581",
+				"-77.0372971",
+				"-77.0368535"
+			]
+		},
+		"assemblyai": {
+			"transcribe": {
+				"id": "0c6ca4b0-64c8-4120-8204-637683b09d27",
+				"language_model": "assemblyai_default",
+				"acoustic_model": "assemblyai_default",
+				"language_code": "en",
+				"status": "completed",
+				"audio_url": "https://cdn.assemblyai.com/upload/fc4bbb98-1f55-44a3-92d7-77506f39749e",
+				"text": "91 1. What is your emergency? Yes, sir. I need an ambulance to come to my house. What's your address, ma'am? From Gardner Road, Brunswick, GA 31523. What's the problem there? I just killed my two kids. What's your name, ma'am? Julia Murray. What is it? Julia Murray. And you said you killed your two kids? Yes, sir. How old are they? 2 and 4. How did you kill them? I drowned in them. Julia, are you with me? No. I just shot myself. You just shot yourself? Yes. With what? A gun. Okay. Please hurry. Okay? I got him on the way. Julia, I'm just trying to keep you in line with me until they get there. Is that okay? Will you talk to me? Julia? Julia, can you hear us? Is your door open? Will we be able to get in?",
+				"utterances": null,
+				"confidence": 0.8991929,
+				"audio_duration": 58,
+				"punctuate": true,
+				"format_text": true,
+				"dual_channel": null,
+				"webhook_url": null,
+				"webhook_status_code": null,
+				"webhook_auth": false,
+				"webhook_auth_header_name": null,
+				"speed_boost": false,
+				"auto_highlights_result": null,
+				"auto_highlights": false,
+				"audio_start_from": null,
+				"audio_end_at": null,
+				"word_boost": [],
+				"boost_param": null,
+				"filter_profanity": false,
+				"redact_pii": false,
+				"redact_pii_audio": false,
+				"redact_pii_audio_quality": null,
+				"redact_pii_policies": null,
+				"redact_pii_sub": null,
+				"speaker_labels": false,
+				"content_safety": false,
+				"iab_categories": true,
+				"content_safety_labels": {
+					"status": "unavailable",
+					"results": [],
+					"summary": {}
+				},
+				"iab_categories_result": {
+					"status": "success",
+					"results": [
+						{
+							"text": "91 1. What is your emergency? Yes, sir. I need an ambulance to come to my house. What's your address, ma'am? From Gardner Road, Brunswick, GA 31523. What's the problem there? I just killed my two kids. What's your name, ma'am? Julia Murray. What is it? Julia Murray. And you said you killed your two kids? Yes, sir. How old are they? 2 and 4. How did you kill them?",
+							"labels": [
+								{
+									"relevance": 0.5048608,
+									"label": "MedicalHealth>DiseasesAndConditions>Injuries>FirstAid"
+								},
+								{
+									"relevance": 0.17649004,
+									"label": "FamilyAndRelationships>Bereavement"
+								},
+								{
+									"relevance": 0.04333804,
+									"label": "NewsAndPolitics>Disasters"
+								},
+								{
+									"relevance": 0.012734555,
+									"label": "MedicalHealth>DiseasesAndConditions>Injuries"
+								},
+								{
+									"relevance": 0.0030563388,
+									"label": "PopCulture>CelebrityDeaths"
+								},
+								{
+									"relevance": 0.002520283,
+									"label": "FamilyAndRelationships>Parenting"
+								},
+								{
+									"relevance": 0.0020893994,
+									"label": "MedicalHealth"
+								},
+								{
+									"relevance": 0.0015642622,
+									"label": "EventsAndAttractions>PersonalCelebrations&LifeEvents>Birth"
+								},
+								{
+									"relevance": 0.0014448768,
+									"label": "Automotive>AutoSafety"
+								},
+								{
+									"relevance": 0.0011092426,
+									"label": "HealthyLiving>Children'sHealth"
+								}
+							],
+							"timestamp": {
+								"start": 280,
+								"end": 27395
+							},
+							"sentences_idx_end": 16,
+							"sentences_idx_start": 0
+						},
+						{
+							"text": "I drowned in them. Julia, are you with me? No. I just shot myself. You just shot yourself? Yes. With what? A gun. Okay. Please hurry. Okay? I got him on the way. Julia, I'm just trying to keep you in line with me until they get there. Is that okay? Will you talk to me? Julia? Julia, can you hear us? Is your door open? Will we be able to get in?",
+							"labels": [
+								{
+									"relevance": 0.22692327,
+									"label": "FamilyAndRelationships>Bereavement"
+								},
+								{
+									"relevance": 0.031422015,
+									"label": "MedicalHealth>DiseasesAndConditions>Injuries>FirstAid"
+								},
+								{
+									"relevance": 0.031112848,
+									"label": "MedicalHealth>DiseasesAndConditions>Injuries"
+								},
+								{
+									"relevance": 0.018326404,
+									"label": "NewsAndPolitics>Disasters"
+								},
+								{
+									"relevance": 0.0029456709,
+									"label": "HealthyLiving>Men'sHealth"
+								},
+								{
+									"relevance": 0.0019140043,
+									"label": "PopCulture>CelebrityDeaths"
+								},
+								{
+									"relevance": 0.0013120183,
+									"label": "FamilyAndRelationships>Parenting"
+								},
+								{
+									"relevance": 0.0008745306,
+									"label": "HealthyLiving>Children'sHealth"
+								},
+								{
+									"relevance": 0.0008212285,
+									"label": "NewsAndPolitics>Politics>WarAndConflicts"
+								},
+								{
+									"relevance": 0.00056281936,
+									"label": "Travel>TravelType>Camping"
+								}
+							],
+							"timestamp": {
+								"start": 27515,
+								"end": 57015
+							},
+							"sentences_idx_start": 17,
+							"sentences_idx_end": 35
+						}
+					],
+					"summary": {
+						"FamilyAndRelationships>Parenting": 0.0071460446,
+						"PopCulture>CelebrityDeaths": 0.009268137,
+						"MedicalHealth>DiseasesAndConditions>Injuries>FirstAid": 1,
+						"Travel>TravelType>Camping": 0.0014940287,
+						"MedicalHealth>DiseasesAndConditions>Injuries": 0.08176172,
+						"HealthyLiving>Men'sHealth": 0.006534104,
+						"HealthyLiving>Children'sHealth": 0.0036991173,
+						"BusinessAndFinance>Economy>FinancialCrisis": 0.0015558664,
+						"NewsAndPolitics>Disasters": 0.11498494,
+						"Automotive>AutoTechnology>AutoSafetyTechnologies": 0.0018001951,
+						"MedicalHealth>DiseasesAndConditions>MentalHealth": 0.001970209,
+						"Automotive>AutoSafety": 0.0033058631,
+						"NewsAndPolitics>Politics>WarAndConflicts": 0.0017208118,
+						"MedicalHealth": 0.0040601217,
+						"Sports>Boxing": 0.0015590355,
+						"FamilyAndRelationships": 0.0014536243,
+						"FamilyAndRelationships>Bereavement": 0.7522398,
+						"EventsAndAttractions>PersonalCelebrations&LifeEvents>Funeral": 0.0021284153,
+						"Television>RealityTV": 0.0018936921,
+						"EventsAndAttractions>PersonalCelebrations&LifeEvents>Birth": 0.0038832298
+					}
+				},
+				"language_detection": true,
+				"language_confidence_threshold": null,
+				"language_confidence": 0.9765,
+				"custom_spelling": null,
+				"throttled": false,
+				"auto_chapters": false,
+				"summarization": false,
+				"summary_type": null,
+				"summary_model": null,
+				"custom_topics": false,
+				"topics": [],
+				"speech_threshold": null,
+				"speech_model": "best",
+				"chapters": null,
+				"disfluencies": false,
+				"entity_detection": true,
+				"sentiment_analysis": false,
+				"sentiment_analysis_results": null,
+				"entities": [
+					{
+						"entity_type": "phone_number",
+						"text": "91 1",
+						"start": 280,
+						"end": 664
+					},
+					{
+						"entity_type": "location",
+						"text": "Gardner Road, Brunswick, GA 31523",
+						"start": 6393,
+						"end": 9165
+					},
+					{
+						"entity_type": "person_name",
+						"text": "Julia Murray",
+						"start": 15353,
+						"end": 16529
+					},
+					{
+						"entity_type": "person_name",
+						"text": "Julia Murray",
+						"start": 17657,
+						"end": 18965
+					},
+					{
+						"entity_type": "person_age",
+						"text": "2",
+						"start": 22961,
+						"end": 23241
+					},
+					{
+						"entity_type": "person_age",
+						"text": "4",
+						"start": 23473,
+						"end": 24045
+					},
+					{
+						"entity_type": "person_name",
+						"text": "Julia",
+						"start": 29435,
+						"end": 29867
+					},
+					{
+						"entity_type": "person_name",
+						"text": "Julia",
+						"start": 42851,
+						"end": 43091
+					},
+					{
+						"entity_type": "person_name",
+						"text": "Julia",
+						"start": 49355,
+						"end": 50215
+					},
+					{
+						"entity_type": "person_name",
+						"text": "Julia",
+						"start": 50915,
+						"end": 51499
+					}
+				],
+				"speakers_expected": null,
+				"summary": null,
+				"custom_topics_results": null,
+				"is_deleted": null,
+				"multichannel": null
+			},
+			"llm": "{\n    \"activities\": \"Emergency call for assistance\",\n    \"summary\": \"A woman named Julia Murray calls 911 and reports that she has killed her two children, ages 2 and 4, by drowning them. She then states that she has shot herself. The operator tries to keep her on the line until emergency services arrive, but Julia does not respond further.\",\n    \"key_points\": [\n        \"Julia Murray calls 911 to report killing her two children\",\n        \"She drowned her 2 and 4-year-old children\",\n        \"Julia then shot herself\",\n        \"The operator tries to keep her on the line until help arrives\",\n        \"Julia stops responding to the operator\"\n    ],\n    \"tone\": \"Urgent and distressing\",\n    \"context\": \"This is an emergency call for assistance\",\n    \"status\": \"Critical\"\n}"
+		}
+	}
+}

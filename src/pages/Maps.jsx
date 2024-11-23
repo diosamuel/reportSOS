@@ -59,7 +59,7 @@ function Maps() {
   let navigate = useNavigate();
   const reportDanger = () => {
     setGeolocation(pos);
-    console.log("SENT\n",pos)
+    console.log("SENT\n", pos);
     navigate("/camera");
   };
 
@@ -144,7 +144,16 @@ function Maps() {
   };
 
   return !isGeolocationAvailable ? (
-    <div>Your browser does not support Geolocation</div>
+    <div className="h-screen flex flex-col justify-center items-center text-center font-semibold">
+      <h1 className="text-xl">Sorry but you cant use Geolocation</h1>
+      <h1>Your browser dont support it</h1>
+      <button
+        className="bg-red-600 px-5 py-2 rounded-full justify-end text-white shadow-lg"
+        onClick={reportDanger}
+      >
+        Skip this step
+      </button>
+    </div>
   ) : !isGeolocationEnabled ? (
     <>
       <div className="h-screen flex flex-col justify-center items-center text-center font-semibold">

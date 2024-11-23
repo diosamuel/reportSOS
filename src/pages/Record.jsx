@@ -38,7 +38,7 @@ function Record() {
     <Layout className={"flex flex-col items-center text-center m-5 gap-2"}>
       <div className="h-screen">
         <h1 className="text-3xl font-bold mb-3">🎙 Describe Emergency</h1>
-        <h1 className="text-xl font-medium w-9/12">
+        <h1 className="text-xl font-medium w-9/12 md:w-full">
           To ensure we understand and respond effectively, please provide the
           following details clearly
         </h1>

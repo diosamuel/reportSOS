@@ -6,7 +6,7 @@ import useReportStore from "../store/useReportStore";
 
 function Result() {
   const [count, setCount] = useState(0);
-  const [coming, setComing] = useState(false);
+  const [coming, setComing] = useState(!false);
   const [isLoading, setLoading] = useState(false);
   const { geolocation, image, audio } = useReportStore();
   const [fileAudio, setFileAudio] = useState(null);
@@ -14,7 +14,7 @@ function Result() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 100);
+    }, 1000);
     console.log(geolocation, image, audio);
     audio && setFileAudio(URL.createObjectURL(audio));
   }, []);
@@ -26,15 +26,15 @@ function Result() {
             "flex flex-col items-center justify-center text-center bg-red-600 text-white"
           }
         >
-          <div className="flex items-center justify-center">
+          <div className="flex flex-col items-center justify-center h-screen">
             <div className="relative">
               <div className="absolute w-16 h-16 rounded-full bg-white animate-ping"></div>
               <div className="relative w-16 h-16 rounded-full bg-white flex items-center justify-center">
                 <span className="text-4xl">{coming ? `🚓` : `🚨`}</span>
               </div>
             </div>
+            <h1 className="text-3xl font-bold mt-5 text-white">Send report to 911, loading..</h1>
           </div>
-          <h1 className="text-3xl font-bold mt-5">Sent to 911, loading..</h1>
         </Layout>
       ) : (
         <Layout className={"items-center text-center space-y-2"}>
@@ -55,17 +55,17 @@ function Result() {
             <h1 className="text-2xl md:text-3xl font-bold">
               {coming
                 ? `Help is on the way to your location`
-                : `Report Send to 911`}
+                : `Report Send to 911!`}
             </h1>
             <h3>
               Please be patient!{" "}
               {coming
-                ? `Team coming to your location`
-                : `Team will be respond shortly`}
+                ? `Out team coming to your location`
+                : `Our team will be respond shortly`}
             </h3>
             <div className="px-3 mt-5 w-full">
               <p>Your Location</p>
-              <strong>{geolocation.display_name}</strong>
+              <strong>{geolocation?.display_name}</strong>
             </div>
           </div>
           <div className="flex flex-col gap-6 justify-center items-center">
@@ -111,7 +111,7 @@ function Result() {
                   Nearby Emergency Station
                 </p>
                 <p className="text-gray-600 text-sm">
-                  Search nearby police station
+                  Search nearby police station, fire departmen and hospital
                 </p>
               </div>
             </button>
