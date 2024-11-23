@@ -1,0 +1,5139 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.4 2390de5a",
+  "osm3s": {
+    "timestamp_osm_base": "2024-11-23T03:00:16Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+    {
+      "type": "node",
+      "id": 306011118,
+      "lat": 38.9076915,
+      "lon": -77.0161077,
+      "tags": {
+        "addr:state": "DC",
+        "amenity": "fire_station",
+        "ele": "24",
+        "gnis:feature_id": "2333857",
+        "name": "District of Columbia Fire and Emergency Medical Services Engine Company 6",
+        "source": "USGS Geonames"
+      }
+    },
+    {
+      "type": "node",
+      "id": 306011599,
+      "lat": 38.9054325,
+      "lon": -77.0497531,
+      "tags": {
+        "amenity": "fire_station",
+        "name": "DC Fire Department Engine Company No. 1"
+      }
+    },
+    {
+      "type": "node",
+      "id": 306020851,
+      "lat": 38.8958177,
+      "lon": -77.0109473,
+      "tags": {
+        "amenity": "fire_station",
+        "name": "DC Fire Department Engine Co. 3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 306499334,
+      "lat": 38.9322767,
+      "lon": -77.0330285,
+      "tags": {
+        "amenity": "fire_station",
+        "created_by": "Potlatch 0.10e",
+        "name": "DC Fire Department Engine Co. 11/Truck Co. 6"
+      }
+    },
+    {
+      "type": "node",
+      "id": 358955146,
+      "lat": 38.903445,
+      "lon": -77.0594219,
+      "tags": {
+        "amenity": "hospital",
+        "ele": "6",
+        "gnis:feature_id": "528829",
+        "healthcare": "hospital",
+        "name": "Mule Hospital"
+      }
+    },
+    {
+      "type": "node",
+      "id": 367141870,
+      "lat": 38.89512,
+      "lon": -77.01587,
+      "tags": {
+        "addr:state": "DC",
+        "amenity": "fire_station",
+        "ele": "10",
+        "gnis:feature_id": "2333846",
+        "name": "District of Columbia Fire and Emergency Medical Services - Fire Prevention Division",
+        "source": "USGS Geonames"
+      }
+    },
+    {
+      "type": "node",
+      "id": 367142183,
+      "lat": 38.90541,
+      "lon": -77.01285,
+      "tags": {
+        "addr:state": "DC",
+        "amenity": "police",
+        "ele": "22",
+        "gnis:feature_id": "2335120",
+        "name": "Metropolitan Police Boys and Girls Clubs",
+        "source": "USGS Geonames"
+      }
+    },
+    {
+      "type": "node",
+      "id": 367142184,
+      "lat": 38.9219,
+      "lon": -77.03231,
+      "tags": {
+        "addr:state": "DC",
+        "amenity": "police",
+        "ele": "49",
+        "gnis:feature_id": "2335119",
+        "name": "Metropolitan Police Boys and Girls Clubs",
+        "source": "USGS Geonames"
+      }
+    },
+    {
+      "type": "node",
+      "id": 367142209,
+      "lat": 38.9179267,
+      "lon": -77.0381077,
+      "tags": {
+        "addr:state": "DC",
+        "amenity": "police",
+        "ele": "32",
+        "gnis:feature_id": "2335137",
+        "name": "Washington District of Columbia Police Department District 3",
+        "source": "USGS Geonames"
+      }
+    },
+    {
+      "type": "node",
+      "id": 367142210,
+      "lat": 38.9348396,
+      "lon": -77.0748469,
+      "tags": {
+        "addr:state": "DC",
+        "amenity": "police",
+        "ele": "108",
+        "gnis:feature_id": "2335138",
+        "name": "Washington District of Columbia Police Department District 2",
+        "source": "USGS Geonames"
+      }
+    },
+    {
+      "type": "node",
+      "id": 367142218,
+      "lat": 38.8943664,
+      "lon": -77.0165408,
+      "tags": {
+        "addr:housenumber": "300",
+        "addr:street": "Indiana Avenue Northwest",
+        "amenity": "police",
+        "name": "Metropolitan Police Headquarters",
+        "operator": "Metropolitan Police Department",
+        "operator:short": "MPD",
+        "operator:wikidata": "Q1350854",
+        "phone": "+1-202-727-4218",
+        "website": "https://mpdc.dc.gov/page/police-headquarters"
+      }
+    },
+    {
+      "type": "node",
+      "id": 367142225,
+      "lat": 38.9431681,
+      "lon": -76.9929055,
+      "tags": {
+        "addr:state": "DC",
+        "amenity": "police",
+        "ele": "46",
+        "gnis:feature_id": "2335127",
+        "name": "D.C. Police & Fire Clinic",
+        "source": "USGS Geonames",
+        "website": "https://www.pfcassociates.org/",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 367142461,
+      "lat": 38.9400718,
+      "lon": -77.0235286,
+      "tags": {
+        "addr:state": "DC",
+        "amenity": "police",
+        "ele": "64",
+        "gnis:feature_id": "2335146;2493090",
+        "name": "Washington District of Columbia Police Department - Patrol Services and School Security Bureau;Metropolitan Police Department Patrol Services and School Security Bureau",
+        "source": "USGS Geonames"
+      }
+    },
+    {
+      "type": "node",
+      "id": 367142467,
+      "lat": 38.8940284,
+      "lon": -77.0192215,
+      "tags": {
+        "addr:state": "DC",
+        "amenity": "police",
+        "ele": "7",
+        "gnis:feature_id": "2493049",
+        "name": "Metropolitan Police Department Headquarters",
+        "operator": "Metropolitan Police Department",
+        "operator:short": "MPD",
+        "operator:wikidata": "Q1350854",
+        "source": "USGS Geonames"
+      }
+    },
+    {
+      "type": "node",
+      "id": 367988417,
+      "lat": 38.8899085,
+      "lon": -77.0832045,
+      "tags": {
+        "addr:state": "VA",
+        "amenity": "police",
+        "ele": "71",
+        "gnis:feature_id": "1491426",
+        "name": "Arlington Police Station",
+        "source": "USGS Geonames"
+      }
+    },
+    {
+      "type": "node",
+      "id": 367989810,
+      "lat": 38.8899223,
+      "lon": -77.0830812,
+      "tags": {
+        "addr:state": "VA",
+        "amenity": "police",
+        "ele": "71",
+        "gnis:feature_id": "2332060",
+        "name": "Arlington County Sheriff's Office",
+        "source": "USGS Geonames",
+        "tiger:reviewed": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 611150915,
+      "lat": 38.8763875,
+      "lon": -77.0341759,
+      "tags": {
+        "addr:city": "Washington",
+        "addr:country": "US",
+        "addr:housenumber": "1100",
+        "addr:state": "DC",
+        "addr:street": "Ohio Drive Southwest",
+        "amenity": "police",
+        "name": "National Capitol Region US Park Police Headquarters"
+      }
+    },
+    {
+      "type": "node",
+      "id": 804064065,
+      "lat": 38.9115271,
+      "lon": -77.0684379,
+      "tags": {
+        "addr:housenumber": "3412",
+        "addr:street": "Dent Place Northwest",
+        "amenity": "fire_station",
+        "dcgis:lot": "0805",
+        "dcgis:square": "1277",
+        "name": "DC Fire Dept. Engine Co. 5"
+      }
+    },
+    {
+      "type": "node",
+      "id": 810582033,
+      "lat": 38.9076991,
+      "lon": -77.0046717,
+      "tags": {
+        "addr:city": "Washington",
+        "addr:housenumber": "99",
+        "addr:postcode": "20002",
+        "addr:state": "DC",
+        "addr:street": "New York Avenue Northeast",
+        "alt_name": "ATF",
+        "alt_name:en": "ATF",
+        "amenity": "police",
+        "dataset": "address",
+        "dcgis:lot": "0804",
+        "dcgis:square": "0710",
+        "government": "police",
+        "name": "Bureau of Alcohol, Tobacco, Firearms and Explosives",
+        "name:en": "Bureau of Alcohol, Tobacco, Firearms and Explosives",
+        "office": "government",
+        "short_name": "BAFTE",
+        "short_name:en": "BAFTE",
+        "source": "dcgis",
+        "website": "https://www.atf.gov/",
+        "wikidata": "Q434371"
+      }
+    },
+    {
+      "type": "node",
+      "id": 929733920,
+      "lat": 38.8514919,
+      "lon": -77.0420967,
+      "tags": {
+        "amenity": "police"
+      }
+    },
+    {
+      "type": "node",
+      "id": 939518175,
+      "lat": 38.9086601,
+      "lon": -76.9911676,
+      "tags": {
+        "amenity": "police",
+        "name": "Department of Public Safety"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2406973959,
+      "lat": 38.9179676,
+      "lon": -77.0378551,
+      "tags": {
+        "amenity": "police",
+        "name": "Ward 2 Station"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2973421682,
+      "lat": 38.9326856,
+      "lon": -77.0256524,
+      "tags": {
+        "amenity": "police",
+        "name": "Fourth District Substation",
+        "operator": "Metropolitan Police Department",
+        "operator:short": "MPD",
+        "operator:wikidata": "Q1350854"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3372389884,
+      "lat": 38.9005399,
+      "lon": -77.048122,
+      "tags": {
+        "addr:city": "Washington",
+        "addr:housenumber": "801",
+        "addr:state": "DC",
+        "addr:street": "22nd Street Northwest",
+        "amenity": "police",
+        "name": "Campus Police"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4076119232,
+      "lat": 38.8828154,
+      "lon": -77.017803,
+      "tags": {
+        "amenity": "fire_station",
+        "name": "DCFD Station 13",
+        "operator": "District of Columbia Fire and EMS Department"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6377041085,
+      "lat": 38.9299501,
+      "lon": -77.0147802,
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Washington Hospital"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9497016420,
+      "lat": 38.8946559,
+      "lon": -77.0758292,
+      "tags": {
+        "addr:city": "Arlington",
+        "addr:housenumber": "1535",
+        "addr:postcode": "22209",
+        "addr:state": "VA",
+        "addr:street": "Wilson Boulevard",
+        "amenity": "fire_station",
+        "name": "Arlington County Fire Station 10",
+        "official_name": "Arlington County Fire Station 10 - Rosslyn",
+        "operator": "Arlington County Fire Department",
+        "operator:wikidata": "Q4792309",
+        "phone": "+1-703-228-0110",
+        "website": "https://www.arlingtonva.us/Government/Departments/Fire/Locations/Fire-Station-10-Rosslyn"
+      }
+    },
+    {
+      "type": "way",
+      "id": 48036787,
+      "bounds": {
+        "minlat": 38.8766149,
+        "minlon": -77.0133744,
+        "maxlat": 38.8771142,
+        "maxlon": -77.0123039
+      },
+      "nodes": [
+        610756925,
+        610756894,
+        610756895,
+        610756896,
+        610756897,
+        610756898,
+        610756899,
+        610756900,
+        610756901,
+        610756902,
+        610756903,
+        610756904,
+        610756905,
+        610756906,
+        610756907,
+        610756908,
+        610756909,
+        610756910,
+        610756911,
+        610756912,
+        610756913,
+        610756914,
+        665494771,
+        665494773,
+        665494772,
+        610756918,
+        610756919,
+        610756920,
+        610756921,
+        610756922,
+        610756923,
+        610756924,
+        610756925
+      ],
+      "geometry": [
+        {
+          "lat": 38.8771139,
+          "lon": -77.0123091
+        },
+        {
+          "lat": 38.8769475,
+          "lon": -77.0123074
+        },
+        {
+          "lat": 38.8769279,
+          "lon": -77.0123072
+        },
+        {
+          "lat": 38.8766149,
+          "lon": -77.0123039
+        },
+        {
+          "lat": 38.8766152,
+          "lon": -77.0125443
+        },
+        {
+          "lat": 38.8766919,
+          "lon": -77.0125451
+        },
+        {
+          "lat": 38.8766918,
+          "lon": -77.012564
+        },
+        {
+          "lat": 38.8766829,
+          "lon": -77.0125639
+        },
+        {
+          "lat": 38.8766827,
+          "lon": -77.0125869
+        },
+        {
+          "lat": 38.8766827,
+          "lon": -77.0125896
+        },
+        {
+          "lat": 38.876689,
+          "lon": -77.0125897
+        },
+        {
+          "lat": 38.8766894,
+          "lon": -77.012965
+        },
+        {
+          "lat": 38.8766823,
+          "lon": -77.012965
+        },
+        {
+          "lat": 38.8766823,
+          "lon": -77.0130234
+        },
+        {
+          "lat": 38.8766824,
+          "lon": -77.0130581
+        },
+        {
+          "lat": 38.8766825,
+          "lon": -77.0131177
+        },
+        {
+          "lat": 38.8766897,
+          "lon": -77.0131178
+        },
+        {
+          "lat": 38.8766881,
+          "lon": -77.0133744
+        },
+        {
+          "lat": 38.8768635,
+          "lon": -77.0133741
+        },
+        {
+          "lat": 38.8768651,
+          "lon": -77.013122
+        },
+        {
+          "lat": 38.8768818,
+          "lon": -77.0131222
+        },
+        {
+          "lat": 38.876881,
+          "lon": -77.0132399
+        },
+        {
+          "lat": 38.8769061,
+          "lon": -77.0132398
+        },
+        {
+          "lat": 38.8770202,
+          "lon": -77.0132396
+        },
+        {
+          "lat": 38.8770203,
+          "lon": -77.0132299
+        },
+        {
+          "lat": 38.877022,
+          "lon": -77.0129595
+        },
+        {
+          "lat": 38.877016,
+          "lon": -77.0129594
+        },
+        {
+          "lat": 38.8770163,
+          "lon": -77.0129171
+        },
+        {
+          "lat": 38.8771018,
+          "lon": -77.012917
+        },
+        {
+          "lat": 38.8771017,
+          "lon": -77.0129055
+        },
+        {
+          "lat": 38.8771014,
+          "lon": -77.0125573
+        },
+        {
+          "lat": 38.8771142,
+          "lon": -77.0125573
+        },
+        {
+          "lat": 38.8771139,
+          "lon": -77.0123091
+        }
+      ],
+      "tags": {
+        "amenity": "police",
+        "building": "yes",
+        "dcgis:captureyear": "19990331",
+        "dcgis:dataset": "buildings",
+        "dcgis:featurecode": "2000",
+        "mappingdc:gid": "973",
+        "source": "dcgis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 48036846,
+      "bounds": {
+        "minlat": 38.8766167,
+        "minlon": -77.0115648,
+        "maxlat": 38.8772457,
+        "maxlon": -77.0107931
+      },
+      "nodes": [
+        611463614,
+        610757426,
+        610757427,
+        610757428,
+        610757429,
+        610757430,
+        610757431,
+        610757432,
+        610757433,
+        610757434,
+        610757435,
+        610757436,
+        611463591,
+        610757438,
+        611463592,
+        610757440,
+        611463601,
+        611463615,
+        611463617,
+        611463613,
+        611463612,
+        611463614
+      ],
+      "geometry": [
+        {
+          "lat": 38.8772071,
+          "lon": -77.0107942
+        },
+        {
+          "lat": 38.8772008,
+          "lon": -77.0107942
+        },
+        {
+          "lat": 38.8770961,
+          "lon": -77.0107941
+        },
+        {
+          "lat": 38.8768933,
+          "lon": -77.0107936
+        },
+        {
+          "lat": 38.8768239,
+          "lon": -77.0107934
+        },
+        {
+          "lat": 38.8767876,
+          "lon": -77.0107934
+        },
+        {
+          "lat": 38.8766176,
+          "lon": -77.0107931
+        },
+        {
+          "lat": 38.8766167,
+          "lon": -77.0114867
+        },
+        {
+          "lat": 38.8766271,
+          "lon": -77.0114867
+        },
+        {
+          "lat": 38.8767258,
+          "lon": -77.0114869
+        },
+        {
+          "lat": 38.8767257,
+          "lon": -77.0115244
+        },
+        {
+          "lat": 38.8767257,
+          "lon": -77.0115643
+        },
+        {
+          "lat": 38.8769937,
+          "lon": -77.0115648
+        },
+        {
+          "lat": 38.8769937,
+          "lon": -77.0115245
+        },
+        {
+          "lat": 38.8769938,
+          "lon": -77.0114868
+        },
+        {
+          "lat": 38.8772068,
+          "lon": -77.0114872
+        },
+        {
+          "lat": 38.8772069,
+          "lon": -77.0114333
+        },
+        {
+          "lat": 38.8772074,
+          "lon": -77.0109835
+        },
+        {
+          "lat": 38.8772456,
+          "lon": -77.0109837
+        },
+        {
+          "lat": 38.8772457,
+          "lon": -77.0108835
+        },
+        {
+          "lat": 38.877207,
+          "lon": -77.0108835
+        },
+        {
+          "lat": 38.8772071,
+          "lon": -77.0107942
+        }
+      ],
+      "tags": {
+        "amenity": "fire_station",
+        "building": "yes",
+        "dcgis:captureyear": "19990331",
+        "dcgis:dataset": "buildings",
+        "dcgis:featurecode": "2000",
+        "mappingdc:gid": "3214",
+        "name": "Washington DC Fire and EMS Station",
+        "source": "dcgis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 48039178,
+      "bounds": {
+        "minlat": 38.8833449,
+        "minlon": -76.9993503,
+        "maxlat": 38.883572,
+        "maxlon": -76.9991417
+      },
+      "nodes": [
+        610785023,
+        610785010,
+        610785011,
+        610785012,
+        610785013,
+        610785019,
+        610785020,
+        610785022,
+        610785023
+      ],
+      "geometry": [
+        {
+          "lat": 38.8835719,
+          "lon": -76.9992626
+        },
+        {
+          "lat": 38.8835717,
+          "lon": -76.9991779
+        },
+        {
+          "lat": 38.8835717,
+          "lon": -76.9991417
+        },
+        {
+          "lat": 38.8835457,
+          "lon": -76.9991417
+        },
+        {
+          "lat": 38.8833449,
+          "lon": -76.9991423
+        },
+        {
+          "lat": 38.8833452,
+          "lon": -76.9993503
+        },
+        {
+          "lat": 38.8833734,
+          "lon": -76.9993502
+        },
+        {
+          "lat": 38.883572,
+          "lon": -76.9993497
+        },
+        {
+          "lat": 38.8835719,
+          "lon": -76.9992626
+        }
+      ],
+      "tags": {
+        "addr:city": "Washington",
+        "addr:country": "US",
+        "addr:housenumber": "500",
+        "addr:postcode": "20003",
+        "addr:state": "DC",
+        "addr:street": "E Street Southeast",
+        "amenity": "police",
+        "building": "yes",
+        "dcgis:captureyear": "19990331",
+        "dcgis:dataset": "buildings",
+        "dcgis:featurecode": "2000",
+        "ele": "23",
+        "gnis:feature_id": "2335139",
+        "mappingdc:gid": "8696",
+        "name": "Washington District of Columbia Police Department District 1 Substation",
+        "source": "dcgis;USGS Geonames"
+      }
+    },
+    {
+      "type": "way",
+      "id": 48041477,
+      "bounds": {
+        "minlat": 38.8969211,
+        "minlon": -77.0197277,
+        "maxlat": 38.8972183,
+        "maxlon": -77.0190578
+      },
+      "nodes": [
+        610816326,
+        665536361,
+        610816329,
+        610816331,
+        11906821765,
+        610816335,
+        610816336,
+        610816326
+      ],
+      "geometry": [
+        {
+          "lat": 38.8970856,
+          "lon": -77.0190578
+        },
+        {
+          "lat": 38.897089,
+          "lon": -77.01943
+        },
+        {
+          "lat": 38.8969211,
+          "lon": -77.0194276
+        },
+        {
+          "lat": 38.8969215,
+          "lon": -77.019727
+        },
+        {
+          "lat": 38.8972164,
+          "lon": -77.0197277
+        },
+        {
+          "lat": 38.8972166,
+          "lon": -77.0194295
+        },
+        {
+          "lat": 38.8972183,
+          "lon": -77.0190621
+        },
+        {
+          "lat": 38.8970856,
+          "lon": -77.0190578
+        }
+      ],
+      "tags": {
+        "addr:city": "Washington",
+        "addr:housenumber": "531",
+        "addr:postcode": "20004",
+        "addr:state": "DC",
+        "addr:street": "6th Street Northwest",
+        "amenity": "fire_station",
+        "building": "yes",
+        "dcgis:captureyear": "19990331",
+        "dcgis:dataset": "buildings",
+        "dcgis:featurecode": "2000",
+        "ele": "13",
+        "gnis:feature_id": "2333853",
+        "name": "DCFD Fire Station Engine 2",
+        "operator": "Engine 2 / Rescue Squad 1",
+        "source": "USGS Geonames"
+      }
+    },
+    {
+      "type": "way",
+      "id": 48056837,
+      "bounds": {
+        "minlat": 38.9032082,
+        "minlon": -77.0302223,
+        "maxlat": 38.9034132,
+        "maxlon": -77.0298089
+      },
+      "nodes": [
+        610959553,
+        610959556,
+        610959559,
+        306508304,
+        610959572,
+        610959575,
+        610959553
+      ],
+      "geometry": [
+        {
+          "lat": 38.9034122,
+          "lon": -77.0301674
+        },
+        {
+          "lat": 38.9034127,
+          "lon": -77.0299747
+        },
+        {
+          "lat": 38.9034132,
+          "lon": -77.0298118
+        },
+        {
+          "lat": 38.9032082,
+          "lon": -77.0298089
+        },
+        {
+          "lat": 38.9032101,
+          "lon": -77.0302223
+        },
+        {
+          "lat": 38.9034121,
+          "lon": -77.030221
+        },
+        {
+          "lat": 38.9034122,
+          "lon": -77.0301674
+        }
+      ],
+      "tags": {
+        "amenity": "fire_station",
+        "building": "yes",
+        "dcgis:captureyear": "19990331",
+        "dcgis:dataset": "buildings",
+        "dcgis:featurecode": "2000",
+        "mappingdc:gid": "21439",
+        "name": "DC Fire Department Engine Co. 16",
+        "source": "dcgis",
+        "wikidata": "Q5377677"
+      }
+    },
+    {
+      "type": "way",
+      "id": 55325024,
+      "bounds": {
+        "minlat": 38.9014406,
+        "minlon": -76.9868559,
+        "maxlat": 38.9017445,
+        "maxlon": -76.986539
+      },
+      "nodes": [
+        694956239,
+        694968897,
+        694960394,
+        694952492,
+        694956485,
+        694950799,
+        694960512,
+        694955520,
+        694956239
+      ],
+      "geometry": [
+        {
+          "lat": 38.9014561,
+          "lon": -76.9867648
+        },
+        {
+          "lat": 38.9014629,
+          "lon": -76.9867601
+        },
+        {
+          "lat": 38.9014406,
+          "lon": -76.9867075
+        },
+        {
+          "lat": 38.9016816,
+          "lon": -76.986539
+        },
+        {
+          "lat": 38.9017445,
+          "lon": -76.9866874
+        },
+        {
+          "lat": 38.9015036,
+          "lon": -76.9868559
+        },
+        {
+          "lat": 38.901482,
+          "lon": -76.9868049
+        },
+        {
+          "lat": 38.9014751,
+          "lon": -76.9868096
+        },
+        {
+          "lat": 38.9014561,
+          "lon": -76.9867648
+        }
+      ],
+      "tags": {
+        "addr:city": "Washington",
+        "addr:country": "US",
+        "addr:housenumber": "1342",
+        "addr:postcode": "20002",
+        "addr:state": "DC",
+        "addr:street": "Florida Avenue Northeast",
+        "alt_name": "Trinidad Firehouse",
+        "amenity": "fire_station",
+        "building": "yes",
+        "dcgis:captureyear": "19990331",
+        "dcgis:dataset": "buildings",
+        "dcgis:featurecode": "2000",
+        "mappingdc:gid": "2932",
+        "name": "DCFD - Engine 10 & Truck 13",
+        "operator": "District of Columbia Fire Department",
+        "source": "dcgis",
+        "wikidata": "Q7847173"
+      }
+    },
+    {
+      "type": "way",
+      "id": 55333016,
+      "bounds": {
+        "minlat": 38.8831835,
+        "minlon": -76.9947875,
+        "maxlat": 38.8833241,
+        "maxlon": -76.994404
+      },
+      "nodes": [
+        695044864,
+        306511654,
+        695044860,
+        611392036,
+        695044883,
+        695044864
+      ],
+      "geometry": [
+        {
+          "lat": 38.8833236,
+          "lon": -76.9947875
+        },
+        {
+          "lat": 38.8832868,
+          "lon": -76.9947874
+        },
+        {
+          "lat": 38.8831835,
+          "lon": -76.9947873
+        },
+        {
+          "lat": 38.8831838,
+          "lon": -76.994404
+        },
+        {
+          "lat": 38.8833241,
+          "lon": -76.9944042
+        },
+        {
+          "lat": 38.8833236,
+          "lon": -76.9947875
+        }
+      ],
+      "tags": {
+        "addr:city": "Washington",
+        "addr:country": "US",
+        "addr:housenumber": "414",
+        "addr:postcode": "20003",
+        "addr:state": "DC",
+        "addr:street": "8th Street Southeast",
+        "amenity": "fire_station",
+        "building": "yes",
+        "check_date": "2024-09-26",
+        "dcgis:captureyear": "19990331",
+        "dcgis:dataset": "buildings",
+        "dcgis:featurecode": "2000",
+        "name": "DC Fire Department Engine Co. 18",
+        "source": "dcgis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 60140664,
+      "bounds": {
+        "minlat": 38.8737825,
+        "minlon": -77.0817703,
+        "maxlat": 38.8741059,
+        "maxlon": -77.081472
+      },
+      "nodes": [
+        747121704,
+        747121705,
+        747121706,
+        747121707,
+        747121692,
+        747121693,
+        747121694,
+        747121695,
+        747121696,
+        747121697,
+        747121704
+      ],
+      "geometry": [
+        {
+          "lat": 38.8741003,
+          "lon": -77.0815517
+        },
+        {
+          "lat": 38.8741059,
+          "lon": -77.0815071
+        },
+        {
+          "lat": 38.8739368,
+          "lon": -77.081472
+        },
+        {
+          "lat": 38.8739248,
+          "lon": -77.0815673
+        },
+        {
+          "lat": 38.8737997,
+          "lon": -77.0815413
+        },
+        {
+          "lat": 38.8737825,
+          "lon": -77.0816778
+        },
+        {
+          "lat": 38.8739099,
+          "lon": -77.0817043
+        },
+        {
+          "lat": 38.873906,
+          "lon": -77.0817357
+        },
+        {
+          "lat": 38.8740728,
+          "lon": -77.0817703
+        },
+        {
+          "lat": 38.8740769,
+          "lon": -77.0817375
+        },
+        {
+          "lat": 38.8741003,
+          "lon": -77.0815517
+        }
+      ],
+      "tags": {
+        "addr:housenumber": "108",
+        "addr:postcode": "22211",
+        "addr:street": "Sheridan Avenue",
+        "addr:unit": "A",
+        "amenity": "fire_station",
+        "building": "yes",
+        "name": "Fort Myer Fire Department Station 1"
+      }
+    },
+    {
+      "type": "way",
+      "id": 66409149,
+      "bounds": {
+        "minlat": 38.8970404,
+        "minlon": -77.0491732,
+        "maxlat": 38.897085,
+        "maxlon": -77.0489912
+      },
+      "nodes": [
+        804598624,
+        804598066,
+        804597557,
+        804597718,
+        804599270,
+        804598863,
+        804597818,
+        804598624
+      ],
+      "geometry": [
+        {
+          "lat": 38.897085,
+          "lon": -77.0489914
+        },
+        {
+          "lat": 38.8970404,
+          "lon": -77.0489912
+        },
+        {
+          "lat": 38.8970416,
+          "lon": -77.0491512
+        },
+        {
+          "lat": 38.8970417,
+          "lon": -77.0491732
+        },
+        {
+          "lat": 38.8970731,
+          "lon": -77.0491724
+        },
+        {
+          "lat": 38.8970739,
+          "lon": -77.0491035
+        },
+        {
+          "lat": 38.897085,
+          "lon": -77.0491034
+        },
+        {
+          "lat": 38.897085,
+          "lon": -77.0489914
+        }
+      ],
+      "tags": {
+        "addr:housenumber": "520",
+        "addr:street": "22nd Street Northwest",
+        "amenity": "police",
+        "building": "yes",
+        "building:levels": "3",
+        "dataset": "buildings",
+        "dcgis:captureyear": "19990331",
+        "dcgis:lot": "0803",
+        "dcgis:square": "0058",
+        "name": "GW Community Policing Center",
+        "source": "dcgis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 67110575,
+      "bounds": {
+        "minlat": 38.9171609,
+        "minlon": -77.0377147,
+        "maxlat": 38.9174322,
+        "maxlon": -77.0373362
+      },
+      "nodes": [
+        810627211,
+        810618848,
+        810623607,
+        810626728,
+        810627409,
+        810630568,
+        810620947,
+        810629152,
+        810627211
+      ],
+      "geometry": [
+        {
+          "lat": 38.9171671,
+          "lon": -77.0374385
+        },
+        {
+          "lat": 38.9171611,
+          "lon": -77.0374385
+        },
+        {
+          "lat": 38.9171609,
+          "lon": -77.0376025
+        },
+        {
+          "lat": 38.9171661,
+          "lon": -77.0376025
+        },
+        {
+          "lat": 38.9171659,
+          "lon": -77.037714
+        },
+        {
+          "lat": 38.9174315,
+          "lon": -77.0377147
+        },
+        {
+          "lat": 38.9174322,
+          "lon": -77.0373369
+        },
+        {
+          "lat": 38.9171673,
+          "lon": -77.0373362
+        },
+        {
+          "lat": 38.9171671,
+          "lon": -77.0374385
+        }
+      ],
+      "tags": {
+        "addr:city": "Washington",
+        "addr:country": "US",
+        "addr:housenumber": "1617",
+        "addr:state": "DC",
+        "addr:street": "U Street Northwest",
+        "amenity": "fire_station",
+        "building": "yes",
+        "dataset": "buildings",
+        "dcgis:captureyear": "19990331",
+        "dcgis:gis_id": "99021",
+        "dcgis:lot": "0826",
+        "dcgis:square": "0175",
+        "name": "DC Fire Dept. Engine Co. 9",
+        "source": "dcgis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 67255083,
+      "bounds": {
+        "minlat": 38.8735397,
+        "minlon": -77.0211533,
+        "maxlat": 38.8741723,
+        "maxlon": -77.0205655
+      },
+      "nodes": [
+        812165936,
+        812160380,
+        812160512,
+        812162166,
+        812163627,
+        812165504,
+        812159298,
+        812161409,
+        812163084,
+        812164612,
+        812166078,
+        812160701,
+        812162357,
+        812163844,
+        812165596,
+        812159553,
+        812161619,
+        812163199,
+        812162281,
+        812163778,
+        812159477,
+        812161534,
+        812164804,
+        812158828,
+        812165936
+      ],
+      "geometry": [
+        {
+          "lat": 38.8738121,
+          "lon": -77.0207774
+        },
+        {
+          "lat": 38.8738129,
+          "lon": -77.0207914
+        },
+        {
+          "lat": 38.8736979,
+          "lon": -77.0208958
+        },
+        {
+          "lat": 38.8736917,
+          "lon": -77.0208847
+        },
+        {
+          "lat": 38.8735889,
+          "lon": -77.020978
+        },
+        {
+          "lat": 38.873599,
+          "lon": -77.0209962
+        },
+        {
+          "lat": 38.8736016,
+          "lon": -77.0210474
+        },
+        {
+          "lat": 38.8735874,
+          "lon": -77.0210277
+        },
+        {
+          "lat": 38.8735397,
+          "lon": -77.021071
+        },
+        {
+          "lat": 38.8735852,
+          "lon": -77.0211533
+        },
+        {
+          "lat": 38.8736297,
+          "lon": -77.021113
+        },
+        {
+          "lat": 38.8736165,
+          "lon": -77.0210891
+        },
+        {
+          "lat": 38.8736606,
+          "lon": -77.0211121
+        },
+        {
+          "lat": 38.8736714,
+          "lon": -77.0211317
+        },
+        {
+          "lat": 38.8738521,
+          "lon": -77.0209677
+        },
+        {
+          "lat": 38.8738559,
+          "lon": -77.0209747
+        },
+        {
+          "lat": 38.8739051,
+          "lon": -77.0209301
+        },
+        {
+          "lat": 38.8738954,
+          "lon": -77.0209128
+        },
+        {
+          "lat": 38.8739184,
+          "lon": -77.0208919
+        },
+        {
+          "lat": 38.8739301,
+          "lon": -77.020898
+        },
+        {
+          "lat": 38.8741723,
+          "lon": -77.0206782
+        },
+        {
+          "lat": 38.8741589,
+          "lon": -77.0206712
+        },
+        {
+          "lat": 38.8741225,
+          "lon": -77.0206056
+        },
+        {
+          "lat": 38.8740458,
+          "lon": -77.0205655
+        },
+        {
+          "lat": 38.8738121,
+          "lon": -77.0207774
+        }
+      ],
+      "tags": {
+        "addr:housenumber": "550",
+        "addr:street": "Water Street Southwest",
+        "amenity": "police",
+        "building": "yes",
+        "dataset": "buildings",
+        "dcgis:captureyear": "19990331",
+        "name": "Police Harbor Patrol",
+        "source": "dcgis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 67260119,
+      "bounds": {
+        "minlat": 38.8757187,
+        "minlon": -76.9954193,
+        "maxlat": 38.8758538,
+        "maxlon": -76.9951061
+      },
+      "nodes": [
+        812231326,
+        812231378,
+        812236194,
+        812233072,
+        10572291770,
+        611239413,
+        812231904,
+        812236817,
+        812233589,
+        812231326
+      ],
+      "geometry": [
+        {
+          "lat": 38.8758538,
+          "lon": -76.9951072
+        },
+        {
+          "lat": 38.8757561,
+          "lon": -76.9951061
+        },
+        {
+          "lat": 38.8757562,
+          "lon": -76.995119
+        },
+        {
+          "lat": 38.8757187,
+          "lon": -76.9951195
+        },
+        {
+          "lat": 38.8757207,
+          "lon": -76.995402
+        },
+        {
+          "lat": 38.8757208,
+          "lon": -76.9954193
+        },
+        {
+          "lat": 38.8757751,
+          "lon": -76.9954187
+        },
+        {
+          "lat": 38.8757752,
+          "lon": -76.995298
+        },
+        {
+          "lat": 38.8758525,
+          "lon": -76.995297
+        },
+        {
+          "lat": 38.8758538,
+          "lon": -76.9951072
+        }
+      ],
+      "tags": {
+        "amenity": "fire_station",
+        "building": "yes",
+        "dataset": "buildings",
+        "dcgis:captureyear": "19990331",
+        "name": "Washington Navy Yard Fire Station 42",
+        "operator": "Naval District Washington Fire and Emergency Services",
+        "source": "dcgis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 67463198,
+      "bounds": {
+        "minlat": 38.9246239,
+        "minlon": -77.0423944,
+        "maxlat": 38.9249185,
+        "maxlon": -77.0420363
+      },
+      "nodes": [
+        814367108,
+        814362178,
+        814367233,
+        814360563,
+        814365337,
+        814363289,
+        814367108
+      ],
+      "geometry": [
+        {
+          "lat": 38.9248286,
+          "lon": -77.0421871
+        },
+        {
+          "lat": 38.9246904,
+          "lon": -77.0420363
+        },
+        {
+          "lat": 38.9246836,
+          "lon": -77.0420466
+        },
+        {
+          "lat": 38.9246239,
+          "lon": -77.0421373
+        },
+        {
+          "lat": 38.9248459,
+          "lon": -77.0423944
+        },
+        {
+          "lat": 38.9249185,
+          "lon": -77.0422842
+        },
+        {
+          "lat": 38.9248286,
+          "lon": -77.0421871
+        }
+      ],
+      "tags": {
+        "addr:housenumber": "1763",
+        "addr:street": "Lanier Place Northwest",
+        "amenity": "fire_station",
+        "building": "yes",
+        "dataset": "buildings",
+        "dcgis:captureyear": "19990331",
+        "dcgis:gis_id": "107889",
+        "dcgis:lot": "0063",
+        "dcgis:square": "2583",
+        "name": "DC Fire Department Engine Co. 21",
+        "source": "dcgis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 69754409,
+      "bounds": {
+        "minlat": 38.9278433,
+        "minlon": -77.0475482,
+        "maxlat": 38.9281258,
+        "maxlon": -77.0472102
+      },
+      "nodes": [
+        834423865,
+        834424629,
+        7094173758,
+        834425980,
+        834425543,
+        834423445,
+        834423736,
+        834423719,
+        3545087090,
+        4406282932,
+        834423865
+      ],
+      "geometry": [
+        {
+          "lat": 38.9280607,
+          "lon": -77.0473183
+        },
+        {
+          "lat": 38.9280652,
+          "lon": -77.0473097
+        },
+        {
+          "lat": 38.928034,
+          "lon": -77.047283
+        },
+        {
+          "lat": 38.9280023,
+          "lon": -77.047256
+        },
+        {
+          "lat": 38.9279978,
+          "lon": -77.0472647
+        },
+        {
+          "lat": 38.9279339,
+          "lon": -77.0472102
+        },
+        {
+          "lat": 38.9278433,
+          "lon": -77.0473844
+        },
+        {
+          "lat": 38.9280352,
+          "lon": -77.0475482
+        },
+        {
+          "lat": 38.9281258,
+          "lon": -77.047374
+        },
+        {
+          "lat": 38.9281215,
+          "lon": -77.0473703
+        },
+        {
+          "lat": 38.9280607,
+          "lon": -77.0473183
+        }
+      ],
+      "tags": {
+        "amenity": "police",
+        "building": "office",
+        "building:levels": "1",
+        "dataset": "buildings",
+        "dcgis:captureyear": "19990331",
+        "dcgis:gis_id": "22627",
+        "dcgis:lot": "0006",
+        "dcgis:square": "PAR",
+        "name": "Zoo Police Station",
+        "source": "dcgis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 70143174,
+      "bounds": {
+        "minlat": 38.9398741,
+        "minlon": -77.0241904,
+        "maxlat": 38.9403038,
+        "maxlon": -77.0234302
+      },
+      "nodes": [
+        837811300,
+        611491183,
+        837828411,
+        837826143,
+        837818920,
+        837819296,
+        837809061,
+        837805490,
+        837826759,
+        837824812,
+        837817400,
+        837814716,
+        837803351,
+        837827989,
+        837820440,
+        837818540,
+        837807474,
+        837804492,
+        837825772,
+        837823885,
+        837816419,
+        837816863,
+        837804990,
+        611491188,
+        837811300
+      ],
+      "geometry": [
+        {
+          "lat": 38.9402516,
+          "lon": -77.0236858
+        },
+        {
+          "lat": 38.9401359,
+          "lon": -77.02368
+        },
+        {
+          "lat": 38.9401431,
+          "lon": -77.0234425
+        },
+        {
+          "lat": 38.9398978,
+          "lon": -77.0234302
+        },
+        {
+          "lat": 38.9398896,
+          "lon": -77.0236964
+        },
+        {
+          "lat": 38.9399817,
+          "lon": -77.0237011
+        },
+        {
+          "lat": 38.9399812,
+          "lon": -77.0237177
+        },
+        {
+          "lat": 38.9399473,
+          "lon": -77.0237159
+        },
+        {
+          "lat": 38.9399463,
+          "lon": -77.0237501
+        },
+        {
+          "lat": 38.9399181,
+          "lon": -77.0237482
+        },
+        {
+          "lat": 38.9399167,
+          "lon": -77.0238072
+        },
+        {
+          "lat": 38.9399445,
+          "lon": -77.0238075
+        },
+        {
+          "lat": 38.9399434,
+          "lon": -77.0238436
+        },
+        {
+          "lat": 38.9399792,
+          "lon": -77.0238455
+        },
+        {
+          "lat": 38.9399788,
+          "lon": -77.0238605
+        },
+        {
+          "lat": 38.939884,
+          "lon": -77.0238557
+        },
+        {
+          "lat": 38.9398741,
+          "lon": -77.024178
+        },
+        {
+          "lat": 38.940121,
+          "lon": -77.0241904
+        },
+        {
+          "lat": 38.9401302,
+          "lon": -77.0238917
+        },
+        {
+          "lat": 38.9402457,
+          "lon": -77.0238975
+        },
+        {
+          "lat": 38.9402451,
+          "lon": -77.0239156
+        },
+        {
+          "lat": 38.9402964,
+          "lon": -77.0239181
+        },
+        {
+          "lat": 38.9403038,
+          "lon": -77.0236744
+        },
+        {
+          "lat": 38.940252,
+          "lon": -77.0236719
+        },
+        {
+          "lat": 38.9402516,
+          "lon": -77.0236858
+        }
+      ],
+      "tags": {
+        "addr:housenumber": "801",
+        "addr:street": "Shepherd Street Northwest",
+        "amenity": "police",
+        "building": "yes",
+        "dataset": "buildings",
+        "dcgis:captureyear": "20050405",
+        "dcgis:gis_id": "158176",
+        "dcgis:lot": "0806",
+        "dcgis:square": "3026",
+        "source": "dcgis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 80300536,
+      "bounds": {
+        "minlat": 38.8668017,
+        "minlon": -77.0690239,
+        "maxlat": 38.867102,
+        "maxlon": -77.0684761
+      },
+      "nodes": [
+        937177677,
+        7003136911,
+        7003136919,
+        937177662,
+        7003136897,
+        937177651,
+        7003136900,
+        937177733,
+        7003136915,
+        937177677
+      ],
+      "geometry": [
+        {
+          "lat": 38.8669826,
+          "lon": -77.0690239
+        },
+        {
+          "lat": 38.8669336,
+          "lon": -77.0690035
+        },
+        {
+          "lat": 38.8668995,
+          "lon": -77.0689893
+        },
+        {
+          "lat": 38.8668017,
+          "lon": -77.0689486
+        },
+        {
+          "lat": 38.866867,
+          "lon": -77.0686942
+        },
+        {
+          "lat": 38.8669243,
+          "lon": -77.0684761
+        },
+        {
+          "lat": 38.8669421,
+          "lon": -77.0684844
+        },
+        {
+          "lat": 38.867102,
+          "lon": -77.0685515
+        },
+        {
+          "lat": 38.8670087,
+          "lon": -77.0689205
+        },
+        {
+          "lat": 38.8669826,
+          "lon": -77.0690239
+        }
+      ],
+      "tags": {
+        "addr:city": "Arlington",
+        "addr:housenumber": "1426",
+        "addr:postcode": "22204",
+        "addr:state": "VA",
+        "addr:street": "Columbia Pike",
+        "amenity": "police",
+        "building": "commercial",
+        "ele": "46",
+        "email": "area45@vsp.virginia.gov",
+        "gnis:feature_id": "2332128",
+        "name": "Virginia State Police Division 7 Area 45 Office",
+        "name:zh": "弗吉尼亚州警察局第7分局第45区办公室",
+        "name:zh-Hans": "弗吉尼亚州警察局第7分局第45区办公室",
+        "phone": "+1 703-845-6300",
+        "source": "USGS Geonames",
+        "website": "https://www.vsp.virginia.gov/Div7.shtm"
+      }
+    },
+    {
+      "type": "way",
+      "id": 91789418,
+      "bounds": {
+        "minlat": 38.9362424,
+        "minlon": -77.0595991,
+        "maxlat": 38.9364473,
+        "maxlon": -77.0592077
+      },
+      "nodes": [
+        307055376,
+        1066603450,
+        1066612653,
+        611510485,
+        1066601615,
+        1066609847,
+        1066604054,
+        1066613601,
+        1066614007,
+        1066604405,
+        12240163931,
+        307055376
+      ],
+      "geometry": [
+        {
+          "lat": 38.9363481,
+          "lon": -77.0592077
+        },
+        {
+          "lat": 38.9362424,
+          "lon": -77.0595196
+        },
+        {
+          "lat": 38.9362636,
+          "lon": -77.0595315
+        },
+        {
+          "lat": 38.9362495,
+          "lon": -77.0595703
+        },
+        {
+          "lat": 38.9362977,
+          "lon": -77.0595991
+        },
+        {
+          "lat": 38.9363106,
+          "lon": -77.0595639
+        },
+        {
+          "lat": 38.9363343,
+          "lon": -77.059577
+        },
+        {
+          "lat": 38.9364113,
+          "lon": -77.05935
+        },
+        {
+          "lat": 38.9364169,
+          "lon": -77.0593531
+        },
+        {
+          "lat": 38.9364473,
+          "lon": -77.059267
+        },
+        {
+          "lat": 38.9364058,
+          "lon": -77.0592422
+        },
+        {
+          "lat": 38.9363481,
+          "lon": -77.0592077
+        }
+      ],
+      "tags": {
+        "addr:housenumber": "3522",
+        "addr:street": "Connecticut Avenue Northwest",
+        "amenity": "fire_station",
+        "building": "yes",
+        "dataset": "buildings",
+        "dcgis:captureyear": "19990331",
+        "dcgis:gis_id": "117594",
+        "dcgis:lot": "0809",
+        "dcgis:square": "2068",
+        "name": "DC Fire Department Engine Co. 28",
+        "operator": "District of Columbia Fire and Emergency Medical Services",
+        "operator:wikidata": "Q5283416",
+        "source": "dcgis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 121777219,
+      "bounds": {
+        "minlat": 38.9232241,
+        "minlon": -77.025241,
+        "maxlat": 38.9235616,
+        "maxlon": -77.0248805
+      },
+      "nodes": [
+        1362253178,
+        1362253179,
+        1362253180,
+        1362253181,
+        611466010,
+        611466001,
+        611466000,
+        611465998,
+        611465999,
+        611465997,
+        1362253182,
+        1362253183,
+        1362253178
+      ],
+      "geometry": [
+        {
+          "lat": 38.9232751,
+          "lon": -77.0252183
+        },
+        {
+          "lat": 38.9234394,
+          "lon": -77.025241
+        },
+        {
+          "lat": 38.9234423,
+          "lon": -77.0252062
+        },
+        {
+          "lat": 38.9235388,
+          "lon": -77.0252196
+        },
+        {
+          "lat": 38.9235616,
+          "lon": -77.0249468
+        },
+        {
+          "lat": 38.9234638,
+          "lon": -77.0249333
+        },
+        {
+          "lat": 38.9234664,
+          "lon": -77.024903
+        },
+        {
+          "lat": 38.9233038,
+          "lon": -77.0248805
+        },
+        {
+          "lat": 38.9233017,
+          "lon": -77.0249055
+        },
+        {
+          "lat": 38.923248,
+          "lon": -77.0248981
+        },
+        {
+          "lat": 38.9232241,
+          "lon": -77.0251827
+        },
+        {
+          "lat": 38.9232774,
+          "lon": -77.0251901
+        },
+        {
+          "lat": 38.9232751,
+          "lon": -77.0252183
+        }
+      ],
+      "tags": {
+        "addr:city": "Washington",
+        "addr:country": "US",
+        "addr:housenumber": "2531",
+        "addr:postcode": "20001",
+        "addr:state": "DC",
+        "addr:street": "Sherman Avenue Northwest",
+        "amenity": "fire_station",
+        "building": "yes",
+        "building:levels": "2",
+        "name": "Washington DC Fire & EMS Station"
+      }
+    },
+    {
+      "type": "way",
+      "id": 211546321,
+      "bounds": {
+        "minlat": 38.8573343,
+        "minlon": -77.0586934,
+        "maxlat": 38.8577661,
+        "maxlon": -77.0580772
+      },
+      "nodes": [
+        2215350933,
+        9811309842,
+        9811309843,
+        2215350932,
+        9811309836,
+        2215350896,
+        2215350900,
+        2215350894,
+        2215350903,
+        2215350898,
+        2215350906,
+        2215350908,
+        2215350910,
+        2215350912,
+        2215350914,
+        2215350916,
+        2215350919,
+        2215350921,
+        2215350923,
+        2215350925,
+        2215350926,
+        2215350928,
+        2215350930,
+        9811309835,
+        2215350933
+      ],
+      "geometry": [
+        {
+          "lat": 38.8577661,
+          "lon": -77.0585168
+        },
+        {
+          "lat": 38.8577521,
+          "lon": -77.0585287
+        },
+        {
+          "lat": 38.8575723,
+          "lon": -77.0586809
+        },
+        {
+          "lat": 38.8575575,
+          "lon": -77.0586934
+        },
+        {
+          "lat": 38.8574051,
+          "lon": -77.0583963
+        },
+        {
+          "lat": 38.8573439,
+          "lon": -77.0582769
+        },
+        {
+          "lat": 38.8573531,
+          "lon": -77.0582694
+        },
+        {
+          "lat": 38.8573343,
+          "lon": -77.0582366
+        },
+        {
+          "lat": 38.8573582,
+          "lon": -77.0581975
+        },
+        {
+          "lat": 38.8573527,
+          "lon": -77.0581889
+        },
+        {
+          "lat": 38.8573728,
+          "lon": -77.0581626
+        },
+        {
+          "lat": 38.8573857,
+          "lon": -77.0581492
+        },
+        {
+          "lat": 38.8574154,
+          "lon": -77.0581223
+        },
+        {
+          "lat": 38.8574384,
+          "lon": -77.0581051
+        },
+        {
+          "lat": 38.8574497,
+          "lon": -77.0580982
+        },
+        {
+          "lat": 38.8574539,
+          "lon": -77.0581078
+        },
+        {
+          "lat": 38.8574685,
+          "lon": -77.0580987
+        },
+        {
+          "lat": 38.8574894,
+          "lon": -77.058089
+        },
+        {
+          "lat": 38.8575024,
+          "lon": -77.0580842
+        },
+        {
+          "lat": 38.8575191,
+          "lon": -77.0580783
+        },
+        {
+          "lat": 38.8575287,
+          "lon": -77.0580772
+        },
+        {
+          "lat": 38.8575467,
+          "lon": -77.0581143
+        },
+        {
+          "lat": 38.8575542,
+          "lon": -77.0581094
+        },
+        {
+          "lat": 38.8576184,
+          "lon": -77.0582328
+        },
+        {
+          "lat": 38.8577661,
+          "lon": -77.0585168
+        }
+      ],
+      "tags": {
+        "addr:city": "Arlington",
+        "addr:housenumber": "1750",
+        "addr:postcode": "22202",
+        "addr:state": "VA",
+        "addr:street": "South Hayes Street",
+        "amenity": "fire_station",
+        "building": "public",
+        "building:levels": "2",
+        "name": "Arlington County Fire Station 5",
+        "official_name": "Arlington County Fire Station 5 - Jefferson District / Aurora Highlands",
+        "operator": "Arlington County Fire Department",
+        "operator:wikidata": "Q4792309",
+        "phone": "+1-703-228-0105",
+        "website": "https://www.arlingtonva.us/Government/Departments/Fire/Locations/Fire-Station-5-Jefferson-District-Aurora-Highlands"
+      }
+    },
+    {
+      "type": "way",
+      "id": 237887734,
+      "bounds": {
+        "minlat": 38.9008149,
+        "minlon": -77.0512739,
+        "maxlat": 38.9018804,
+        "maxlon": -77.0502962
+      },
+      "nodes": [
+        2457606214,
+        2998050676,
+        804627302,
+        804627318,
+        804629592,
+        804629602,
+        3403048241,
+        804628486,
+        804628865,
+        804627398,
+        804627827,
+        804629669,
+        804628332,
+        804627921,
+        804627599,
+        804628433,
+        804628730,
+        804628878,
+        804629073,
+        804629212,
+        804627782,
+        804629405,
+        804628399,
+        804627864,
+        804629067,
+        804628936,
+        804629318,
+        804629412,
+        804629511,
+        804629292,
+        804627845,
+        804627737,
+        804628397,
+        804627450,
+        804628609,
+        804628327,
+        804629545,
+        804629626,
+        804629687,
+        804628294,
+        804629132,
+        2457606213,
+        804628874,
+        804628076,
+        804628061,
+        804628654,
+        804629333,
+        804629364,
+        804629084,
+        804628074,
+        804628765,
+        804629520,
+        2457606214
+      ],
+      "geometry": [
+        {
+          "lat": 38.9017125,
+          "lon": -77.0502976
+        },
+        {
+          "lat": 38.901438,
+          "lon": -77.0502981
+        },
+        {
+          "lat": 38.9013153,
+          "lon": -77.0502983
+        },
+        {
+          "lat": 38.9013146,
+          "lon": -77.0503198
+        },
+        {
+          "lat": 38.9012765,
+          "lon": -77.0503201
+        },
+        {
+          "lat": 38.9012767,
+          "lon": -77.0503008
+        },
+        {
+          "lat": 38.9011656,
+          "lon": -77.0503017
+        },
+        {
+          "lat": 38.9010931,
+          "lon": -77.0503024
+        },
+        {
+          "lat": 38.901051,
+          "lon": -77.0503137
+        },
+        {
+          "lat": 38.9010127,
+          "lon": -77.0503389
+        },
+        {
+          "lat": 38.9009809,
+          "lon": -77.050376
+        },
+        {
+          "lat": 38.9009627,
+          "lon": -77.0504102
+        },
+        {
+          "lat": 38.9009441,
+          "lon": -77.0504891
+        },
+        {
+          "lat": 38.9009415,
+          "lon": -77.0506717
+        },
+        {
+          "lat": 38.9009524,
+          "lon": -77.0506733
+        },
+        {
+          "lat": 38.9009513,
+          "lon": -77.0507092
+        },
+        {
+          "lat": 38.9009409,
+          "lon": -77.0507094
+        },
+        {
+          "lat": 38.9009408,
+          "lon": -77.0507222
+        },
+        {
+          "lat": 38.9009252,
+          "lon": -77.0507219
+        },
+        {
+          "lat": 38.9009249,
+          "lon": -77.0509229
+        },
+        {
+          "lat": 38.9009409,
+          "lon": -77.0509228
+        },
+        {
+          "lat": 38.900939,
+          "lon": -77.0509351
+        },
+        {
+          "lat": 38.9009517,
+          "lon": -77.0509345
+        },
+        {
+          "lat": 38.9009506,
+          "lon": -77.0509896
+        },
+        {
+          "lat": 38.9009344,
+          "lon": -77.0509916
+        },
+        {
+          "lat": 38.9009361,
+          "lon": -77.0509649
+        },
+        {
+          "lat": 38.9008798,
+          "lon": -77.0509653
+        },
+        {
+          "lat": 38.9008794,
+          "lon": -77.0509733
+        },
+        {
+          "lat": 38.9008149,
+          "lon": -77.0509724
+        },
+        {
+          "lat": 38.9008154,
+          "lon": -77.0512608
+        },
+        {
+          "lat": 38.9008787,
+          "lon": -77.0512598
+        },
+        {
+          "lat": 38.9008784,
+          "lon": -77.0512732
+        },
+        {
+          "lat": 38.9010054,
+          "lon": -77.0512739
+        },
+        {
+          "lat": 38.9010062,
+          "lon": -77.0512445
+        },
+        {
+          "lat": 38.9010392,
+          "lon": -77.0512379
+        },
+        {
+          "lat": 38.9010686,
+          "lon": -77.0512036
+        },
+        {
+          "lat": 38.9010508,
+          "lon": -77.0511663
+        },
+        {
+          "lat": 38.9010593,
+          "lon": -77.0511596
+        },
+        {
+          "lat": 38.9010768,
+          "lon": -77.0511896
+        },
+        {
+          "lat": 38.901086,
+          "lon": -77.0511815
+        },
+        {
+          "lat": 38.9010933,
+          "lon": -77.0511955
+        },
+        {
+          "lat": 38.9017811,
+          "lon": -77.0505598
+        },
+        {
+          "lat": 38.9018616,
+          "lon": -77.0504853
+        },
+        {
+          "lat": 38.9018533,
+          "lon": -77.0504679
+        },
+        {
+          "lat": 38.9018748,
+          "lon": -77.050435
+        },
+        {
+          "lat": 38.9018804,
+          "lon": -77.0503927
+        },
+        {
+          "lat": 38.9018683,
+          "lon": -77.0503547
+        },
+        {
+          "lat": 38.9018541,
+          "lon": -77.050334
+        },
+        {
+          "lat": 38.9018485,
+          "lon": -77.0503292
+        },
+        {
+          "lat": 38.9018227,
+          "lon": -77.0503187
+        },
+        {
+          "lat": 38.9017647,
+          "lon": -77.0503196
+        },
+        {
+          "lat": 38.9017652,
+          "lon": -77.0502962
+        },
+        {
+          "lat": 38.9017125,
+          "lon": -77.0502976
+        }
+      ],
+      "tags": {
+        "addr:city": "Washington",
+        "addr:housenumber": "900",
+        "addr:postcode": "20037",
+        "addr:street": "23rd Street Northwest",
+        "amenity": "hospital",
+        "building": "hospital",
+        "building:levels": "7",
+        "dataset": "buildings",
+        "dcgis:captureyear": "20050405",
+        "dcgis:lot": "0036",
+        "dcgis:square": "0040",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "name": "George Washington University Hospital",
+        "opening_hours": "24/7",
+        "phone": "+1 202-715-4000",
+        "source": "dcgis",
+        "website": "https://www.gwhospital.com/",
+        "wheelchair": "yes",
+        "wikidata": "Q5546034"
+      }
+    },
+    {
+      "type": "way",
+      "id": 265661379,
+      "bounds": {
+        "minlat": 38.9263337,
+        "minlon": -77.0161107,
+        "maxlat": 38.9278838,
+        "maxlon": -77.012239
+      },
+      "nodes": [
+        4594340269,
+        4594340598,
+        2712937318,
+        10892478634,
+        2712937319,
+        2712937320,
+        4594340222,
+        2712937321,
+        2712937322,
+        2712937323,
+        4594340284,
+        4594340283,
+        4594340282,
+        4594340281,
+        4594340280,
+        4594340279,
+        4594340278,
+        4594340277,
+        4594340276,
+        4594340275,
+        4594340274,
+        4594340273,
+        4594340272,
+        4594340271,
+        4594340270,
+        4594340269
+      ],
+      "geometry": [
+        {
+          "lat": 38.9274658,
+          "lon": -77.0122456
+        },
+        {
+          "lat": 38.9264423,
+          "lon": -77.012239
+        },
+        {
+          "lat": 38.9263934,
+          "lon": -77.0122718
+        },
+        {
+          "lat": 38.9263734,
+          "lon": -77.0123307
+        },
+        {
+          "lat": 38.9263373,
+          "lon": -77.0135358
+        },
+        {
+          "lat": 38.9263337,
+          "lon": -77.0139694
+        },
+        {
+          "lat": 38.9263815,
+          "lon": -77.0142992
+        },
+        {
+          "lat": 38.9264963,
+          "lon": -77.0147478
+        },
+        {
+          "lat": 38.9268214,
+          "lon": -77.015398
+        },
+        {
+          "lat": 38.9272206,
+          "lon": -77.0160317
+        },
+        {
+          "lat": 38.9273544,
+          "lon": -77.0161107
+        },
+        {
+          "lat": 38.9274218,
+          "lon": -77.0160725
+        },
+        {
+          "lat": 38.9276023,
+          "lon": -77.0159008
+        },
+        {
+          "lat": 38.9277348,
+          "lon": -77.0156776
+        },
+        {
+          "lat": 38.927809,
+          "lon": -77.0154808
+        },
+        {
+          "lat": 38.9278621,
+          "lon": -77.0152445
+        },
+        {
+          "lat": 38.927881,
+          "lon": -77.0150044
+        },
+        {
+          "lat": 38.9278838,
+          "lon": -77.0134914
+        },
+        {
+          "lat": 38.9278712,
+          "lon": -77.0133563
+        },
+        {
+          "lat": 38.9278484,
+          "lon": -77.013277
+        },
+        {
+          "lat": 38.9277959,
+          "lon": -77.0132051
+        },
+        {
+          "lat": 38.927596,
+          "lon": -77.013048
+        },
+        {
+          "lat": 38.9275195,
+          "lon": -77.0129276
+        },
+        {
+          "lat": 38.9275035,
+          "lon": -77.0128513
+        },
+        {
+          "lat": 38.9274943,
+          "lon": -77.0123315
+        },
+        {
+          "lat": 38.9274658,
+          "lon": -77.0122456
+        }
+      ],
+      "tags": {
+        "addr:city": "Washington",
+        "addr:housenumber": "111",
+        "addr:postcode": "20010",
+        "addr:street": "Michigan Avenue Northwest",
+        "amenity": "hospital",
+        "emergency": "yes",
+        "gnis:feature_id": "531322",
+        "healthcare": "hospital",
+        "healthcare:speciality": "paediatrics",
+        "name": "Children's National Hospital",
+        "opening_hours": "24/7",
+        "phone": "+1 202-476-5000",
+        "website": "https://childrensnational.org/",
+        "wikidata": "Q5098193"
+      }
+    },
+    {
+      "type": "way",
+      "id": 296252750,
+      "bounds": {
+        "minlat": 38.9321939,
+        "minlon": -76.9900012,
+        "maxlat": 38.9324411,
+        "maxlon": -76.9898526
+      },
+      "nodes": [
+        3000504733,
+        3000504528,
+        611183543,
+        611183536,
+        611183531,
+        3000504746,
+        3000504745,
+        3000505370,
+        3000505380,
+        3000504765,
+        3000504733
+      ],
+      "geometry": [
+        {
+          "lat": 38.9322445,
+          "lon": -76.9898526
+        },
+        {
+          "lat": 38.932244,
+          "lon": -76.9898902
+        },
+        {
+          "lat": 38.9322401,
+          "lon": -76.98989
+        },
+        {
+          "lat": 38.9321959,
+          "lon": -76.9898884
+        },
+        {
+          "lat": 38.9321939,
+          "lon": -76.989978
+        },
+        {
+          "lat": 38.9322659,
+          "lon": -76.9899808
+        },
+        {
+          "lat": 38.9322656,
+          "lon": -76.9899892
+        },
+        {
+          "lat": 38.9324354,
+          "lon": -76.9900012
+        },
+        {
+          "lat": 38.9324411,
+          "lon": -76.9898564
+        },
+        {
+          "lat": 38.9322921,
+          "lon": -76.9898535
+        },
+        {
+          "lat": 38.9322445,
+          "lon": -76.9898526
+        }
+      ],
+      "tags": {
+        "amenity": "fire_station",
+        "building": "yes",
+        "dcgis:gis_id": "77264",
+        "elevation": "60",
+        "gnis:feature_id": "2333881",
+        "name": "DC Fire Department Engine Co. 17",
+        "operator": "District of Columbia Fire and Emergency Medical Services",
+        "source": "USGS Geonames"
+      }
+    },
+    {
+      "type": "way",
+      "id": 297401965,
+      "bounds": {
+        "minlat": 38.9197256,
+        "minlon": -76.9993519,
+        "maxlat": 38.920072,
+        "maxlon": -76.9989307
+      },
+      "nodes": [
+        665438587,
+        665438570,
+        665438591,
+        3012846024,
+        3012846031,
+        3012846134,
+        665438568,
+        3012846137,
+        3012846136,
+        665438589,
+        665438587
+      ],
+      "geometry": [
+        {
+          "lat": 38.9199642,
+          "lon": -76.9989307
+        },
+        {
+          "lat": 38.9199213,
+          "lon": -76.9990594
+        },
+        {
+          "lat": 38.9198038,
+          "lon": -76.9989925
+        },
+        {
+          "lat": 38.9197256,
+          "lon": -76.9992175
+        },
+        {
+          "lat": 38.9199618,
+          "lon": -76.9993519
+        },
+        {
+          "lat": 38.9200408,
+          "lon": -76.9991246
+        },
+        {
+          "lat": 38.9200344,
+          "lon": -76.9991211
+        },
+        {
+          "lat": 38.9200526,
+          "lon": -76.9990704
+        },
+        {
+          "lat": 38.9200486,
+          "lon": -76.9990685
+        },
+        {
+          "lat": 38.920072,
+          "lon": -76.9989995
+        },
+        {
+          "lat": 38.9199642,
+          "lon": -76.9989307
+        }
+      ],
+      "tags": {
+        "amenity": "fire_station",
+        "building": "yes",
+        "dcgis:gis_id": "92552",
+        "name": "DC Fire Department Engine Co. 12"
+      }
+    },
+    {
+      "type": "way",
+      "id": 320564537,
+      "bounds": {
+        "minlat": 38.8728279,
+        "minlon": -77.0577095,
+        "maxlat": 38.8729708,
+        "maxlon": -77.0575098
+      },
+      "nodes": [
+        3271085237,
+        3271085234,
+        3271085233,
+        3271085235,
+        3271085236,
+        3271085237
+      ],
+      "geometry": [
+        {
+          "lat": 38.8729708,
+          "lon": -77.0576539
+        },
+        {
+          "lat": 38.8728836,
+          "lon": -77.0575098
+        },
+        {
+          "lat": 38.8728279,
+          "lon": -77.0575654
+        },
+        {
+          "lat": 38.8729151,
+          "lon": -77.0577095
+        },
+        {
+          "lat": 38.8729639,
+          "lon": -77.0576609
+        },
+        {
+          "lat": 38.8729708,
+          "lon": -77.0576539
+        }
+      ],
+      "tags": {
+        "amenity": "fire_station",
+        "building": "yes",
+        "source": "Bing"
+      }
+    },
+    {
+      "type": "way",
+      "id": 331160766,
+      "bounds": {
+        "minlat": 38.8984408,
+        "minlon": -77.0476957,
+        "maxlat": 38.8987277,
+        "maxlon": -77.0475631
+      },
+      "nodes": [
+        9365468182,
+        804597993,
+        804598712,
+        12169237073,
+        804599254,
+        9365468182
+      ],
+      "geometry": [
+        {
+          "lat": 38.8987271,
+          "lon": -77.0476957
+        },
+        {
+          "lat": 38.8987277,
+          "lon": -77.047565
+        },
+        {
+          "lat": 38.8984413,
+          "lon": -77.0475631
+        },
+        {
+          "lat": 38.898441,
+          "lon": -77.047635
+        },
+        {
+          "lat": 38.8984408,
+          "lon": -77.0476938
+        },
+        {
+          "lat": 38.8987271,
+          "lon": -77.0476957
+        }
+      ],
+      "tags": {
+        "addr:city": "Washington",
+        "addr:housenumber": "2119",
+        "addr:postcode": "20037",
+        "addr:state": "DC",
+        "addr:street": "G Street Northwest",
+        "amenity": "fire_station",
+        "building": "yes",
+        "building:levels": "2",
+        "dataset": "buildings",
+        "dcgis:captureyear": "19990331",
+        "dcgis:lot": "0005",
+        "dcgis:square": "0079",
+        "gnis:feature_id": "2333869",
+        "name": "DC Fire Department Engine Co. 23;District of Columbia Fire and Emergency Medical Services Engine Company 23",
+        "source": "dcgis;United States Geological Survey"
+      }
+    },
+    {
+      "type": "way",
+      "id": 464217042,
+      "bounds": {
+        "minlat": 38.910355,
+        "minlon": -77.0763941,
+        "maxlat": 38.9125792,
+        "maxlon": -77.0739947
+      },
+      "nodes": [
+        4593549699,
+        4593549698,
+        4593549697,
+        4593549696,
+        4593549695,
+        4593549694,
+        4593549693,
+        4593549692,
+        4593549691,
+        4593549690,
+        4593549689,
+        4593549588,
+        4593549587,
+        4593549586,
+        4593549585,
+        4593549584,
+        4593549583,
+        10092584874,
+        10102233530,
+        4593549582,
+        4593549576,
+        11576283917,
+        11576283918,
+        4593549575,
+        4593549574,
+        4593549699
+      ],
+      "geometry": [
+        {
+          "lat": 38.9125792,
+          "lon": -77.0759576
+        },
+        {
+          "lat": 38.9121315,
+          "lon": -77.0759869
+        },
+        {
+          "lat": 38.9120507,
+          "lon": -77.0759008
+        },
+        {
+          "lat": 38.9119791,
+          "lon": -77.0758754
+        },
+        {
+          "lat": 38.911906,
+          "lon": -77.0759008
+        },
+        {
+          "lat": 38.9118619,
+          "lon": -77.0759634
+        },
+        {
+          "lat": 38.9118466,
+          "lon": -77.0760496
+        },
+        {
+          "lat": 38.9118497,
+          "lon": -77.0763353
+        },
+        {
+          "lat": 38.9107911,
+          "lon": -77.0763941
+        },
+        {
+          "lat": 38.9107394,
+          "lon": -77.0759321
+        },
+        {
+          "lat": 38.9106891,
+          "lon": -77.0758519
+        },
+        {
+          "lat": 38.9105599,
+          "lon": -77.0758684
+        },
+        {
+          "lat": 38.9104429,
+          "lon": -77.0758955
+        },
+        {
+          "lat": 38.9104099,
+          "lon": -77.0756836
+        },
+        {
+          "lat": 38.9103715,
+          "lon": -77.0755305
+        },
+        {
+          "lat": 38.910355,
+          "lon": -77.0747158
+        },
+        {
+          "lat": 38.9107324,
+          "lon": -77.074697
+        },
+        {
+          "lat": 38.9107901,
+          "lon": -77.0746967
+        },
+        {
+          "lat": 38.9105097,
+          "lon": -77.0746945
+        },
+        {
+          "lat": 38.9105036,
+          "lon": -77.0743408
+        },
+        {
+          "lat": 38.9115015,
+          "lon": -77.0743053
+        },
+        {
+          "lat": 38.9116426,
+          "lon": -77.0742979
+        },
+        {
+          "lat": 38.9116419,
+          "lon": -77.0743394
+        },
+        {
+          "lat": 38.9122713,
+          "lon": -77.074237
+        },
+        {
+          "lat": 38.9125196,
+          "lon": -77.0739947
+        },
+        {
+          "lat": 38.9125792,
+          "lon": -77.0759576
+        }
+      ],
+      "tags": {
+        "addr:city": "Washington",
+        "addr:housenumber": "3800",
+        "addr:postcode": "20007",
+        "addr:street": "Reservoir Road Northwest",
+        "amenity": "hospital",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "name": "MedStar Georgetown University Hospital",
+        "opening_hours": "24/7",
+        "phone": "+1 855-633-0364",
+        "website": "ww.medstargeorgetown.org/",
+        "wikidata": "Q5547055"
+      }
+    },
+    {
+      "type": "way",
+      "id": 464250576,
+      "bounds": {
+        "minlat": 38.9164663,
+        "minlon": -77.0217981,
+        "maxlat": 38.919177,
+        "maxlon": -77.0177529
+      },
+      "nodes": [
+        4593844267,
+        4593844266,
+        611467925,
+        611467889,
+        4593844265,
+        611467887,
+        611467888,
+        665435169,
+        665435171,
+        665435170,
+        4593844264,
+        4593844263,
+        4593844262,
+        806520836,
+        806520612,
+        11255289577,
+        11493030082,
+        11493030076,
+        11255289581,
+        11255289595,
+        806520690,
+        806520452,
+        4593844261,
+        806520749,
+        806520823,
+        806520600,
+        4593844260,
+        611467929,
+        4593844267
+      ],
+      "geometry": [
+        {
+          "lat": 38.9166477,
+          "lon": -77.0209832
+        },
+        {
+          "lat": 38.9164746,
+          "lon": -77.0209822
+        },
+        {
+          "lat": 38.9164663,
+          "lon": -77.0210063
+        },
+        {
+          "lat": 38.9164689,
+          "lon": -77.0216675
+        },
+        {
+          "lat": 38.9164663,
+          "lon": -77.0217404
+        },
+        {
+          "lat": 38.9165194,
+          "lon": -77.0217345
+        },
+        {
+          "lat": 38.9168415,
+          "lon": -77.0217324
+        },
+        {
+          "lat": 38.9179692,
+          "lon": -77.0217453
+        },
+        {
+          "lat": 38.9182614,
+          "lon": -77.021775
+        },
+        {
+          "lat": 38.9183523,
+          "lon": -77.0217799
+        },
+        {
+          "lat": 38.9189424,
+          "lon": -77.0217981
+        },
+        {
+          "lat": 38.919177,
+          "lon": -77.0191845
+        },
+        {
+          "lat": 38.9186928,
+          "lon": -77.0191011
+        },
+        {
+          "lat": 38.9187248,
+          "lon": -77.0187402
+        },
+        {
+          "lat": 38.9188017,
+          "lon": -77.0178709
+        },
+        {
+          "lat": 38.9184268,
+          "lon": -77.0178217
+        },
+        {
+          "lat": 38.9184189,
+          "lon": -77.0178207
+        },
+        {
+          "lat": 38.918412,
+          "lon": -77.0178198
+        },
+        {
+          "lat": 38.9183653,
+          "lon": -77.0178105
+        },
+        {
+          "lat": 38.9183143,
+          "lon": -77.0178063
+        },
+        {
+          "lat": 38.9179023,
+          "lon": -77.0177529
+        },
+        {
+          "lat": 38.9178835,
+          "lon": -77.0179674
+        },
+        {
+          "lat": 38.9177842,
+          "lon": -77.0189471
+        },
+        {
+          "lat": 38.9172804,
+          "lon": -77.0188687
+        },
+        {
+          "lat": 38.9169715,
+          "lon": -77.0188204
+        },
+        {
+          "lat": 38.9168491,
+          "lon": -77.0200849
+        },
+        {
+          "lat": 38.9167725,
+          "lon": -77.0208977
+        },
+        {
+          "lat": 38.916687,
+          "lon": -77.0209158
+        },
+        {
+          "lat": 38.9166477,
+          "lon": -77.0209832
+        }
+      ],
+      "tags": {
+        "addr:city": "Washington",
+        "addr:housenumber": "2041",
+        "addr:postcode": "20060",
+        "addr:street": "Georgia Avenue Northwest",
+        "amenity": "hospital",
+        "emergency": "yes",
+        "gnis:feature_id": "1984545",
+        "healthcare": "hospital",
+        "name": "Howard University Hospital",
+        "opening_hours": "24/7",
+        "phone": "+1 202-865-6100",
+        "website": "http://huhealthcare.com/healthcare/hospital",
+        "wikidata": "Q5500403"
+      }
+    },
+    {
+      "type": "way",
+      "id": 464250823,
+      "bounds": {
+        "minlat": 38.9429254,
+        "minlon": -76.9965944,
+        "maxlat": 38.9462265,
+        "maxlon": -76.9903467
+      },
+      "nodes": [
+        4593850244,
+        4593850243,
+        4593850242,
+        358958254,
+        4593850241,
+        4593850240,
+        4593850239,
+        4593850238,
+        4593850237,
+        4593850236,
+        4593850235,
+        4593850234,
+        806521132,
+        9051941400,
+        806520588,
+        4593850233,
+        4593850232,
+        4593850231,
+        810808946,
+        810823728,
+        4593850230,
+        4593850229,
+        4593850228,
+        4593850227,
+        4593850226,
+        4593850225,
+        4593850244
+      ],
+      "geometry": [
+        {
+          "lat": 38.9429388,
+          "lon": -76.9923891
+        },
+        {
+          "lat": 38.9431408,
+          "lon": -76.9923891
+        },
+        {
+          "lat": 38.9432679,
+          "lon": -76.9924308
+        },
+        {
+          "lat": 38.9437524,
+          "lon": -76.992429
+        },
+        {
+          "lat": 38.9437411,
+          "lon": -76.9932045
+        },
+        {
+          "lat": 38.9438654,
+          "lon": -76.9933135
+        },
+        {
+          "lat": 38.943864,
+          "lon": -76.993477
+        },
+        {
+          "lat": 38.944035,
+          "lon": -76.9934806
+        },
+        {
+          "lat": 38.9440364,
+          "lon": -76.9944377
+        },
+        {
+          "lat": 38.9441084,
+          "lon": -76.994563
+        },
+        {
+          "lat": 38.9443118,
+          "lon": -76.9949463
+        },
+        {
+          "lat": 38.943857,
+          "lon": -76.99572
+        },
+        {
+          "lat": 38.9437914,
+          "lon": -76.9957724
+        },
+        {
+          "lat": 38.9437625,
+          "lon": -76.9958344
+        },
+        {
+          "lat": 38.9436072,
+          "lon": -76.9961678
+        },
+        {
+          "lat": 38.9447716,
+          "lon": -76.9965327
+        },
+        {
+          "lat": 38.9451699,
+          "lon": -76.9965944
+        },
+        {
+          "lat": 38.9462265,
+          "lon": -76.996569
+        },
+        {
+          "lat": 38.9462149,
+          "lon": -76.9949037
+        },
+        {
+          "lat": 38.9449919,
+          "lon": -76.9948969
+        },
+        {
+          "lat": 38.9450004,
+          "lon": -76.992479
+        },
+        {
+          "lat": 38.9461898,
+          "lon": -76.9924608
+        },
+        {
+          "lat": 38.9461926,
+          "lon": -76.991738
+        },
+        {
+          "lat": 38.9452561,
+          "lon": -76.9917343
+        },
+        {
+          "lat": 38.945249,
+          "lon": -76.9903558
+        },
+        {
+          "lat": 38.9429254,
+          "lon": -76.9903467
+        },
+        {
+          "lat": 38.9429388,
+          "lon": -76.9923891
+        }
+      ],
+      "tags": {
+        "addr:city": "Washington",
+        "addr:housenumber": "1150",
+        "addr:postcode": "20017",
+        "addr:street": "Varnum Street Northeast",
+        "amenity": "hospital",
+        "beds": "408",
+        "emergency": "yes",
+        "gnis:feature_id": "530562",
+        "healthcare": "hospital",
+        "name": "Providence Hospital",
+        "opening_hours": "24/7",
+        "operator": "Ascension",
+        "operator:wikidata": "Q96372437",
+        "phone": "+1 202-854-7000",
+        "website": "https://www.provhosp.org/",
+        "wikidata": "Q30280436"
+      }
+    },
+    {
+      "type": "way",
+      "id": 464307669,
+      "bounds": {
+        "minlat": 38.9274252,
+        "minlon": -77.0172771,
+        "maxlat": 38.9300872,
+        "maxlon": -77.0122772
+      },
+      "nodes": [
+        4594340268,
+        4594340236,
+        4594340237,
+        4594340238,
+        4594340239,
+        4594340240,
+        4594340241,
+        4594340242,
+        4594340243,
+        4594340244,
+        4594340245,
+        4594340246,
+        4594340247,
+        4594340248,
+        4594340249,
+        4594340250,
+        4594340251,
+        4594340252,
+        2712937324,
+        611167852,
+        611167845,
+        611167850,
+        4594340221,
+        2712937267,
+        4594340219,
+        4594340220,
+        2712937270,
+        612717416,
+        612717415,
+        612717434,
+        2712937272,
+        4594340258,
+        4594340218,
+        4594340257,
+        4594340256,
+        4594340255,
+        4594340254,
+        4594340253,
+        4594340264,
+        4594340268
+      ],
+      "geometry": [
+        {
+          "lat": 38.927636,
+          "lon": -77.0122772
+        },
+        {
+          "lat": 38.9275999,
+          "lon": -77.0123088
+        },
+        {
+          "lat": 38.9275839,
+          "lon": -77.0123426
+        },
+        {
+          "lat": 38.9275839,
+          "lon": -77.0126039
+        },
+        {
+          "lat": 38.9275839,
+          "lon": -77.0127728
+        },
+        {
+          "lat": 38.9276102,
+          "lon": -77.0128946
+        },
+        {
+          "lat": 38.9277598,
+          "lon": -77.0130782
+        },
+        {
+          "lat": 38.9278855,
+          "lon": -77.0132206
+        },
+        {
+          "lat": 38.9279289,
+          "lon": -77.0133351
+        },
+        {
+          "lat": 38.9279346,
+          "lon": -77.013595
+        },
+        {
+          "lat": 38.9279369,
+          "lon": -77.0140619
+        },
+        {
+          "lat": 38.9279369,
+          "lon": -77.0148738
+        },
+        {
+          "lat": 38.9279334,
+          "lon": -77.0151293
+        },
+        {
+          "lat": 38.9278843,
+          "lon": -77.0154038
+        },
+        {
+          "lat": 38.9278443,
+          "lon": -77.0155859
+        },
+        {
+          "lat": 38.9276742,
+          "lon": -77.0158957
+        },
+        {
+          "lat": 38.9274263,
+          "lon": -77.0162539
+        },
+        {
+          "lat": 38.9274252,
+          "lon": -77.0163185
+        },
+        {
+          "lat": 38.9274892,
+          "lon": -77.0165055
+        },
+        {
+          "lat": 38.9276414,
+          "lon": -77.0167347
+        },
+        {
+          "lat": 38.9278056,
+          "lon": -77.0169346
+        },
+        {
+          "lat": 38.9280746,
+          "lon": -77.0171342
+        },
+        {
+          "lat": 38.9282431,
+          "lon": -77.0172251
+        },
+        {
+          "lat": 38.928433,
+          "lon": -77.017276
+        },
+        {
+          "lat": 38.9286563,
+          "lon": -77.0172771
+        },
+        {
+          "lat": 38.9288421,
+          "lon": -77.0172442
+        },
+        {
+          "lat": 38.929024,
+          "lon": -77.017179
+        },
+        {
+          "lat": 38.9291708,
+          "lon": -77.017138
+        },
+        {
+          "lat": 38.9293071,
+          "lon": -77.0170592
+        },
+        {
+          "lat": 38.9295439,
+          "lon": -77.0168659
+        },
+        {
+          "lat": 38.9299969,
+          "lon": -77.0165125
+        },
+        {
+          "lat": 38.9300647,
+          "lon": -77.0164184
+        },
+        {
+          "lat": 38.9300872,
+          "lon": -77.0161368
+        },
+        {
+          "lat": 38.9300784,
+          "lon": -77.0149501
+        },
+        {
+          "lat": 38.9300601,
+          "lon": -77.0138049
+        },
+        {
+          "lat": 38.9300282,
+          "lon": -77.0133821
+        },
+        {
+          "lat": 38.9300305,
+          "lon": -77.012369
+        },
+        {
+          "lat": 38.9300099,
+          "lon": -77.0123132
+        },
+        {
+          "lat": 38.9299683,
+          "lon": -77.0122787
+        },
+        {
+          "lat": 38.927636,
+          "lon": -77.0122772
+        }
+      ],
+      "tags": {
+        "addr:city": "Washington",
+        "addr:housenumber": "110",
+        "addr:postcode": "20010",
+        "addr:state": "DC",
+        "addr:street": "Irving Street Northwest",
+        "amenity": "hospital",
+        "emergency": "yes",
+        "gnis:feature_id": "530936",
+        "healthcare": "hospital",
+        "name": "Washington Hospital Center",
+        "opening_hours": "24/7",
+        "operator": "Medstar Health",
+        "phone": "+1 855-546-1686",
+        "website": "https://www.medstarhealth.org/locations/medstar-washington-hospital-center",
+        "wikidata": "Q7971940"
+      }
+    },
+    {
+      "type": "way",
+      "id": 464307671,
+      "bounds": {
+        "minlat": 38.9301507,
+        "minlon": -77.0163906,
+        "maxlat": 38.9310747,
+        "maxlon": -77.0122684
+      },
+      "nodes": [
+        4594340259,
+        2712937274,
+        4594340217,
+        2712937276,
+        2712937278,
+        4594340216,
+        2712937281,
+        4594340215,
+        2712937285,
+        2712937287,
+        4594340599,
+        4594340263,
+        4594340262,
+        4594340261,
+        4594340260,
+        4594340259
+      ],
+      "geometry": [
+        {
+          "lat": 38.9301721,
+          "lon": -77.0163906
+        },
+        {
+          "lat": 38.9303907,
+          "lon": -77.0162385
+        },
+        {
+          "lat": 38.9305879,
+          "lon": -77.0160572
+        },
+        {
+          "lat": 38.93077,
+          "lon": -77.0158102
+        },
+        {
+          "lat": 38.9309326,
+          "lon": -77.0154119
+        },
+        {
+          "lat": 38.9310051,
+          "lon": -77.0151332
+        },
+        {
+          "lat": 38.9310518,
+          "lon": -77.0148082
+        },
+        {
+          "lat": 38.9310698,
+          "lon": -77.0144792
+        },
+        {
+          "lat": 38.9310683,
+          "lon": -77.0140501
+        },
+        {
+          "lat": 38.9310747,
+          "lon": -77.0123664
+        },
+        {
+          "lat": 38.9310292,
+          "lon": -77.0122684
+        },
+        {
+          "lat": 38.9302035,
+          "lon": -77.0122875
+        },
+        {
+          "lat": 38.9301624,
+          "lon": -77.0123256
+        },
+        {
+          "lat": 38.9301507,
+          "lon": -77.0123893
+        },
+        {
+          "lat": 38.9301561,
+          "lon": -77.016251
+        },
+        {
+          "lat": 38.9301721,
+          "lon": -77.0163906
+        }
+      ],
+      "tags": {
+        "addr:city": "Washington",
+        "addr:housenumber": "102",
+        "addr:postcode": "20010",
+        "addr:street": "Irving Street Northwest",
+        "amenity": "hospital",
+        "emergency": "no",
+        "gnis:feature_id": "530090",
+        "healthcare": "hospital",
+        "name": "National Rehabilitation Hospital",
+        "operator": "Medstar Health",
+        "phone": "+1 855-633-0204",
+        "website": "https://www.medstarnrh.org/",
+        "wikidata": "Q6978012"
+      }
+    },
+    {
+      "type": "way",
+      "id": 464307673,
+      "bounds": {
+        "minlat": 38.9263897,
+        "minlon": -77.0120312,
+        "maxlat": 38.9310915,
+        "maxlon": -77.0073036
+      },
+      "nodes": [
+        2712937289,
+        2712937291,
+        2712937293,
+        2712937296,
+        2712937298,
+        2712937301,
+        2712937303,
+        2712937305,
+        2712937308,
+        2712937309,
+        11194739089,
+        2712937311,
+        2712937316,
+        4594340605,
+        4594340604,
+        4594340601,
+        4594340600,
+        4594340602,
+        4594340603,
+        2712937289
+      ],
+      "geometry": [
+        {
+          "lat": 38.93109,
+          "lon": -77.0119938
+        },
+        {
+          "lat": 38.9310879,
+          "lon": -77.0098996
+        },
+        {
+          "lat": 38.9310915,
+          "lon": -77.0073036
+        },
+        {
+          "lat": 38.9292419,
+          "lon": -77.008381
+        },
+        {
+          "lat": 38.9285266,
+          "lon": -77.008785
+        },
+        {
+          "lat": 38.9278402,
+          "lon": -77.0090544
+        },
+        {
+          "lat": 38.92737,
+          "lon": -77.0091597
+        },
+        {
+          "lat": 38.9269117,
+          "lon": -77.0091937
+        },
+        {
+          "lat": 38.926778,
+          "lon": -77.0092169
+        },
+        {
+          "lat": 38.9267239,
+          "lon": -77.0093887
+        },
+        {
+          "lat": 38.9265113,
+          "lon": -77.0108458
+        },
+        {
+          "lat": 38.9265071,
+          "lon": -77.0108748
+        },
+        {
+          "lat": 38.9263897,
+          "lon": -77.0119752
+        },
+        {
+          "lat": 38.9264287,
+          "lon": -77.0120312
+        },
+        {
+          "lat": 38.926516,
+          "lon": -77.0120312
+        },
+        {
+          "lat": 38.9299625,
+          "lon": -77.0120292
+        },
+        {
+          "lat": 38.930193,
+          "lon": -77.0119982
+        },
+        {
+          "lat": 38.9307776,
+          "lon": -77.0119924
+        },
+        {
+          "lat": 38.9310473,
+          "lon": -77.0120195
+        },
+        {
+          "lat": 38.93109,
+          "lon": -77.0119938
+        }
+      ],
+      "tags": {
+        "access": "private",
+        "addr:city": "Washington",
+        "addr:housenumber": "50",
+        "addr:postcode": "20422",
+        "addr:street": "Irving Street Northwest",
+        "amenity": "hospital",
+        "emergency": "yes",
+        "gnis:feature_id": "529045",
+        "healthcare": "hospital",
+        "name": "Washington DC VA Medical Center",
+        "opening_hours": "24/7",
+        "phone": "+1 202-745-8000",
+        "website": "https://www.washingtondc.va.gov/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 521118443,
+      "bounds": {
+        "minlat": 38.8732842,
+        "minlon": -77.021372,
+        "maxlat": 38.8742769,
+        "maxlon": -77.0205278
+      },
+      "nodes": [
+        1513559387,
+        5078041521,
+        5078041522,
+        5078041523,
+        5078041524,
+        5078041525,
+        5078041526,
+        5078041527,
+        812163913,
+        812164804,
+        812158828,
+        1513559387
+      ],
+      "geometry": [
+        {
+          "lat": 38.8739704,
+          "lon": -77.0205278
+        },
+        {
+          "lat": 38.8739482,
+          "lon": -77.0206183
+        },
+        {
+          "lat": 38.8733051,
+          "lon": -77.0211789
+        },
+        {
+          "lat": 38.8732842,
+          "lon": -77.0212218
+        },
+        {
+          "lat": 38.8733009,
+          "lon": -77.0212594
+        },
+        {
+          "lat": 38.8735076,
+          "lon": -77.021372
+        },
+        {
+          "lat": 38.873541,
+          "lon": -77.021372
+        },
+        {
+          "lat": 38.8735933,
+          "lon": -77.0213291
+        },
+        {
+          "lat": 38.8742769,
+          "lon": -77.0207051
+        },
+        {
+          "lat": 38.8741225,
+          "lon": -77.0206056
+        },
+        {
+          "lat": 38.8740458,
+          "lon": -77.0205655
+        },
+        {
+          "lat": 38.8739704,
+          "lon": -77.0205278
+        }
+      ],
+      "tags": {
+        "amenity": "police",
+        "area": "yes",
+        "man_made": "pier"
+      }
+    },
+    {
+      "type": "way",
+      "id": 549439926,
+      "bounds": {
+        "minlat": 38.8873662,
+        "minlon": -77.0458493,
+        "maxlat": 38.887568,
+        "maxlon": -77.0456453
+      },
+      "nodes": [
+        5307538718,
+        5307538717,
+        5307538716,
+        5307538715,
+        5307538718
+      ],
+      "geometry": [
+        {
+          "lat": 38.8873915,
+          "lon": -77.0458493
+        },
+        {
+          "lat": 38.887568,
+          "lon": -77.0458023
+        },
+        {
+          "lat": 38.8875426,
+          "lon": -77.0456453
+        },
+        {
+          "lat": 38.8873662,
+          "lon": -77.0456923
+        },
+        {
+          "lat": 38.8873915,
+          "lon": -77.0458493
+        }
+      ],
+      "tags": {
+        "addr:street": "Independence Avenue Southwest",
+        "amenity": "police",
+        "building": "yes",
+        "name": "Park Police Riding Office",
+        "operator": "United States Park Police",
+        "operator:short": "USPP",
+        "operator:wikidata": "Q2005254"
+      }
+    },
+    {
+      "type": "way",
+      "id": 655490174,
+      "bounds": {
+        "minlat": 38.8524603,
+        "minlon": -77.0321466,
+        "maxlat": 38.8526412,
+        "maxlon": -77.0319006
+      },
+      "nodes": [
+        6141421670,
+        6141421675,
+        6141421671,
+        6141421672,
+        6141421673,
+        6141421670
+      ],
+      "geometry": [
+        {
+          "lat": 38.8524994,
+          "lon": -77.0321466
+        },
+        {
+          "lat": 38.8525048,
+          "lon": -77.0321448
+        },
+        {
+          "lat": 38.8526412,
+          "lon": -77.0321009
+        },
+        {
+          "lat": 38.8526021,
+          "lon": -77.0319006
+        },
+        {
+          "lat": 38.8524603,
+          "lon": -77.0319463
+        },
+        {
+          "lat": 38.8524994,
+          "lon": -77.0321466
+        }
+      ],
+      "tags": {
+        "amenity": "fire_station",
+        "building": "yes",
+        "name": "MWAA Northern River Rescue Station"
+      }
+    },
+    {
+      "type": "way",
+      "id": 658565908,
+      "bounds": {
+        "minlat": 38.8880451,
+        "minlon": -77.0375484,
+        "maxlat": 38.888267,
+        "maxlon": -77.0373029
+      },
+      "nodes": [
+        6166879260,
+        6166879261,
+        6166879262,
+        6166879263,
+        8313561034,
+        8313561035,
+        6166879264,
+        6166879265,
+        8313561052,
+        8319509430,
+        8313561053,
+        6166879260
+      ],
+      "geometry": [
+        {
+          "lat": 38.8880451,
+          "lon": -77.037436
+        },
+        {
+          "lat": 38.8881652,
+          "lon": -77.0375305
+        },
+        {
+          "lat": 38.8881711,
+          "lon": -77.0375182
+        },
+        {
+          "lat": 38.8882094,
+          "lon": -77.0375484
+        },
+        {
+          "lat": 38.8882328,
+          "lon": -77.0374994
+        },
+        {
+          "lat": 38.8882417,
+          "lon": -77.0374808
+        },
+        {
+          "lat": 38.888267,
+          "lon": -77.0374277
+        },
+        {
+          "lat": 38.8881087,
+          "lon": -77.0373029
+        },
+        {
+          "lat": 38.8880815,
+          "lon": -77.0373597
+        },
+        {
+          "lat": 38.888077,
+          "lon": -77.0373693
+        },
+        {
+          "lat": 38.8880731,
+          "lon": -77.0373774
+        },
+        {
+          "lat": 38.8880451,
+          "lon": -77.037436
+        }
+      ],
+      "tags": {
+        "amenity": "police",
+        "building": "yes",
+        "dataset": "buildings",
+        "dcgis:captureyear": "19990331",
+        "dcgis:lot": "0000",
+        "dcgis:square": "0000",
+        "name": "Survey Lodge Ranger Station",
+        "operator": "National Park Service",
+        "source": "dcgis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 732099139,
+      "bounds": {
+        "minlat": 38.868314,
+        "minlon": -77.0158929,
+        "maxlat": 38.8684243,
+        "maxlon": -77.0157436
+      },
+      "nodes": [
+        6855229132,
+        6855229133,
+        6855229134,
+        6855229135,
+        6855229132
+      ],
+      "geometry": [
+        {
+          "lat": 38.8684243,
+          "lon": -77.0158924
+        },
+        {
+          "lat": 38.8683143,
+          "lon": -77.0158929
+        },
+        {
+          "lat": 38.868314,
+          "lon": -77.015744
+        },
+        {
+          "lat": 38.8684239,
+          "lon": -77.0157436
+        },
+        {
+          "lat": 38.8684243,
+          "lon": -77.0158924
+        }
+      ],
+      "tags": {
+        "addr:city": "Washington",
+        "addr:housenumber": "222",
+        "addr:postcode": "20319",
+        "addr:state": "DC",
+        "addr:street": "4th Avenue Southwest",
+        "amenity": "fire_station",
+        "building": "fire_station",
+        "name": "Fort McNair Fire Station",
+        "operator": "Fort McNair Engine Company 46"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1086368696,
+      "bounds": {
+        "minlat": 38.8943669,
+        "minlon": -77.0257789,
+        "maxlat": 38.8959766,
+        "maxlon": -77.0241735
+      },
+      "nodes": [
+        610816792,
+        610816786,
+        610816785,
+        610816782,
+        10052559668,
+        610816781,
+        9954162816,
+        9954162815,
+        9954162814,
+        9954162813,
+        9954162812,
+        9954162811,
+        9954162810,
+        9954162809,
+        9954162808,
+        9954162807,
+        9954162806,
+        9954162805,
+        610816775,
+        10052559667,
+        610816774,
+        9954178723,
+        9954178724,
+        610816763,
+        610816757,
+        610816751,
+        610816792
+      ],
+      "geometry": [
+        {
+          "lat": 38.8959766,
+          "lon": -77.0257779
+        },
+        {
+          "lat": 38.89518,
+          "lon": -77.0257789
+        },
+        {
+          "lat": 38.8951799,
+          "lon": -77.0256602
+        },
+        {
+          "lat": 38.8947829,
+          "lon": -77.0256608
+        },
+        {
+          "lat": 38.8947375,
+          "lon": -77.0256206
+        },
+        {
+          "lat": 38.8946921,
+          "lon": -77.0255804
+        },
+        {
+          "lat": 38.8946824,
+          "lon": -77.0255453
+        },
+        {
+          "lat": 38.8946561,
+          "lon": -77.0254506
+        },
+        {
+          "lat": 38.8946289,
+          "lon": -77.0253524
+        },
+        {
+          "lat": 38.8946038,
+          "lon": -77.0252621
+        },
+        {
+          "lat": 38.8945794,
+          "lon": -77.0251742
+        },
+        {
+          "lat": 38.894552,
+          "lon": -77.0250752
+        },
+        {
+          "lat": 38.8945233,
+          "lon": -77.0249716
+        },
+        {
+          "lat": 38.8944978,
+          "lon": -77.0248796
+        },
+        {
+          "lat": 38.8944709,
+          "lon": -77.0247827
+        },
+        {
+          "lat": 38.8944436,
+          "lon": -77.0246845
+        },
+        {
+          "lat": 38.8944169,
+          "lon": -77.0245879
+        },
+        {
+          "lat": 38.894385,
+          "lon": -77.0244729
+        },
+        {
+          "lat": 38.8943669,
+          "lon": -77.0244077
+        },
+        {
+          "lat": 38.8944004,
+          "lon": -77.02435
+        },
+        {
+          "lat": 38.8944277,
+          "lon": -77.0243003
+        },
+        {
+          "lat": 38.8944572,
+          "lon": -77.0243003
+        },
+        {
+          "lat": 38.8950991,
+          "lon": -77.0242996
+        },
+        {
+          "lat": 38.895179,
+          "lon": -77.0242995
+        },
+        {
+          "lat": 38.8951789,
+          "lon": -77.0241745
+        },
+        {
+          "lat": 38.8959754,
+          "lon": -77.0241735
+        },
+        {
+          "lat": 38.8959766,
+          "lon": -77.0257779
+        }
+      ],
+      "tags": {
+        "addr:city": "Washington",
+        "addr:housenumber": "935",
+        "addr:postcode": "20535",
+        "addr:state": "DC",
+        "addr:street": "Pennsylvania Avenue Northwest",
+        "air_conditioning": "yes",
+        "amenity": "police",
+        "government": "investigation",
+        "name": "Federal Bureau of Investigation",
+        "name:be": "Федэральнае бюро расследванняў",
+        "name:el": "Κτίριο του Ομοσπονδιακού Γραφείου Ερευνών J Edgar Hoover",
+        "name:en": "Federal Bureau of Investigation",
+        "name:es": "Oficina Federal de Investigación Edificio J Edgar Hoover",
+        "name:pl": "Budynek Federalnego Biura Śledczego J Edgara Hoovera",
+        "name:ru": "Федеральное бюро расследований",
+        "not:operator:wikidata": "Q8333",
+        "office": "government",
+        "operator": "United States Department of Justice",
+        "operator:wikidata": "Q1553390",
+        "short_name": "FBI",
+        "short_name:be": "ФБР",
+        "short_name:en": "FBI",
+        "short_name:ru": "ФБР",
+        "source": "dcgis",
+        "subject:wikidata": "Q8333",
+        "website": "https://www.fbi.gov/",
+        "wikidata": "Q8333",
+        "wikipedia": "en:Federal Bureau of Investigation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1091696488,
+      "bounds": {
+        "minlat": 38.8740769,
+        "minlon": -77.0821324,
+        "maxlat": 38.8744143,
+        "maxlon": -77.0815517
+      },
+      "nodes": [
+        747121697,
+        747121698,
+        747121699,
+        747121700,
+        747121701,
+        747121702,
+        747121703,
+        9494236721,
+        747121704,
+        747121697
+      ],
+      "geometry": [
+        {
+          "lat": 38.8740769,
+          "lon": -77.0817375
+        },
+        {
+          "lat": 38.8742156,
+          "lon": -77.0817663
+        },
+        {
+          "lat": 38.8741743,
+          "lon": -77.0820942
+        },
+        {
+          "lat": 38.8743578,
+          "lon": -77.0821324
+        },
+        {
+          "lat": 38.8744143,
+          "lon": -77.0816836
+        },
+        {
+          "lat": 38.8742545,
+          "lon": -77.0816504
+        },
+        {
+          "lat": 38.8742627,
+          "lon": -77.0815854
+        },
+        {
+          "lat": 38.8741893,
+          "lon": -77.0815702
+        },
+        {
+          "lat": 38.8741003,
+          "lon": -77.0815517
+        },
+        {
+          "lat": 38.8740769,
+          "lon": -77.0817375
+        }
+      ],
+      "tags": {
+        "addr:housenumber": "108",
+        "addr:postcode": "22211",
+        "addr:street": "Sheridan Avenue",
+        "addr:unit": "B",
+        "amenity": "fire_station",
+        "building": "yes",
+        "name": "Fort Myer Fire Department Station 1"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1149556089,
+      "bounds": {
+        "minlat": 38.944901,
+        "minlon": -77.0785961,
+        "maxlat": 38.9450941,
+        "maxlon": -77.0782599
+      },
+      "nodes": [
+        1065887960,
+        306512939,
+        1065888459,
+        10694147539,
+        10694147540,
+        10694147541,
+        10694147542,
+        10694147543,
+        10694147544,
+        10694147545,
+        10694147546,
+        10694147547,
+        1065891126,
+        1065887960
+      ],
+      "geometry": [
+        {
+          "lat": 38.9450941,
+          "lon": -77.0785959
+        },
+        {
+          "lat": 38.9450349,
+          "lon": -77.0785961
+        },
+        {
+          "lat": 38.9450348,
+          "lon": -77.0785428
+        },
+        {
+          "lat": 38.9450074,
+          "lon": -77.0785429
+        },
+        {
+          "lat": 38.9450075,
+          "lon": -77.0785771
+        },
+        {
+          "lat": 38.9449016,
+          "lon": -77.0785774
+        },
+        {
+          "lat": 38.944901,
+          "lon": -77.0782603
+        },
+        {
+          "lat": 38.945007,
+          "lon": -77.0782599
+        },
+        {
+          "lat": 38.945007,
+          "lon": -77.0782964
+        },
+        {
+          "lat": 38.9450499,
+          "lon": -77.0782963
+        },
+        {
+          "lat": 38.9450499,
+          "lon": -77.0783196
+        },
+        {
+          "lat": 38.9450935,
+          "lon": -77.0783194
+        },
+        {
+          "lat": 38.9450936,
+          "lon": -77.0783533
+        },
+        {
+          "lat": 38.9450941,
+          "lon": -77.0785959
+        }
+      ],
+      "tags": {
+        "addr:city": "Washington",
+        "addr:housenumber": "4300",
+        "addr:state": "DC",
+        "addr:street": "Wisconsin Avenue Northwest",
+        "alt_name": "Tenleytown Firehouse",
+        "amenity": "fire_station",
+        "building": "yes",
+        "dataset": "address",
+        "dcgis:lot": "0804",
+        "dcgis:square": "1783",
+        "name": "DC Fire Department Engine Co. 20",
+        "operator": "District of Columbia Fire Department",
+        "source": "dcgis"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1266650314,
+      "bounds": {
+        "minlat": 38.8872681,
+        "minlon": -77.046193,
+        "maxlat": 38.8880759,
+        "maxlon": -77.0446667
+      },
+      "nodes": [
+        8345641780,
+        10263347751,
+        8345680991,
+        8345641787,
+        8345680997,
+        10263347752,
+        8345641785,
+        8345680972,
+        8345641780
+      ],
+      "geometry": [
+        {
+          "lat": 38.8880759,
+          "lon": -77.0446767
+        },
+        {
+          "lat": 38.8880673,
+          "lon": -77.0456123
+        },
+        {
+          "lat": 38.8877333,
+          "lon": -77.0460861
+        },
+        {
+          "lat": 38.8873181,
+          "lon": -77.046193
+        },
+        {
+          "lat": 38.8873099,
+          "lon": -77.0460047
+        },
+        {
+          "lat": 38.8872961,
+          "lon": -77.0456433
+        },
+        {
+          "lat": 38.8872681,
+          "lon": -77.0448847
+        },
+        {
+          "lat": 38.8876121,
+          "lon": -77.0446667
+        },
+        {
+          "lat": 38.8880759,
+          "lon": -77.0446767
+        }
+      ],
+      "tags": {
+        "access": "private",
+        "addr:street": "Independence Avenue Southwest",
+        "amenity": "police",
+        "covered": "no",
+        "indoor": "no",
+        "lit": "yes",
+        "name": "National Park Service Stables"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 3960821,
+      "bounds": {
+        "minlat": 38.9279507,
+        "minlon": -77.0112807,
+        "maxlat": 38.9299623,
+        "maxlon": -77.0088698
+      },
+      "members": [
+        {
+          "type": "way",
+          "ref": 297762598,
+          "role": "outer",
+          "geometry": [
+            {
+              "lat": 38.9297348,
+              "lon": -77.0097686
+            },
+            {
+              "lat": 38.9297363,
+              "lon": -77.0099792
+            },
+            {
+              "lat": 38.9297146,
+              "lon": -77.0099787
+            },
+            {
+              "lat": 38.9296943,
+              "lon": -77.0099783
+            },
+            {
+              "lat": 38.9296938,
+              "lon": -77.0099994
+            },
+            {
+              "lat": 38.9296931,
+              "lon": -77.0100308
+            },
+            {
+              "lat": 38.9297354,
+              "lon": -77.0100316
+            },
+            {
+              "lat": 38.9297347,
+              "lon": -77.0100487
+            },
+            {
+              "lat": 38.9294293,
+              "lon": -77.0100495
+            },
+            {
+              "lat": 38.9294301,
+              "lon": -77.0099551
+            },
+            {
+              "lat": 38.9294317,
+              "lon": -77.009761
+            },
+            {
+              "lat": 38.9294333,
+              "lon": -77.0095646
+            },
+            {
+              "lat": 38.9294286,
+              "lon": -77.0095645
+            },
+            {
+              "lat": 38.9294303,
+              "lon": -77.0094239
+            },
+            {
+              "lat": 38.9293996,
+              "lon": -77.0094239
+            },
+            {
+              "lat": 38.9293995,
+              "lon": -77.0093932
+            },
+            {
+              "lat": 38.9293135,
+              "lon": -77.009392
+            },
+            {
+              "lat": 38.9293137,
+              "lon": -77.0092924
+            },
+            {
+              "lat": 38.9292613,
+              "lon": -77.0092908
+            },
+            {
+              "lat": 38.9292616,
+              "lon": -77.0092095
+            },
+            {
+              "lat": 38.9292745,
+              "lon": -77.0092095
+            },
+            {
+              "lat": 38.9292809,
+              "lon": -77.0089043
+            },
+            {
+              "lat": 38.9292568,
+              "lon": -77.0089023
+            },
+            {
+              "lat": 38.9292567,
+              "lon": -77.0088715
+            },
+            {
+              "lat": 38.9291907,
+              "lon": -77.0088698
+            },
+            {
+              "lat": 38.9291895,
+              "lon": -77.0088941
+            },
+            {
+              "lat": 38.9285137,
+              "lon": -77.0088946
+            },
+            {
+              "lat": 38.9285127,
+              "lon": -77.0089244
+            },
+            {
+              "lat": 38.9284886,
+              "lon": -77.0089255
+            },
+            {
+              "lat": 38.9284906,
+              "lon": -77.0090989
+            },
+            {
+              "lat": 38.9283495,
+              "lon": -77.009099
+            },
+            {
+              "lat": 38.9283491,
+              "lon": -77.0090692
+            },
+            {
+              "lat": 38.92826,
+              "lon": -77.0090695
+            },
+            {
+              "lat": 38.9282581,
+              "lon": -77.0091076
+            },
+            {
+              "lat": 38.9282606,
+              "lon": -77.0091079
+            },
+            {
+              "lat": 38.9282608,
+              "lon": -77.0093762
+            },
+            {
+              "lat": 38.9280423,
+              "lon": -77.0093775
+            },
+            {
+              "lat": 38.9280416,
+              "lon": -77.0093495
+            },
+            {
+              "lat": 38.9279763,
+              "lon": -77.0093503
+            },
+            {
+              "lat": 38.9279755,
+              "lon": -77.0093812
+            },
+            {
+              "lat": 38.9279525,
+              "lon": -77.0093809
+            },
+            {
+              "lat": 38.9279523,
+              "lon": -77.0094178
+            },
+            {
+              "lat": 38.9279507,
+              "lon": -77.0096728
+            },
+            {
+              "lat": 38.9280391,
+              "lon": -77.0096708
+            },
+            {
+              "lat": 38.9280407,
+              "lon": -77.0096582
+            },
+            {
+              "lat": 38.9282668,
+              "lon": -77.0096582
+            },
+            {
+              "lat": 38.9282675,
+              "lon": -77.0097064
+            },
+            {
+              "lat": 38.9282696,
+              "lon": -77.0098446
+            },
+            {
+              "lat": 38.9284029,
+              "lon": -77.0098433
+            },
+            {
+              "lat": 38.9284035,
+              "lon": -77.01006
+            },
+            {
+              "lat": 38.9284496,
+              "lon": -77.0100618
+            },
+            {
+              "lat": 38.9284495,
+              "lon": -77.0101437
+            },
+            {
+              "lat": 38.9283944,
+              "lon": -77.010146
+            },
+            {
+              "lat": 38.9283943,
+              "lon": -77.0104125
+            },
+            {
+              "lat": 38.9282934,
+              "lon": -77.0104148
+            },
+            {
+              "lat": 38.9282928,
+              "lon": -77.0102372
+            },
+            {
+              "lat": 38.9280418,
+              "lon": -77.0102367
+            },
+            {
+              "lat": 38.9280408,
+              "lon": -77.0105136
+            },
+            {
+              "lat": 38.9280226,
+              "lon": -77.0105132
+            },
+            {
+              "lat": 38.928023,
+              "lon": -77.0105409
+            },
+            {
+              "lat": 38.9280407,
+              "lon": -77.0105418
+            },
+            {
+              "lat": 38.9280395,
+              "lon": -77.0108757
+            },
+            {
+              "lat": 38.9282941,
+              "lon": -77.0108754
+            },
+            {
+              "lat": 38.9282939,
+              "lon": -77.0108907
+            },
+            {
+              "lat": 38.9283559,
+              "lon": -77.0108919
+            },
+            {
+              "lat": 38.9283558,
+              "lon": -77.0109075
+            },
+            {
+              "lat": 38.9284048,
+              "lon": -77.0109078
+            },
+            {
+              "lat": 38.9284048,
+              "lon": -77.0110966
+            },
+            {
+              "lat": 38.9285641,
+              "lon": -77.0110954
+            },
+            {
+              "lat": 38.9285644,
+              "lon": -77.0110772
+            },
+            {
+              "lat": 38.9287284,
+              "lon": -77.0110787
+            },
+            {
+              "lat": 38.928729,
+              "lon": -77.0110443
+            },
+            {
+              "lat": 38.9290355,
+              "lon": -77.0110425
+            },
+            {
+              "lat": 38.9290349,
+              "lon": -77.0110959
+            },
+            {
+              "lat": 38.9291508,
+              "lon": -77.0110978
+            },
+            {
+              "lat": 38.9291491,
+              "lon": -77.0112779
+            },
+            {
+              "lat": 38.9292661,
+              "lon": -77.0112807
+            },
+            {
+              "lat": 38.9292674,
+              "lon": -77.0112366
+            },
+            {
+              "lat": 38.9294599,
+              "lon": -77.0112383
+            },
+            {
+              "lat": 38.9294637,
+              "lon": -77.01113
+            },
+            {
+              "lat": 38.9294925,
+              "lon": -77.0111298
+            },
+            {
+              "lat": 38.9294933,
+              "lon": -77.0110977
+            },
+            {
+              "lat": 38.9296873,
+              "lon": -77.0110975
+            },
+            {
+              "lat": 38.9296879,
+              "lon": -77.0109474
+            },
+            {
+              "lat": 38.929468,
+              "lon": -77.010947
+            },
+            {
+              "lat": 38.9294693,
+              "lon": -77.0106592
+            },
+            {
+              "lat": 38.9295873,
+              "lon": -77.0106604
+            },
+            {
+              "lat": 38.929587,
+              "lon": -77.010797
+            },
+            {
+              "lat": 38.9296462,
+              "lon": -77.0107994
+            },
+            {
+              "lat": 38.9296503,
+              "lon": -77.0107891
+            },
+            {
+              "lat": 38.929668,
+              "lon": -77.0107998
+            },
+            {
+              "lat": 38.9296461,
+              "lon": -77.0108896
+            },
+            {
+              "lat": 38.9296792,
+              "lon": -77.0108997
+            },
+            {
+              "lat": 38.9296946,
+              "lon": -77.0108453
+            },
+            {
+              "lat": 38.9297119,
+              "lon": -77.0108003
+            },
+            {
+              "lat": 38.929767,
+              "lon": -77.0106822
+            },
+            {
+              "lat": 38.9298195,
+              "lon": -77.0106033
+            },
+            {
+              "lat": 38.9298524,
+              "lon": -77.0106033
+            },
+            {
+              "lat": 38.9298525,
+              "lon": -77.0103144
+            },
+            {
+              "lat": 38.9299619,
+              "lon": -77.0103128
+            },
+            {
+              "lat": 38.9299623,
+              "lon": -77.0100591
+            },
+            {
+              "lat": 38.9298525,
+              "lon": -77.0100578
+            },
+            {
+              "lat": 38.929852,
+              "lon": -77.0097703
+            },
+            {
+              "lat": 38.9297378,
+              "lon": -77.0097686
+            },
+            {
+              "lat": 38.9297348,
+              "lon": -77.0097686
+            }
+          ]
+        },
+        {
+          "type": "way",
+          "ref": 297762584,
+          "role": "inner",
+          "geometry": [
+            {
+              "lat": 38.9283829,
+              "lon": -77.0108761
+            },
+            {
+              "lat": 38.9283846,
+              "lon": -77.010682
+            },
+            {
+              "lat": 38.9282939,
+              "lon": -77.0106821
+            },
+            {
+              "lat": 38.9282937,
+              "lon": -77.0105507
+            },
+            {
+              "lat": 38.9283231,
+              "lon": -77.0105511
+            },
+            {
+              "lat": 38.9283242,
+              "lon": -77.01049
+            },
+            {
+              "lat": 38.9283908,
+              "lon": -77.010491
+            },
+            {
+              "lat": 38.9283938,
+              "lon": -77.010451
+            },
+            {
+              "lat": 38.9284496,
+              "lon": -77.0104519
+            },
+            {
+              "lat": 38.9284497,
+              "lon": -77.0108754
+            },
+            {
+              "lat": 38.9283829,
+              "lon": -77.0108761
+            }
+          ]
+        }
+      ],
+      "tags": {
+        "addr:city": "Washington",
+        "addr:housenumber": "50",
+        "addr:postcode": "20422",
+        "addr:state": "DC",
+        "addr:street": "Irving Street Northwest",
+        "amenity": "hospital",
+        "building": "hospital",
+        "dcgis:gis_id": "97865",
+        "healthcare": "hospital",
+        "healthcare:for": "veteran",
+        "name": "Wasington DC VA Medical Center",
+        "operator": "Veterans Health Administration",
+        "operator:short": "VA",
+        "operator:wikidata": "Q6580225",
+        "short_name": "VA",
+        "type": "multipolygon"
+      }
+    }
+  ]
+}

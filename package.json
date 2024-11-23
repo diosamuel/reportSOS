@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
@@ -19,7 +19,8 @@
     "react-toastify": "^10.0.6",
     "react-voice-visualizer": "^2.0.4",
     "react-webcam": "^7.2.0",
-    "shake.js": "^1.2.2"
+    "shake.js": "^1.2.2",
+    "zustand": "^5.0.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.13.0",

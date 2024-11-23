@@ -15,12 +15,14 @@ import { useGeolocated } from "react-geolocated";
 import L from "leaflet";
 import useDebounce from "../hook/useDebounce";
 import { useNavigate } from "react-router-dom";
+import useReportStore from "../store/useReportStore";
 
 function Maps() {
   const [query, setQuery] = useState("");
   const debouncedQuery = useDebounce(query, 500);
   const [pos, setPos] = useState(null);
   const [newPosition, setNewPosition] = useState(null);
+  const setGeolocation = useReportStore((state) => state.setGeolocation);
   const { coords, isGeolocationAvailable, isGeolocationEnabled } =
     useGeolocated({
       positionOptions: {
@@ -54,10 +56,12 @@ function Maps() {
     }
   }, [debouncedQuery]);
 
-  let navigate = useNavigate()
-  const reportDanger = () =>{
-    navigate("/camera")
-  }
+  let navigate = useNavigate();
+  const reportDanger = () => {
+    setGeolocation(pos);
+    console.log("SENT\n",pos)
+    navigate("/camera");
+  };
 
   async function getAddressFromCoordinate(lat, lon) {
     const API_REVERSE = `https://nominatim.openstreetmap.org/reverse.php?lat=${lat}&lon=${lon}&zoom=18&layer=address&format=jsonv2`;
@@ -142,7 +146,17 @@ function Maps() {
   return !isGeolocationAvailable ? (
     <div>Your browser does not support Geolocation</div>
   ) : !isGeolocationEnabled ? (
-    <div className="h-screen">Geolocation is not enabled</div>
+    <>
+      <div className="h-screen flex flex-col justify-center items-center text-center font-semibold">
+        <h1 className="text-xl">Geolocation is not enabled, please enable</h1>
+        <button
+          className="bg-red-600 px-5 py-2 rounded-full justify-end text-white shadow-lg"
+          onClick={reportDanger}
+        >
+          Skip this step
+        </button>
+      </div>
+    </>
   ) : coords ? (
     <>
       {pos && (
@@ -157,6 +171,11 @@ function Maps() {
         </div>
       )}
 
+      <div className="fixed z-50 left-16 top-4 md:top-[1.5em]">
+        <h1 className="md:text-3xl md:w-40 text-lg w-20 font-bold">
+          Find your Location
+        </h1>
+      </div>
       <div className="gap-2 w-4/12 md:w-2/12 flex flex-col fixed z-50 right-0 top-[15em] shadow-lg">
         <button
           className="flex gap-3 px-3 py-3 bg-white border rounded-l-md"
@@ -201,7 +220,10 @@ function Maps() {
           </svg>
           Choose
         </button>
-        <button className="flex gap-3 px-3 py-3 rounded-l-md bg-red-600 text-white" onClick={reportDanger}>
+        <button
+          className="flex gap-3 px-3 py-3 rounded-l-md bg-red-600 text-white"
+          onClick={reportDanger}
+        >
           Proceed
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -222,7 +244,7 @@ function Maps() {
           </svg>
         </button>
       </div>
-      <div className="fixed bottom-2 left-1/2 transform -translate-x-1/2 z-50 w-9/12 md:w-6/12">
+      {/* <div className="fixed bottom-2 left-1/2 transform -translate-x-1/2 z-50 w-9/12 md:w-6/12">
         <div className="w-full bg-white h-[50px] mb-2 rounded p-3">{query}</div>
         <input
           className="w-full rounded-full p-3 border border-black"
@@ -230,7 +252,7 @@ function Maps() {
           value={query}
           onChange={(e) => setQuery(e.target.value)}
         />
-      </div>
+      </div> */}
       <section className="h-screen">
         {pos && (
           <MapContainer

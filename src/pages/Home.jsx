@@ -51,7 +51,10 @@ function Home() {
             </h1>
           </div>
           <div className="flex flex-col gap-4 w-8/12">
-            <button className="text-white border-white border px-3 py-4 rounded-full">
+            <button className="text-white border-white border px-3 py-4 rounded-full" onClick={()=>{
+              setTrigger(false)
+              setIsRunning(false)
+            }}>
               ❌ Cancel
             </button>
             <button className="flex gap-6 items-center bg-white rounded-full px-3 py-2" onClick={reportDanger}>
@@ -69,12 +72,12 @@ function Home() {
           </div>
         </div>
       ) : (
-        <div className="flex flex-col items-center text-center gap-9 m-5">
+        <div className="h-screen flex flex-col items-center text-center gap-9 m-5">
           <h1 className="text-4xl font-semibold mb-5 rounded-full bg-red-500 text-white p-5">
             🚨ReportSOS
           </h1>
           <h1 className="text-2xl font-medium w-9/12">
-            Shake your phone to report, or click button below
+            Shake your phone to send an emergency alert, or tap the SOS button below.
           </h1>
           <button
             onClick={triggerSOS}
