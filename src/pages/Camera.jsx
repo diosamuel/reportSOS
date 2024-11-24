@@ -1,12 +1,12 @@
-import { useRef, useState, useEffect, useCallback } from "react";
-import Webcam from "react-webcam";
-import Layout from "../Layout";
-import { useNavigate } from "react-router-dom";
-import useReportStore from "../store/useReportStore";
+import { useRef, useState, useEffect, useCallback } from 'react';
+import Webcam from 'react-webcam';
+import Layout from '../Layout';
+import { useNavigate } from 'react-router-dom';
+import useReportStore from '../store/useReportStore';
 
 function base64ToFile(base64String, filename, mimeType) {
   // Decode the base64 string
-  const byteString = atob(base64String.split(",")[1]);
+  const byteString = atob(base64String.split(',')[1]);
   const arrayBuffer = new ArrayBuffer(byteString.length);
   const uintArray = new Uint8Array(arrayBuffer);
 
@@ -30,12 +30,12 @@ const WebcamCapture = () => {
   const videoConstraints = {
     width: 1280,
     height: 720,
-    facingMode: rotate ? "environment" : "user",
+    facingMode: rotate ? 'environment' : 'user',
   };
 
   const capture = useCallback(() => {
     const imageSrc = webcamRef.current.getScreenshot();
-    const imageBinary = base64ToFile(imageSrc, "image.jpg", "image/jpg");
+    const imageBinary = base64ToFile(imageSrc, 'image.jpg', 'image/jpg');
     setCapture(imageSrc);
     setImage(imageBinary);
   }, [webcamRef]);
@@ -48,16 +48,14 @@ const WebcamCapture = () => {
   };
 
   const reportDanger = () => {
-    console.log("SENT\n", setImage);
-    navigate("/result");
+    console.log('SENT\n', setImage);
+    navigate('/result');
   };
   return (
     <Layout className="relative h-screen">
       <div className="h-screen">
         <div className="m-5 space-y-2">
-          <h1 className="text-2xl font-bold w-3/4">
-            Can you capture sorrounding?
-          </h1>
+          <h1 className="text-2xl font-bold w-3/4">Can you capture sorrounding?</h1>
           <p className="text-xl">It'll be helpful fo us to get information</p>
         </div>
         {capturedImage ? (
@@ -100,34 +98,22 @@ const WebcamCapture = () => {
         )}
         {capturedImage ? (
           <div className="flex flex-col items-center justify-center mt-5 gap-3 fixed bottom-3 md:relative w-full">
-            <button
-              onClick={reset}
-              className="border border-red-500 p-3 rounded-full text-center w-11/12 text-red-500"
-            >
+            <button onClick={reset} className="border border-red-500 p-3 rounded-full text-center w-11/12 text-red-500">
               Reset photo
             </button>
-            <button
-              onClick={reportDanger}
-              className="bg-red-500 p-3 rounded-full text-center w-11/12 text-white"
-            >
+            <button onClick={reportDanger} className="bg-red-500 p-3 rounded-full text-center w-11/12 text-white">
               Proceed
             </button>
           </div>
         ) : (
           <>
             <div className="flex flex-col items-center justify-center mt-5 w-full md:relative">
-              <button
-                onClick={capture}
-                className="bg-red-500 p-3 rounded-full text-center w-11/12 text-white"
-              >
+              <button onClick={capture} className="bg-red-500 p-3 rounded-full text-center w-11/12 text-white">
                 Capture photo
               </button>
             </div>
             <div className="flex flex-col items-center justify-center mt-10 w-full md:relative">
-              <button
-                onClick={reportDanger}
-                className="border border-red-500 p-2 rounded-md text-red-500 text-center w-fit"
-              >
+              <button onClick={reportDanger} className="border border-red-500 p-2 rounded-md text-red-500 text-center w-fit">
                 Skip this step
               </button>
             </div>

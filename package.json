@@ -8,7 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "pretty":"prettier . --check"
+    "pretty": "prettier . --write"
   },
   "dependencies": {
     "leaflet": "^1.9.4",

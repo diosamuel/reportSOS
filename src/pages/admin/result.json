@@ -1,298 +1,293 @@
 {
-	"status": 200,
-	"message": "Success",
-	"data": {
-        "image":"image-1732356307514-507591873.jpg",
-        "audio":"audio-1732356307470-825003580.mp3",
-        "status":true,
-        "datetime":"2024-11-23 10:05:09.43919",
-		"nominatim": {
-			"place_id": 28525870,
-			"licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
-			"osm_type": "way",
-			"osm_id": 770582044,
-			"lat": "-5.3667628999999994",
-			"lon": "105.3148909843239",
-			"category": "amenity",
-			"type": "university",
-			"place_rank": 30,
-			"importance": 0.3323460935801182,
-			"addresstype": "amenity",
-			"name": "Institut Teknologi Sumatera",
-			"display_name": "Institut Teknologi Sumatera, Jalan Kaswari, Way Huwi, Lampung Selatan, Lampung, Sumatera, 35365, Indonesia",
-			"address": {
-				"amenity": "Institut Teknologi Sumatera",
-				"road": "Jalan Kaswari",
-				"village": "Way Huwi",
-				"county": "Lampung Selatan",
-				"state": "Lampung",
-				"ISO3166-2-lvl4": "ID-LA",
-				"region": "Sumatera",
-				"ISO3166-2-lvl3": "ID-SM",
-				"postcode": "35365",
-				"country": "Indonesia",
-				"country_code": "id"
-			},
-			"boundingbox": [
-				"-5.3723321",
-				"-5.3546964",
-				"105.3073829",
-				"105.3213948"
-			]
-		},
-		"assemblyai": {
-			"transcribe": {
-				"id": "42680ce4-70aa-4151-a5cd-c11b4e224d56",
-				"language_model": "assemblyai_default",
-				"acoustic_model": "assemblyai_default",
-				"language_code": "en",
-				"status": "completed",
-				"audio_url": "https://cdn.assemblyai.com/upload/a4c7eac1-2020-49f9-a0f7-7a787fb11bb3",
-				"text": "Ambulance service. Tell me exactly what's happened. Mummy fell down a. Stairs. Your mummy fell down the stairs? Sorry. She's got a baby. Did Mummy and the baby fall down the stairs at the same time? Yes. All right, my darling. We're gonna help Mummy, okay? So can you go up to your mummy for me? You're with Mummy, all right? Is Mummy breathing? Yes. Mummy's breathing, is she? Yes. All right, my lovely. Bear with me in second, okay? Stay on the phone. I'm not going to hang up the phone. Okay. How's the baby? In Mummy's tummy. The baby's in Mummy's tummy. Okay, sweetie. All right, my darling. That's okay. Do you know where Mummy's hurt? Where did Mummy hurt herself? Apart from her head? Is she hurt anywhere else? No. No. Okay. And has Mummy got her eyes open? Is she talking to you? Going back to sleep now. She's gone back to sleep now. Okay, but, Emma, the ambulance has come in, my lovely, so I'm going to stay on the phone with you, okay? Suicide. And I want you to watch your mummy and make sure that Mummy's breathing, okay? Do you know what that means?",
-				"utterances": null,
-				"confidence": 0.8554641,
-				"audio_duration": 69,
-				"punctuate": true,
-				"format_text": true,
-				"dual_channel": null,
-				"webhook_url": null,
-				"webhook_status_code": null,
-				"webhook_auth": false,
-				"webhook_auth_header_name": null,
-				"speed_boost": false,
-				"auto_highlights_result": null,
-				"auto_highlights": false,
-				"audio_start_from": null,
-				"audio_end_at": null,
-				"word_boost": [],
-				"boost_param": null,
-				"filter_profanity": false,
-				"redact_pii": false,
-				"redact_pii_audio": false,
-				"redact_pii_audio_quality": null,
-				"redact_pii_policies": null,
-				"redact_pii_sub": null,
-				"speaker_labels": false,
-				"content_safety": false,
-				"iab_categories": true,
-				"content_safety_labels": {
-					"status": "unavailable",
-					"results": [],
-					"summary": {}
-				},
-				"iab_categories_result": {
-					"status": "success",
-					"results": [
-						{
-							"text": "Ambulance service. Tell me exactly what's happened. Mummy fell down a. Stairs. Your mummy fell down the stairs? Sorry. She's got a baby. Did Mummy and the baby fall down the stairs at the same time? Yes. All right, my darling. We're gonna help Mummy, okay? So can you go up to your mummy for me? You're with Mummy, all right? Is Mummy breathing? Yes. Mummy's breathing, is she? Yes.",
-							"labels": [
-								{
-									"relevance": 0.92642707,
-									"label": "MedicalHealth>DiseasesAndConditions>Injuries>FirstAid"
-								},
-								{
-									"relevance": 0.060026005,
-									"label": "MedicalHealth>DiseasesAndConditions>Injuries"
-								},
-								{
-									"relevance": 0.027153142,
-									"label": "EventsAndAttractions>PersonalCelebrations&LifeEvents>Birth"
-								},
-								{
-									"relevance": 0.022004865,
-									"label": "FamilyAndRelationships>Bereavement"
-								},
-								{
-									"relevance": 0.0121492995,
-									"label": "NewsAndPolitics>Disasters"
-								},
-								{
-									"relevance": 0.008450843,
-									"label": "FamilyAndRelationships>Parenting"
-								},
-								{
-									"relevance": 0.003075551,
-									"label": "EventsAndAttractions>PersonalCelebrations&LifeEvents>BabyShower"
-								},
-								{
-									"relevance": 0.0023089908,
-									"label": "FamilyAndRelationships>Parenting>ParentingBabiesAndToddlers"
-								},
-								{
-									"relevance": 0.002301266,
-									"label": "HealthyLiving>Children'sHealth"
-								},
-								{
-									"relevance": 0.001564841,
-									"label": "Automotive>AutoSafety"
-								}
-							],
-							"timestamp": {
-								"start": 920,
-								"end": 28045
-							},
-							"sentences_idx_end": 15,
-							"sentences_idx_start": 0
-						},
-						{
-							"text": "All right, my lovely. Bear with me in second, okay? Stay on the phone. I'm not going to hang up the phone. Okay. How's the baby? In Mummy's tummy. The baby's in Mummy's tummy. Okay, sweetie. All right, my darling. That's okay. Do you know where Mummy's hurt? Where did Mummy hurt herself? Apart from her head? Is she hurt anywhere else? No. No. Okay.",
-							"labels": [
-								{
-									"relevance": 0.23025425,
-									"label": "EventsAndAttractions>PersonalCelebrations&LifeEvents>Birth"
-								},
-								{
-									"relevance": 0.070219435,
-									"label": "FamilyAndRelationships>Parenting"
-								},
-								{
-									"relevance": 0.026906298,
-									"label": "FamilyAndRelationships>Parenting>ParentingBabiesAndToddlers"
-								},
-								{
-									"relevance": 0.0248562,
-									"label": "MedicalHealth>DiseasesAndConditions>ReproductiveHealth>Pregnancy"
-								},
-								{
-									"relevance": 0.009060709,
-									"label": "EventsAndAttractions>PersonalCelebrations&LifeEvents>BabyShower"
-								},
-								{
-									"relevance": 0.008992042,
-									"label": "FamilyAndRelationships>Bereavement"
-								},
-								{
-									"relevance": 0.008687312,
-									"label": "PopCulture>CelebrityPregnancy"
-								},
-								{
-									"relevance": 0.0058177416,
-									"label": "HealthyLiving>Children'sHealth"
-								},
-								{
-									"relevance": 0.00477685,
-									"label": "MedicalHealth>DiseasesAndConditions>Injuries>FirstAid"
-								},
-								{
-									"relevance": 0.0010056271,
-									"label": "MedicalHealth>DiseasesAndConditions>Injuries"
-								}
-							],
-							"timestamp": {
-								"start": 28205,
-								"end": 48341
-							},
-							"sentences_idx_start": 16,
-							"sentences_idx_end": 33
-						},
-						{
-							"text": "And has Mummy got her eyes open? Is she talking to you? Going back to sleep now. She's gone back to sleep now. Okay, but, Emma, the ambulance has come in, my lovely, so I'm going to stay on the phone with you, okay? Suicide. And I want you to watch your mummy and make sure that Mummy's breathing, okay? Do you know what that means?",
-							"labels": [
-								{
-									"relevance": 0.79959667,
-									"label": "FamilyAndRelationships>Bereavement"
-								},
-								{
-									"relevance": 0.060935996,
-									"label": "MedicalHealth>DiseasesAndConditions>Injuries>FirstAid"
-								},
-								{
-									"relevance": 0.008361157,
-									"label": "EventsAndAttractions>PersonalCelebrations&LifeEvents>Funeral"
-								},
-								{
-									"relevance": 0.0035969932,
-									"label": "FamilyAndRelationships>Parenting"
-								},
-								{
-									"relevance": 0.0035792515,
-									"label": "EventsAndAttractions>PersonalCelebrations&LifeEvents>Birth"
-								},
-								{
-									"relevance": 0.0019393131,
-									"label": "MedicalHealth>DiseasesAndConditions>Injuries"
-								},
-								{
-									"relevance": 0.0012021025,
-									"label": "PopCulture>CelebrityDeaths"
-								},
-								{
-									"relevance": 0.0010567487,
-									"label": "MedicalHealth>DiseasesAndConditions>ColdAndFlu"
-								},
-								{
-									"relevance": 0.0008932235,
-									"label": "Pets>Cats"
-								},
-								{
-									"relevance": 0.0007736728,
-									"label": "NewsAndPolitics>Disasters"
-								}
-							],
-							"timestamp": {
-								"start": 48373,
-								"end": 64755
-							},
-							"sentences_idx_start": 34,
-							"sentences_idx_end": 41
-						}
-					],
-					"summary": {
-						"FamilyAndRelationships>Parenting": 0.08291902,
-						"PopCulture>CelebrityDeaths": 0.002182516,
-						"EventsAndAttractions>PersonalCelebrations&LifeEvents>Funeral": 0.0089243045,
-						"MedicalHealth>DiseasesAndConditions>Injuries>FirstAid": 1,
-						"MedicalHealth>DiseasesAndConditions>ColdAndFlu": 0.002166984,
-						"FamilyAndRelationships>Parenting>ParentingBabiesAndToddlers": 0.02984062,
-						"PopCulture>CelebrityPregnancy": 0.010166817,
-						"MedicalHealth>DiseasesAndConditions>Injuries": 0.06346982,
-						"FamilyAndRelationships>Parenting>AdoptionAndFostering": 0.0013814373,
-						"EventsAndAttractions>PersonalCelebrations&LifeEvents>BabyShower": 0.012628027,
-						"HealthyLiving>Children'sHealth": 0.008588958,
-						"Automotive>AutoSafety": 0.0020979391,
-						"NewsAndPolitics>Disasters": 0.01349266,
-						"HealthyLiving>FitnessAndExercise>RunningAndJogging": 0.0013344471,
-						"MedicalHealth>DiseasesAndConditions>ReproductiveHealth>Pregnancy": 0.026798213,
-						"FamilyAndRelationships": 0.0013723652,
-						"FamilyAndRelationships>Bereavement": 0.8371739,
-						"Pets>Cats": 0.0020317067,
-						"FamilyAndRelationships>Parenting>ParentingChildrenAged4-11": 0.001381047,
-						"EventsAndAttractions>PersonalCelebrations&LifeEvents>Birth": 0.26305428
-					}
-				},
-				"language_detection": true,
-				"language_confidence_threshold": null,
-				"language_confidence": 0.781,
-				"custom_spelling": null,
-				"throttled": false,
-				"auto_chapters": false,
-				"summarization": false,
-				"summary_type": null,
-				"summary_model": null,
-				"custom_topics": false,
-				"topics": [],
-				"speech_threshold": null,
-				"speech_model": "best",
-				"chapters": null,
-				"disfluencies": false,
-				"entity_detection": true,
-				"sentiment_analysis": false,
-				"sentiment_analysis_results": null,
-				"entities": [
-					{
-						"entity_type": "person_name",
-						"text": "Emma",
-						"start": 55611,
-						"end": 55875
-					}
-				],
-				"speakers_expected": null,
-				"summary": null,
-				"custom_topics_results": null,
-				"is_deleted": null,
-				"multichannel": null
-			},
-			"llm": "{\n                    \"activities\":\"Mother has fallen down the stairs with a baby in her tummy.\",\n                    \"summary\": \"A child calls an ambulance service to report that their mother has fallen down the stairs with a baby in her tummy. The child is asked to check on the mother's condition, including whether she is breathing and has any other injuries, and to stay on the phone until the ambulance arrives.\",\n                    \"key_points\": [\n                        \"Mother has fallen down the stairs with a baby in her tummy\",\n                        \"Child calls ambulance service for help\",\n                        \"Child is asked to check on mother's condition, including breathing and other injuries\",\n                        \"Child is asked to stay on the phone until the ambulance arrives\"\n                    ],\n                    \"tone\": \"Calm, reassuring, and directive\",\n                    \"context\":\"This is an emergency call for assistance.\",\n                    \"status\":\"Critical\"\n                }"
-		}
-	}
+  "status": 200,
+  "message": "Success",
+  "data": {
+    "image": "image-1732356307514-507591873.jpg",
+    "audio": "audio-1732356307470-825003580.mp3",
+    "status": true,
+    "datetime": "2024-11-23 10:05:09.43919",
+    "nominatim": {
+      "place_id": 28525870,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 770582044,
+      "lat": "-5.3667628999999994",
+      "lon": "105.3148909843239",
+      "category": "amenity",
+      "type": "university",
+      "place_rank": 30,
+      "importance": 0.3323460935801182,
+      "addresstype": "amenity",
+      "name": "Institut Teknologi Sumatera",
+      "display_name": "Institut Teknologi Sumatera, Jalan Kaswari, Way Huwi, Lampung Selatan, Lampung, Sumatera, 35365, Indonesia",
+      "address": {
+        "amenity": "Institut Teknologi Sumatera",
+        "road": "Jalan Kaswari",
+        "village": "Way Huwi",
+        "county": "Lampung Selatan",
+        "state": "Lampung",
+        "ISO3166-2-lvl4": "ID-LA",
+        "region": "Sumatera",
+        "ISO3166-2-lvl3": "ID-SM",
+        "postcode": "35365",
+        "country": "Indonesia",
+        "country_code": "id"
+      },
+      "boundingbox": ["-5.3723321", "-5.3546964", "105.3073829", "105.3213948"]
+    },
+    "assemblyai": {
+      "transcribe": {
+        "id": "42680ce4-70aa-4151-a5cd-c11b4e224d56",
+        "language_model": "assemblyai_default",
+        "acoustic_model": "assemblyai_default",
+        "language_code": "en",
+        "status": "completed",
+        "audio_url": "https://cdn.assemblyai.com/upload/a4c7eac1-2020-49f9-a0f7-7a787fb11bb3",
+        "text": "Ambulance service. Tell me exactly what's happened. Mummy fell down a. Stairs. Your mummy fell down the stairs? Sorry. She's got a baby. Did Mummy and the baby fall down the stairs at the same time? Yes. All right, my darling. We're gonna help Mummy, okay? So can you go up to your mummy for me? You're with Mummy, all right? Is Mummy breathing? Yes. Mummy's breathing, is she? Yes. All right, my lovely. Bear with me in second, okay? Stay on the phone. I'm not going to hang up the phone. Okay. How's the baby? In Mummy's tummy. The baby's in Mummy's tummy. Okay, sweetie. All right, my darling. That's okay. Do you know where Mummy's hurt? Where did Mummy hurt herself? Apart from her head? Is she hurt anywhere else? No. No. Okay. And has Mummy got her eyes open? Is she talking to you? Going back to sleep now. She's gone back to sleep now. Okay, but, Emma, the ambulance has come in, my lovely, so I'm going to stay on the phone with you, okay? Suicide. And I want you to watch your mummy and make sure that Mummy's breathing, okay? Do you know what that means?",
+        "utterances": null,
+        "confidence": 0.8554641,
+        "audio_duration": 69,
+        "punctuate": true,
+        "format_text": true,
+        "dual_channel": null,
+        "webhook_url": null,
+        "webhook_status_code": null,
+        "webhook_auth": false,
+        "webhook_auth_header_name": null,
+        "speed_boost": false,
+        "auto_highlights_result": null,
+        "auto_highlights": false,
+        "audio_start_from": null,
+        "audio_end_at": null,
+        "word_boost": [],
+        "boost_param": null,
+        "filter_profanity": false,
+        "redact_pii": false,
+        "redact_pii_audio": false,
+        "redact_pii_audio_quality": null,
+        "redact_pii_policies": null,
+        "redact_pii_sub": null,
+        "speaker_labels": false,
+        "content_safety": false,
+        "iab_categories": true,
+        "content_safety_labels": {
+          "status": "unavailable",
+          "results": [],
+          "summary": {}
+        },
+        "iab_categories_result": {
+          "status": "success",
+          "results": [
+            {
+              "text": "Ambulance service. Tell me exactly what's happened. Mummy fell down a. Stairs. Your mummy fell down the stairs? Sorry. She's got a baby. Did Mummy and the baby fall down the stairs at the same time? Yes. All right, my darling. We're gonna help Mummy, okay? So can you go up to your mummy for me? You're with Mummy, all right? Is Mummy breathing? Yes. Mummy's breathing, is she? Yes.",
+              "labels": [
+                {
+                  "relevance": 0.92642707,
+                  "label": "MedicalHealth>DiseasesAndConditions>Injuries>FirstAid"
+                },
+                {
+                  "relevance": 0.060026005,
+                  "label": "MedicalHealth>DiseasesAndConditions>Injuries"
+                },
+                {
+                  "relevance": 0.027153142,
+                  "label": "EventsAndAttractions>PersonalCelebrations&LifeEvents>Birth"
+                },
+                {
+                  "relevance": 0.022004865,
+                  "label": "FamilyAndRelationships>Bereavement"
+                },
+                {
+                  "relevance": 0.0121492995,
+                  "label": "NewsAndPolitics>Disasters"
+                },
+                {
+                  "relevance": 0.008450843,
+                  "label": "FamilyAndRelationships>Parenting"
+                },
+                {
+                  "relevance": 0.003075551,
+                  "label": "EventsAndAttractions>PersonalCelebrations&LifeEvents>BabyShower"
+                },
+                {
+                  "relevance": 0.0023089908,
+                  "label": "FamilyAndRelationships>Parenting>ParentingBabiesAndToddlers"
+                },
+                {
+                  "relevance": 0.002301266,
+                  "label": "HealthyLiving>Children'sHealth"
+                },
+                {
+                  "relevance": 0.001564841,
+                  "label": "Automotive>AutoSafety"
+                }
+              ],
+              "timestamp": {
+                "start": 920,
+                "end": 28045
+              },
+              "sentences_idx_end": 15,
+              "sentences_idx_start": 0
+            },
+            {
+              "text": "All right, my lovely. Bear with me in second, okay? Stay on the phone. I'm not going to hang up the phone. Okay. How's the baby? In Mummy's tummy. The baby's in Mummy's tummy. Okay, sweetie. All right, my darling. That's okay. Do you know where Mummy's hurt? Where did Mummy hurt herself? Apart from her head? Is she hurt anywhere else? No. No. Okay.",
+              "labels": [
+                {
+                  "relevance": 0.23025425,
+                  "label": "EventsAndAttractions>PersonalCelebrations&LifeEvents>Birth"
+                },
+                {
+                  "relevance": 0.070219435,
+                  "label": "FamilyAndRelationships>Parenting"
+                },
+                {
+                  "relevance": 0.026906298,
+                  "label": "FamilyAndRelationships>Parenting>ParentingBabiesAndToddlers"
+                },
+                {
+                  "relevance": 0.0248562,
+                  "label": "MedicalHealth>DiseasesAndConditions>ReproductiveHealth>Pregnancy"
+                },
+                {
+                  "relevance": 0.009060709,
+                  "label": "EventsAndAttractions>PersonalCelebrations&LifeEvents>BabyShower"
+                },
+                {
+                  "relevance": 0.008992042,
+                  "label": "FamilyAndRelationships>Bereavement"
+                },
+                {
+                  "relevance": 0.008687312,
+                  "label": "PopCulture>CelebrityPregnancy"
+                },
+                {
+                  "relevance": 0.0058177416,
+                  "label": "HealthyLiving>Children'sHealth"
+                },
+                {
+                  "relevance": 0.00477685,
+                  "label": "MedicalHealth>DiseasesAndConditions>Injuries>FirstAid"
+                },
+                {
+                  "relevance": 0.0010056271,
+                  "label": "MedicalHealth>DiseasesAndConditions>Injuries"
+                }
+              ],
+              "timestamp": {
+                "start": 28205,
+                "end": 48341
+              },
+              "sentences_idx_start": 16,
+              "sentences_idx_end": 33
+            },
+            {
+              "text": "And has Mummy got her eyes open? Is she talking to you? Going back to sleep now. She's gone back to sleep now. Okay, but, Emma, the ambulance has come in, my lovely, so I'm going to stay on the phone with you, okay? Suicide. And I want you to watch your mummy and make sure that Mummy's breathing, okay? Do you know what that means?",
+              "labels": [
+                {
+                  "relevance": 0.79959667,
+                  "label": "FamilyAndRelationships>Bereavement"
+                },
+                {
+                  "relevance": 0.060935996,
+                  "label": "MedicalHealth>DiseasesAndConditions>Injuries>FirstAid"
+                },
+                {
+                  "relevance": 0.008361157,
+                  "label": "EventsAndAttractions>PersonalCelebrations&LifeEvents>Funeral"
+                },
+                {
+                  "relevance": 0.0035969932,
+                  "label": "FamilyAndRelationships>Parenting"
+                },
+                {
+                  "relevance": 0.0035792515,
+                  "label": "EventsAndAttractions>PersonalCelebrations&LifeEvents>Birth"
+                },
+                {
+                  "relevance": 0.0019393131,
+                  "label": "MedicalHealth>DiseasesAndConditions>Injuries"
+                },
+                {
+                  "relevance": 0.0012021025,
+                  "label": "PopCulture>CelebrityDeaths"
+                },
+                {
+                  "relevance": 0.0010567487,
+                  "label": "MedicalHealth>DiseasesAndConditions>ColdAndFlu"
+                },
+                {
+                  "relevance": 0.0008932235,
+                  "label": "Pets>Cats"
+                },
+                {
+                  "relevance": 0.0007736728,
+                  "label": "NewsAndPolitics>Disasters"
+                }
+              ],
+              "timestamp": {
+                "start": 48373,
+                "end": 64755
+              },
+              "sentences_idx_start": 34,
+              "sentences_idx_end": 41
+            }
+          ],
+          "summary": {
+            "FamilyAndRelationships>Parenting": 0.08291902,
+            "PopCulture>CelebrityDeaths": 0.002182516,
+            "EventsAndAttractions>PersonalCelebrations&LifeEvents>Funeral": 0.0089243045,
+            "MedicalHealth>DiseasesAndConditions>Injuries>FirstAid": 1,
+            "MedicalHealth>DiseasesAndConditions>ColdAndFlu": 0.002166984,
+            "FamilyAndRelationships>Parenting>ParentingBabiesAndToddlers": 0.02984062,
+            "PopCulture>CelebrityPregnancy": 0.010166817,
+            "MedicalHealth>DiseasesAndConditions>Injuries": 0.06346982,
+            "FamilyAndRelationships>Parenting>AdoptionAndFostering": 0.0013814373,
+            "EventsAndAttractions>PersonalCelebrations&LifeEvents>BabyShower": 0.012628027,
+            "HealthyLiving>Children'sHealth": 0.008588958,
+            "Automotive>AutoSafety": 0.0020979391,
+            "NewsAndPolitics>Disasters": 0.01349266,
+            "HealthyLiving>FitnessAndExercise>RunningAndJogging": 0.0013344471,
+            "MedicalHealth>DiseasesAndConditions>ReproductiveHealth>Pregnancy": 0.026798213,
+            "FamilyAndRelationships": 0.0013723652,
+            "FamilyAndRelationships>Bereavement": 0.8371739,
+            "Pets>Cats": 0.0020317067,
+            "FamilyAndRelationships>Parenting>ParentingChildrenAged4-11": 0.001381047,
+            "EventsAndAttractions>PersonalCelebrations&LifeEvents>Birth": 0.26305428
+          }
+        },
+        "language_detection": true,
+        "language_confidence_threshold": null,
+        "language_confidence": 0.781,
+        "custom_spelling": null,
+        "throttled": false,
+        "auto_chapters": false,
+        "summarization": false,
+        "summary_type": null,
+        "summary_model": null,
+        "custom_topics": false,
+        "topics": [],
+        "speech_threshold": null,
+        "speech_model": "best",
+        "chapters": null,
+        "disfluencies": false,
+        "entity_detection": true,
+        "sentiment_analysis": false,
+        "sentiment_analysis_results": null,
+        "entities": [
+          {
+            "entity_type": "person_name",
+            "text": "Emma",
+            "start": 55611,
+            "end": 55875
+          }
+        ],
+        "speakers_expected": null,
+        "summary": null,
+        "custom_topics_results": null,
+        "is_deleted": null,
+        "multichannel": null
+      },
+      "llm": "{\n                    \"activities\":\"Mother has fallen down the stairs with a baby in her tummy.\",\n                    \"summary\": \"A child calls an ambulance service to report that their mother has fallen down the stairs with a baby in her tummy. The child is asked to check on the mother's condition, including whether she is breathing and has any other injuries, and to stay on the phone until the ambulance arrives.\",\n                    \"key_points\": [\n                        \"Mother has fallen down the stairs with a baby in her tummy\",\n                        \"Child calls ambulance service for help\",\n                        \"Child is asked to check on mother's condition, including breathing and other injuries\",\n                        \"Child is asked to stay on the phone until the ambulance arrives\"\n                    ],\n                    \"tone\": \"Calm, reassuring, and directive\",\n                    \"context\":\"This is an emergency call for assistance.\",\n                    \"status\":\"Critical\"\n                }"
+    }
+  }
 }

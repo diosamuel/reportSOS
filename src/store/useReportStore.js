@@ -1,9 +1,9 @@
 // src/store/useReportStore.js
-import { create } from "zustand";
+import { create } from 'zustand';
 
 const useReportStore = create((set) => ({
-  geolocation: "",
-  image: "",
+  geolocation: '',
+  image: '',
   audio: null,
 
   // Actions to update the data
