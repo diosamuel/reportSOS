@@ -5,7 +5,7 @@ import { MapContainer, TileLayer, useMap, Marker, Popup } from 'react-leaflet';
 import useReportStore from '../store/useReportStore';
 import { useNavigate } from 'react-router-dom';
 
-function reportDanger(audio, geolocation, image) {
+function reportDanger(audio, geolocation, image, cb) {
   try {
     const form = new FormData();
     form.append('audio', audio, 'audio.webm');
@@ -17,21 +17,23 @@ function reportDanger(audio, geolocation, image) {
     };
     fetch(`${import.meta.env.VITE_API_URL}/api/v1/report`, options)
       .then((response) => {
-        console.error(response);
         if (!response.ok) {
           throw new Error('Failed to submit the report.');
         }
-        return response.json();
+        cb(response)
+        return response
       })
       .then((data) => {
         console.log('Report submitted successfully:', data);
-        return data;
+        cb(data.json())
       })
       .catch((err) => {
-        return false;
+        console.error(err)
+        cb(false)
       });
   } catch (err) {
-    return false;
+    console.error(err)
+    cb(false)
   }
 }
 
@@ -47,9 +49,19 @@ function Result() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-      let res = reportDanger(audio, geolocation, image);
-      console.log(res);
-      setError(!res);
+      const reportBefore = localStorage.getItem('report');
+      if(!(audio&&geolocation)){
+        setError(true)
+      }
+      if(!Boolean(reportBefore)){
+        reportDanger(audio, geolocation, image, (res)=>{
+          if(!res){
+            setError(!res);
+          }else{
+            localStorage.setItem('report', true);
+          }
+        });
+      }
     }, 1000);
 
     //for UI
@@ -57,6 +69,8 @@ function Result() {
     image && setFileImage(URL.createObjectURL(image));
   }, []);
   if (isError) {
+    alert("Missing media, retry")
+    localStorage.setItem('report', false);
     navigate('/');
     return <></>;
   } else {

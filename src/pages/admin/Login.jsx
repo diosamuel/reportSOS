@@ -4,9 +4,11 @@ import { useNavigate } from 'react-router-dom';
 const Login = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const [apikey, setAPIKEY] = useState('');
   const [message, setMessage] = useState('');
   let navigate = useNavigate();
   const handleLogin = async (e) => {
+    localStorage.setItem("API_KEY",apikey)
     e.preventDefault();
     try {
       const response = await fetch(`${import.meta.env.VITE_API_URL}/api/v1/login`, {
@@ -30,7 +32,7 @@ const Login = () => {
   };
 
   return (
-    <div className="h-screen flex flex-col justify-center items-center bg-gray-300">
+    <div className="h-screen flex flex-col justify-center items-center bg-red-100">
       <h1 className="text-xl font-semibold mb-5 rounded-full bg-red-500 text-white p-5">🚨ReportSOS Admin</h1>
       <form className="bg-white p-6 rounded-lg shadow-xl w-80" onSubmit={handleLogin}>
         <h2 className="text-lg font-bold mb-4 text-center">Login Admin</h2>
@@ -59,6 +61,20 @@ const Login = () => {
             className="w-full mt-1 p-2 border border-gray-300 rounded-md focus:ring-red-500 focus:border-red-500"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
+            required
+          />
+        </div>
+
+        <div className="mb-4">
+          <label htmlFor="password" className="block text-sm font-medium text-gray-700">
+            AssemblyAI API Key
+          </label>
+          <input
+            type="password"
+            id="apikey"
+            className="w-full mt-1 p-2 border border-gray-300 rounded-md focus:ring-red-500 focus:border-red-500"
+            value={apikey}
+            onChange={(e) => setAPIKEY(e.target.value)}
             required
           />
         </div>

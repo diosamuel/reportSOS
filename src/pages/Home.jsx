@@ -77,7 +77,7 @@ function Home() {
           >
             <h1 className="text-2xl font-semibold text-white">Help Me!</h1>
           </button>
-          <div>Use wisely, report will be sent to 911</div>
+          <div>Use it wisely</div>
         </div>
       )}
     </Layout>

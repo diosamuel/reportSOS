@@ -107,11 +107,11 @@ const WebcamCapture = () => {
                 Capture photo
               </button>
             </div>
-            <div className="flex flex-col items-center justify-center mt-10 w-full md:relative">
+            {/* <div className="flex flex-col items-center justify-center mt-10 w-full md:relative">
               <button onClick={reportDanger} className="border border-red-500 p-2 rounded-md text-red-500 text-center w-fit">
                 Skip this step
               </button>
-            </div>
+            </div> */}
           </>
         )}
       </div>

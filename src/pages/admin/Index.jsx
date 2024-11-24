@@ -1,6 +1,9 @@
 import { MapContainer, TileLayer, useMap, Marker, Popup, useMapEvents, CircleMarker, Polyline } from 'react-leaflet';
 import L from 'leaflet';
 import location_danger from '../../assets/location_danger.png';
+import hospital from '../../assets/hospital.png';
+import police from '../../assets/police.png';
+import fire from '../../assets/fire.png';
 import { useEffect, useState, useRef } from 'react';
 import noimage from '../../assets/noimage.jpg';
 import { useNavigate } from 'react-router-dom';
@@ -70,7 +73,7 @@ const Admin = () => {
       .then((data) => {
         if (data.data.length > 0) {
           setAllEmergency(data);
-          let { geolocation } = data.data[1];
+          let { geolocation } = data.data[0];
           setLatLong(JSON.parse(geolocation));
           setAppLoading(false);
         } else {
@@ -96,7 +99,13 @@ const Admin = () => {
 
   async function emergencyReview(id) {
     try {
-      let req = await fetch(`${import.meta.env.VITE_API_URL}/api/v1/report/${id}`);
+      // let API_KEY = "1c04708858ed4e3aa5ead1f3907ba0d3"
+      let API_KEY = localStorage.getItem("API_KEY");
+      if(!API_KEY){
+        alert("Please insert API_KEY at login page")
+        navigate("/admin")
+      }
+      let req = await fetch(`${import.meta.env.VITE_API_URL}/api/v1/report/${id}?API_KEY=${API_KEY}`);
       let response = await req.json();
       let { lat, lon } = response.data.nominatim;
       let lemur = JSON.parse(response?.data?.assemblyai?.llm);
@@ -114,6 +123,27 @@ const Admin = () => {
   }
   const dangerIcon = new L.Icon({
     iconUrl: location_danger,
+    iconAnchor: [50, 50],
+    iconSize: [100, 100],
+    popupAnchor: [0, -50],
+  });
+
+  const hospitalIcon = new L.Icon({
+    iconUrl: hospital,
+    iconAnchor: [50, 50],
+    iconSize: [50, 50],
+    popupAnchor: [0, -50],
+  });
+
+  const policeIcon = new L.Icon({
+    iconUrl: police,
+    iconAnchor: [50, 50],
+    iconSize: [50, 50],
+    popupAnchor: [0, -50],
+  });
+
+  const fireIcon = new L.Icon({
+    iconUrl: fire,
     iconAnchor: [50, 50],
     iconSize: [50, 50],
     popupAnchor: [0, -50],
@@ -136,16 +166,19 @@ const Admin = () => {
           <div className="fixed z-50 right-2/4 px-4 py-2 rounded-full text-red-600 font-bold top-3">
             <div className="absolute inset-0 bg-red-300 border border-red-600 rounded-full animate-ping"></div>
             <div className="absolute inset-0 bg-red-300 border border-red-600 rounded-full"></div>
-            <h1 className="relative">Listening to Emergency!</h1>
+            <h1 className="relative">Emergency Alert!</h1>
           </div>
 
           <div className="fixed z-50 left-0 px-4 py-2 rounded-full text-white top-20 w-1/4">
-            <button className="bg-red-600 rounded-full p-2 text-sm" onClick={() => navigate('/admin')}>
+            {/* <button className="bg-red-600 rounded-full p-2 text-sm" onClick={() => navigate('/admin')}>
               Back to Dashboard
-            </button>
+            </button> */}
             {allEmergency && (
               <>
-                <h1 className="font-bold text-black mb-2 text-lg mt-5">Latest Emergency</h1>
+                <div className='flex w-full my-2 text-black justify-between items-center'>
+                  <h1 className="font-bold text-lg">Latest Emergency</h1>
+                  <a className='underline' href="#" onClick={() => location.reload()}>Refresh</a>
+                </div>
                 <div className="bg-blue-900 p-3 rounded-lg h-[30em] overflow-y-scroll">
                   {allEmergency?.data?.map((place, i) => {
                     if (place.status) {
@@ -297,9 +330,9 @@ const Admin = () => {
                     ))}
                 </div>
               </div>
-              <div className="w-full space-y-2">
+              {/* <div className="w-full space-y-2">
                 <button className="bg-red-700 rounded-full w-full p-3 text-white">Accept Emergency</button>
-              </div>
+              </div> */}
             </div>
           </section>
           <section className="h-screen">
@@ -357,29 +390,41 @@ const Admin = () => {
                   nearbyStation.elements.map((place, i) => {
                     if (place.type == 'node') {
                       return (
-                        <CircleMarker
-                          key={i}
-                          center={[place.lat, place.lon]}
-                          radius={10}
-                          pathOptions={{
-                            fillColor:
-                              place.tags.amenity === 'hospital'
-                                ? 'lightblue'
-                                : place.tags.amenity === 'fire_station'
-                                  ? 'red'
-                                  : place.tags.amenity === 'police'
-                                    ? 'orange'
-                                    : 'white',
-                            color:
-                              place.tags.amenity === 'hospital'
-                                ? 'lightblue'
-                                : place.tags.amenity === 'fire_station'
-                                  ? 'red'
-                                  : place.tags.amenity === 'police'
-                                    ? 'orange'
-                                    : 'white',
-                            fillOpacity: 0.5,
-                          }}
+                        // <CircleMarker
+                        // key={i}
+                        // center={[place.lat, place.lon]}
+                        // radius={10}
+                        // pathOptions={{
+                        //   fillColor:
+                        //     place.tags.amenity === 'hospital'
+                        //       ? 'lightblue'
+                        //       : place.tags.amenity === 'fire_station'
+                        //         ? 'red'
+                        //         : place.tags.amenity === 'police'
+                        //           ? 'orange'
+                        //           : 'white',
+                        //   color:
+                        //     place.tags.amenity === 'hospital'
+                        //       ? 'lightblue'
+                        //       : place.tags.amenity === 'fire_station'
+                        //         ? 'red'
+                        //         : place.tags.amenity === 'police'
+                        //           ? 'orange'
+                        //           : 'white',
+                        //   fillOpacity: 0.5,
+                        // }}
+                        // >
+                        <Marker
+                          position={[place.lat, place.lon]}
+                          icon={
+                            place.tags.amenity === "hospital"
+                              ? hospitalIcon
+                              : place.tags.amenity === "fire_station"
+                                ? fireIcon
+                                : place.tags.amenity === "police"
+                                  ? policeIcon
+                                  : dangerIcon // fallback icon if no match
+                          }
                         >
                           <Popup>
                             <p className="bg-red px-2 py-1 w-fit bg-red-200 rounded border-2 border-red-400">{place.tags.amenity}</p>
@@ -389,32 +434,44 @@ const Admin = () => {
                               Open Google Maps
                             </a>
                           </Popup>
-                        </CircleMarker>
+                        </Marker>
                       );
                     } else if (place.type == 'way') {
                       return (
-                        <CircleMarker
-                          center={[place.geometry[0].lat, place.geometry[0].lon]}
-                          radius={10}
-                          pathOptions={{
-                            fillColor:
-                              place.tags.amenity === 'hospital'
-                                ? 'lightblue'
-                                : place.tags.amenity === 'fire_station'
-                                  ? 'red'
-                                  : place.tags.amenity === 'police'
-                                    ? 'orange'
-                                    : 'white',
-                            color:
-                              place.tags.amenity === 'hospital'
-                                ? 'lightblue'
-                                : place.tags.amenity === 'fire_station'
-                                  ? 'red'
-                                  : place.tags.amenity === 'police'
-                                    ? 'orange'
-                                    : 'white',
-                            fillOpacity: 0.5,
-                          }}
+                        // <CircleMarker
+                        //   center={[place.geometry[0].lat, place.geometry[0].lon]}
+                        //   radius={10}
+                        //   pathOptions={{
+                        //     fillColor:
+                        //       place.tags.amenity === 'hospital'
+                        //         ? 'lightblue'
+                        //         : place.tags.amenity === 'fire_station'
+                        //           ? 'red'
+                        //           : place.tags.amenity === 'police'
+                        //             ? 'orange'
+                        //             : 'white',
+                        //     color:
+                        //       place.tags.amenity === 'hospital'
+                        //         ? 'lightblue'
+                        //         : place.tags.amenity === 'fire_station'
+                        //           ? 'red'
+                        //           : place.tags.amenity === 'police'
+                        //             ? 'orange'
+                        //             : 'white',
+                        //     fillOpacity: 0.5,
+                        //   }}
+                        // >
+                        <Marker
+                          position={[place.geometry[0].lat, place.geometry[0].lon]}
+                          icon={
+                            place.tags.amenity === "hospital"
+                              ? hospitalIcon
+                              : place.tags.amenity === "fire_station"
+                                ? fireIcon
+                                : place.tags.amenity === "police"
+                                  ? policeIcon
+                                  : dangerIcon // fallback icon if no match
+                          }
                         >
                           <Popup>
                             <p className="bg-red px-2 py-1 w-fit bg-red-200 rounded border-2 border-red-400">{place.tags.amenity}</p>
@@ -424,7 +481,7 @@ const Admin = () => {
                               Open Google Maps
                             </a>
                           </Popup>
-                        </CircleMarker>
+                        </Marker>
                       );
                     }
                   })}
