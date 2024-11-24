@@ -4,19 +4,57 @@ import "leaflet/dist/leaflet.css";
 import { MapContainer, TileLayer, useMap, Marker, Popup } from "react-leaflet";
 import useReportStore from "../store/useReportStore";
 
+function reportDanger(audio, geolocation, image) {
+  try {
+    const form = new FormData();
+    console.log(audio);
+    console.log(geolocation);
+    console.log(image);
+    form.append("audio", audio, "audio.webm");
+    form.append(
+      "coordinate",
+      JSON.stringify([geolocation.lat, geolocation.lon])
+    );
+    form.append("image", image);
+    const options = {
+      method: "POST",
+      body: form,
+    };
+    fetch("http://localhost:5000/api/v1/report", options)
+      .then((response) => {
+        console.error(response);
+        if (!response.ok) {
+          throw new Error("Failed to submit the report.");
+        }
+        return response.json();
+      })
+      .then((data) => {
+        console.log("Report submitted successfully:", data);
+      })
+      .catch((err) => {
+        console.error("Error submitting report:", err);
+      });
+  } catch (err) {
+    console.log("Unexpected error:", err);
+  }
+}
+
 function Result() {
-  const [count, setCount] = useState(0);
   const [coming, setComing] = useState(!false);
   const [isLoading, setLoading] = useState(false);
   const { geolocation, image, audio } = useReportStore();
   const [fileAudio, setFileAudio] = useState(null);
+  const [fileImage, setFileImage] = useState(null);
   useEffect(() => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
+      reportDanger(audio, geolocation, image);
     }, 1000);
-    console.log(geolocation, image, audio);
+
+    //for UI
     audio && setFileAudio(URL.createObjectURL(audio));
+    image && setFileImage(URL.createObjectURL(image));
   }, []);
   return (
     <>
@@ -33,7 +71,9 @@ function Result() {
                 <span className="text-4xl">{coming ? `🚓` : `🚨`}</span>
               </div>
             </div>
-            <h1 className="text-3xl font-bold mt-5 text-white">Send report to 911, loading..</h1>
+            <h1 className="text-3xl font-bold mt-5 text-white">
+              Send report to 911, loading..
+            </h1>
           </div>
         </Layout>
       ) : (
@@ -69,7 +109,7 @@ function Result() {
             </div>
           </div>
           <div className="flex flex-col gap-6 justify-center items-center">
-            {image && <img src={image} className="w-96 rounded-lg mt-5" />}
+            {image && <img src={fileImage} className="w-96 rounded-lg mt-5" />}
             {fileAudio && (
               <audio controls>
                 <source src={fileAudio} type={audio.type} />

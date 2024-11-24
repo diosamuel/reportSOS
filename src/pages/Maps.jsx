@@ -43,18 +43,12 @@ function Maps() {
     iconSize: [50, 50],
     popupAnchor: [0, -50],
   });
-
+  console.log(isGeolocationEnabled)
   useEffect(() => {
     if (coords?.latitude) {
       getAddressFromCoordinate(coords.latitude, coords.longitude);
     }
   }, [coords?.latitude]);
-
-  useEffect(() => {
-    if (debouncedQuery) {
-      console.log("Search with:", debouncedQuery);
-    }
-  }, [debouncedQuery]);
 
   let navigate = useNavigate();
   const reportDanger = () => {

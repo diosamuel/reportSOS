@@ -3,6 +3,23 @@ import Webcam from "react-webcam";
 import Layout from "../Layout";
 import { useNavigate } from "react-router-dom";
 import useReportStore from "../store/useReportStore";
+
+function base64ToFile(base64String, filename, mimeType) {
+  // Decode the base64 string
+  const byteString = atob(base64String.split(",")[1]);
+  const arrayBuffer = new ArrayBuffer(byteString.length);
+  const uintArray = new Uint8Array(arrayBuffer);
+
+  // Convert to binary
+  for (let i = 0; i < byteString.length; i++) {
+    uintArray[i] = byteString.charCodeAt(i);
+  }
+
+  // Create a Blob and convert it to a File object
+  const blob = new Blob([arrayBuffer], { type: mimeType });
+  return new File([blob], filename, { type: mimeType });
+}
+
 const WebcamCapture = () => {
   const [capturedImage, setCapture] = useState(null);
   const [rotate, setRotate] = useState(true);
@@ -18,8 +35,9 @@ const WebcamCapture = () => {
 
   const capture = useCallback(() => {
     const imageSrc = webcamRef.current.getScreenshot();
+    const imageBinary = base64ToFile(imageSrc, "image.jpg", "image/jpg");
     setCapture(imageSrc);
-    setImage(imageSrc);
+    setImage(imageBinary);
   }, [webcamRef]);
 
   const rotateCam = () => {
@@ -92,18 +110,28 @@ const WebcamCapture = () => {
               onClick={reportDanger}
               className="bg-red-500 p-3 rounded-full text-center w-11/12 text-white"
             >
-              Lanjut
+              Proceed
             </button>
           </div>
         ) : (
-          <div className="flex flex-col items-center justify-center mt-5 gap-3 fixed bottom-3 w-full md:relative">
-            <button
-              onClick={capture}
-              className="bg-red-500 p-3 rounded-full text-center w-11/12 text-white"
-            >
-              Capture photo
-            </button>
-          </div>
+          <>
+            <div className="flex flex-col items-center justify-center mt-5 w-full md:relative">
+              <button
+                onClick={capture}
+                className="bg-red-500 p-3 rounded-full text-center w-11/12 text-white"
+              >
+                Capture photo
+              </button>
+            </div>
+            <div className="flex flex-col items-center justify-center mt-10 w-full md:relative">
+              <button
+                onClick={reportDanger}
+                className="border border-red-500 p-2 rounded-md text-red-500 text-center w-fit"
+              >
+                Skip this step
+              </button>
+            </div>
+          </>
         )}
       </div>
     </Layout>
