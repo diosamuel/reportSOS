@@ -3,6 +3,7 @@ import L from 'leaflet';
 import location_danger from '../../assets/location_danger.png';
 import { useEffect, useState, useRef } from 'react';
 import noimage from '../../assets/noimage.jpg';
+import { useNavigate } from 'react-router-dom';
 async function GetOverpass(geo) {
   let distanceInKm = 5;
   let [lat, lon] = geo;
@@ -28,7 +29,8 @@ async function GetOverpass(geo) {
 }
 
 async function GetLatestEmergency() {
-  let result = await fetch('http://localhost:5000/api/v1/report');
+  console.log(import.meta.env.VITE_API_URL);
+  let result = await fetch(`${import.meta.env.VITE_API_URL}/api/v1/report`);
   return result;
 }
 
@@ -61,25 +63,32 @@ const Admin = () => {
   });
   const [lemurResponse, setLemurResponse] = useState(null);
   const mapRef = useRef(null);
+  let navigate = useNavigate();
   useEffect(() => {
     GetLatestEmergency()
       .then((data) => data.json())
       .then((data) => {
-        setAllEmergency(data);
-        let { geolocation } = data.data[1];
-        setLatLong(JSON.parse(geolocation));
-        setAppLoading(false);
+        if (data.data.length > 0) {
+          setAllEmergency(data);
+          let { geolocation } = data.data[1];
+          setLatLong(JSON.parse(geolocation));
+          setAppLoading(false);
+        } else {
+          //default
+          setLatLong([38.89796010583636, -77.03730229875413]);
+          setAppLoading(false);
+        }
       })
       .catch((err) => {
-        console.log(err);
-        setEmergencyLoading(false)
+        console.error(err);
+        setEmergencyLoading(false);
       });
   }, []);
 
-  console.log(allEmergency)
+  console.log(allEmergency);
 
   const flyToLocation = (latlong) => {
-    const map = mapRef.current
+    const map = mapRef.current;
     map.flyTo([latlong[0], latlong[1]], 17, {
       duration: 2, // seconds
     });
@@ -87,7 +96,7 @@ const Admin = () => {
 
   async function emergencyReview(id) {
     try {
-      let req = await fetch(`http://localhost:5000/api/v1/report/${id}`);
+      let req = await fetch(`${import.meta.env.VITE_API_URL}/api/v1/report/${id}`);
       let response = await req.json();
       let { lat, lon } = response.data.nominatim;
       let lemur = JSON.parse(response?.data?.assemblyai?.llm);
@@ -99,8 +108,8 @@ const Admin = () => {
         setEmergencyLoading(false);
       })();
     } catch (err) {
-      console.error(err)
-      setEmergencyLoading(false)
+      console.error(err);
+      setEmergencyLoading(false);
     }
   }
   const dangerIcon = new L.Icon({
@@ -119,34 +128,48 @@ const Admin = () => {
               <span className="text-4xl">🚨</span>
             </div>
           </div>
-          <h1 className='text-3xl font-bold'>Loading...🔎</h1>
-          <p>Refresh if wont load</p>
+          <h1 className="text-3xl font-bold">Loading 🗺</h1>
+          <p>If loading takes too long, refresh to update.</p>
         </div>
       ) : (
         <>
-          <div className="fixed z-50 right-3/4 px-4 py-2 rounded-full text-white top-3">
-            <div className="absolute inset-0 bg-red-600 rounded-full animate-ping"></div>
-            <div className="absolute inset-0 bg-red-600 rounded-full"></div>
-            <h1 className="relative">Emergency Alert!</h1>
+          <div className="fixed z-50 right-2/4 px-4 py-2 rounded-full text-red-600 font-bold top-3">
+            <div className="absolute inset-0 bg-red-300 border border-red-600 rounded-full animate-ping"></div>
+            <div className="absolute inset-0 bg-red-300 border border-red-600 rounded-full"></div>
+            <h1 className="relative">Listening to Emergency!</h1>
           </div>
 
-          <div className="fixed z-50 left-0 px-4 py-2 rounded-full text-white top-28 w-1/4">
-            <h1 className='font-bold text-black mb-2'>Latest Emergency</h1>
-            <div className="bg-blue-900 p-3 rounded-lg h-56 overflow-y-scroll">
-              {allEmergency?.data?.map((place, i) => {
-                if (place.status) {
-                  return <div className='mb-4' key={i}>
-                    <p className='text-sm'>{readableTime(place.datetime)}</p>
-                    <p className='font-bold'>{place.title}</p>
-                    <button className="bg-red-600 px-2 py-1 rounded-full text-xs" onClick={() => {
-                      flyToLocation(JSON.parse(place.geolocation))
-                      console.log("MOVED")
-                    }}>Locate Me</button>
-                    <hr className='mt-2 opacity-10' />
-                  </div>
-                }
-              })}
-            </div>
+          <div className="fixed z-50 left-0 px-4 py-2 rounded-full text-white top-20 w-1/4">
+            <button className="bg-red-600 rounded-full p-2 text-sm" onClick={() => navigate('/admin')}>
+              Back to Dashboard
+            </button>
+            {allEmergency && (
+              <>
+                <h1 className="font-bold text-black mb-2 text-lg mt-5">Latest Emergency</h1>
+                <div className="bg-blue-900 p-3 rounded-lg h-[30em] overflow-y-scroll">
+                  {allEmergency?.data?.map((place, i) => {
+                    if (place.status) {
+                      return (
+                        <div className="mb-4" key={i}>
+                          <p className="text-sm">{readableTime(place.datetime)}</p>
+                          <p className="font-bold">{place.title}</p>
+                          <button
+                            className="bg-red-600 px-2 py-1 rounded-full text-xs"
+                            onClick={() => {
+                              flyToLocation(JSON.parse(place.geolocation));
+                              console.log('MOVED');
+                            }}
+                          >
+                            Locate Me
+                          </button>
+                          <hr className="mt-2 opacity-10" />
+                        </div>
+                      );
+                    }
+                  })}
+                </div>
+              </>
+            )}
           </div>
           <section className={`flex flex-col fixed z-50 right-0 shadow-2xl transition-all`}>
             <div className={`bg-blue-950 p-5 h-screen w-[35em] space-y-2 overflow-y-scroll ${response.status == 200 ? 'block' : 'hidden'}`}>
@@ -167,7 +190,13 @@ const Admin = () => {
               <p className="text-white text-sm bg-red-400/20 p-1 px-3 rounded-lg border border-red-300 w-fit">
                 {readableTime(response?.datetime)}
               </p>
-              <img className="rounded-lg w-full" src={`${API_URL}${response?.image}`} onError={(e) => (e.target.src = noimage)} />
+              <img
+                className="rounded-lg w-full"
+                src={`${import.meta.env.VITE_API_URL}/${response?.image}`}
+                onError={(e) => (e.target.src = noimage)}
+              />
+              {/* <p>{`${import.meta.env.VITE_API_URL}/${place.image}`}</p> */}
+              <img src={`${import.meta.env.VITE_API_URL}/${response.image}`} />
               <br />
               <div>
                 <p className="text-white text-lg font-bold">{response?.data?.nominatim?.display_name}</p>
@@ -192,7 +221,12 @@ const Admin = () => {
               </div>
               <div className="w-full">
                 <p className="font-semibold text-xl my-3 text-white">Voice Recording</p>
-                <audio className="w-full h-22 bg-gray-100 rounded-t-md" controls autoPlay src={`${API_URL}${response?.audio}`}>
+                <audio
+                  className="w-full h-22 bg-gray-100 rounded-t-md"
+                  controls
+                  autoPlay
+                  src={`${import.meta.env.VITE_API_URL}/${response?.audio}`}
+                >
                   Your browser does not support the audio element.
                 </audio>
                 <div className="flex flex-col p-2 w-full bg-red-800 text-sm rounded-b-xl text-white">
@@ -241,16 +275,23 @@ const Admin = () => {
                       <div key={i}>
                         <p className="font-bold">{place.tags.name}</p>
                         <p className="text-sm">{place.tags.amenity}</p>
-                        {place.lat &&
+                        {place.lat && (
                           <>
-                          <p>{place.lat}, {place.lon}</p>
-                          <div className="flex gap-2 mt-2">
-                            <button className="bg-red-600 px-3 py-2 rounded-full text-sm" onClick={() => {
-                              flyToLocation([place.lat, place.lon])
-                            }}>Locate Me</button>
-                          </div>
+                            <p>
+                              {place.lat}, {place.lon}
+                            </p>
+                            <div className="flex gap-2 mt-2">
+                              <button
+                                className="bg-red-600 px-3 py-2 rounded-full text-sm"
+                                onClick={() => {
+                                  flyToLocation([place.lat, place.lon]);
+                                }}
+                              >
+                                Locate Me
+                              </button>
+                            </div>
                           </>
-                        }
+                        )}
                         <hr className="opacity-5 mt-4" />
                       </div>
                     ))}
@@ -263,7 +304,7 @@ const Admin = () => {
           </section>
           <section className="h-screen">
             {latlong && (
-              <MapContainer center={latlong} zoom={15} className="w-full h-full relative" style={{ zIndex: 1 }} ref={mapRef} >
+              <MapContainer center={latlong} zoom={15} className="w-full h-full relative" style={{ zIndex: 1 }} ref={mapRef}>
                 <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
                 {allEmergency?.data?.map((place, i) => {
                   return (
@@ -271,9 +312,13 @@ const Admin = () => {
                       <Popup>
                         <div className="bg-red-200 text-red-600 border border-red-600 p-1 w-fit rounded-md mb-2">{place.datetime}</div>
                         <h1>{place.title}</h1>
-                        <img className="rounded-lg" src={`${API_URL}${place.image}`} onError={(e) => (e.target.src = noimage)} />
+                        <img
+                          className="rounded-lg"
+                          src={`${import.meta.env.VITE_API_URL}/${place.image}`}
+                          onError={(e) => (e.target.src = noimage)}
+                        />
                         <button
-                          className={`w-full ${emergencyLoading ? "bg-red-200" : "bg-red-600"} text-white p-3 rounded-full mt-4`}
+                          className={`w-full ${emergencyLoading ? 'bg-red-200' : 'bg-red-600'} text-white p-3 rounded-full mt-4`}
                           onClick={() => {
                             emergencyReview(place.id);
                             setEmergencyLoading(true);

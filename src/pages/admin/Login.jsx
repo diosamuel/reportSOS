@@ -9,7 +9,7 @@ const Login = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:5000/api/v1/login', {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/v1/login`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -30,10 +30,10 @@ const Login = () => {
   };
 
   return (
-    <div className="h-screen flex flex-col justify-center items-center bg-gray-100">
-      <h1 className="text-4xl font-semibold mb-5 rounded-full bg-red-500 text-white p-5">🚨ReportSOS Admin</h1>
-      <form className="bg-white p-6 rounded-lg shadow-lg w-80" onSubmit={handleLogin}>
-        <h2 className="text-xl font-bold mb-4 text-center">Login Admin</h2>
+    <div className="h-screen flex flex-col justify-center items-center bg-gray-300">
+      <h1 className="text-xl font-semibold mb-5 rounded-full bg-red-500 text-white p-5">🚨ReportSOS Admin</h1>
+      <form className="bg-white p-6 rounded-lg shadow-xl w-80" onSubmit={handleLogin}>
+        <h2 className="text-lg font-bold mb-4 text-center">Login Admin</h2>
 
         <div className="mb-4">
           <label htmlFor="username" className="block text-sm font-medium text-gray-700">

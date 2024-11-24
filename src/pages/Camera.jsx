@@ -5,17 +5,12 @@ import { useNavigate } from 'react-router-dom';
 import useReportStore from '../store/useReportStore';
 
 function base64ToFile(base64String, filename, mimeType) {
-  // Decode the base64 string
   const byteString = atob(base64String.split(',')[1]);
   const arrayBuffer = new ArrayBuffer(byteString.length);
   const uintArray = new Uint8Array(arrayBuffer);
-
-  // Convert to binary
   for (let i = 0; i < byteString.length; i++) {
     uintArray[i] = byteString.charCodeAt(i);
   }
-
-  // Create a Blob and convert it to a File object
   const blob = new Blob([arrayBuffer], { type: mimeType });
   return new File([blob], filename, { type: mimeType });
 }
@@ -48,7 +43,7 @@ const WebcamCapture = () => {
   };
 
   const reportDanger = () => {
-    console.log('SENT\n', setImage);
+    console.log('SENT');
     navigate('/result');
   };
   return (
