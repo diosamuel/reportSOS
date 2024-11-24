@@ -7,6 +7,7 @@ import Result from './pages/Result';
 import Camera from './pages/Camera';
 import Admin from './pages/admin/Index';
 import Login from './pages/admin/Login';
+import Manual from './pages/admin/Manual';
 const App = () => {
   return (
     <Router>
@@ -16,6 +17,7 @@ const App = () => {
         <Route path="/maps" element={<Maps />} />
         <Route path="/camera" element={<Camera />} />
         <Route path="/result" element={<Result />} />
+        <Route path="/admin" element={<Manual />} />
         <Route path="/admin/report" element={<Admin />} />
         <Route path="/admin/login" element={<Login />} />
       </Routes>

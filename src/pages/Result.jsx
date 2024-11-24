@@ -37,7 +37,7 @@ function reportDanger(audio, geolocation, image) {
 }
 
 function Result() {
-  const [coming, setComing] = useState(!false);
+  const [coming, setComing] = useState(false);
   const [isLoading, setLoading] = useState(false);
   const { geolocation, image, audio } = useReportStore();
   const [fileAudio, setFileAudio] = useState(null);
@@ -65,6 +65,7 @@ function Result() {
               </div>
             </div>
             <h1 className="text-3xl font-bold mt-5 text-white">Send report to 911, loading..</h1>
+            <p>Refresh for update</p>
           </div>
         </Layout>
       ) : (
