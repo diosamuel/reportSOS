@@ -194,9 +194,8 @@ const Admin = () => {
                 className="rounded-lg w-full"
                 src={`${import.meta.env.VITE_API_URL}/${response?.image}`}
                 onError={(e) => (e.target.src = noimage)}
+                crossorigin="anonymous"
               />
-              {/* <p>{`${import.meta.env.VITE_API_URL}/${place.image}`}</p> */}
-              <img src={`${import.meta.env.VITE_API_URL}/${response.image}`} />
               <br />
               <div>
                 <p className="text-white text-lg font-bold">{response?.data?.nominatim?.display_name}</p>
@@ -226,6 +225,7 @@ const Admin = () => {
                   controls
                   autoPlay
                   src={`${import.meta.env.VITE_API_URL}/${response?.audio}`}
+                  crossorigin="anonymous"
                 >
                   Your browser does not support the audio element.
                 </audio>
@@ -313,7 +313,8 @@ const Admin = () => {
                         <div className="bg-red-200 text-red-600 border border-red-600 p-1 w-fit rounded-md mb-2">{place.datetime}</div>
                         <h1>{place.title}</h1>
                         <img
-                          className="rounded-lg"
+                          className="rounded-lg mt-2"
+                          crossorigin="anonymous"
                           src={`${import.meta.env.VITE_API_URL}/${place.image}`}
                           onError={(e) => (e.target.src = noimage)}
                         />
