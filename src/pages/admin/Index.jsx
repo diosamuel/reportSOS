@@ -179,7 +179,7 @@ const Admin = () => {
                   <h1 className="font-bold text-lg">Latest Emergency</h1>
                   <a className='underline' href="#" onClick={() => location.reload()}>Refresh</a>
                 </div>
-                <div className="bg-blue-900 p-3 rounded-lg h-[30em] overflow-y-scroll">
+                <div className="bg-blue-900 p-3 rounded-lg h-[30em] overflow-y-auto">
                   {allEmergency?.data?.map((place, i) => {
                     if (place.status) {
                       return (
