@@ -22,6 +22,17 @@ const WebcamCapture = () => {
   const webcamRef = useRef(null);
   let navigate = useNavigate();
 
+  // const [file, setFile] = useState(null);
+
+  // const handleFileChange = (event) => {
+  //   const selectedFile = event.target.files[0];
+  //   if (selectedFile) {
+  //     setFile(selectedFile);
+  //     let previewImg = URL.createObjectURL(file)
+  //     console.log(previewImg)
+  //   }
+  // };
+
   const videoConstraints = {
     width: 1280,
     height: 720,
@@ -107,11 +118,6 @@ const WebcamCapture = () => {
                 Capture photo
               </button>
             </div>
-            {/* <div className="flex flex-col items-center justify-center mt-10 w-full md:relative">
-              <button onClick={reportDanger} className="border border-red-500 p-2 rounded-md text-red-500 text-center w-fit">
-                Skip this step
-              </button>
-            </div> */}
           </>
         )}
       </div>
